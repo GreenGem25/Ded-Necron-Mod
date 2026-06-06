@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "BAB",
+    "B B"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:brown_dye"
+    },
+    "B": {
+      "item": "minecraft:cocoa_beans"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:poop_helmet"
+  }
+}
