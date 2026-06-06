@@ -1,0 +1,8 @@
+{
+  "sound_event": "necronmod:slon_music",
+  "description": {
+    "translate": "item.necronmod.slon_music_disc.desc"
+  },
+  "length_in_seconds": 275,
+  "comparator_output": 15
+}

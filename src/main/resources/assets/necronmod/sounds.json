@@ -1,0 +1,25 @@
+{
+  "slon_music": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "necronmod:music/slon",
+        "stream": true
+      }
+    ]
+  },
+  "coughing_sound": {
+    "category": "player",
+    "subtitle": "subtitles.necronmod.coughing_sound",
+    "sounds": [
+      "necronmod:coughing_sound"
+    ]
+  },
+  "ussr_canned_fish_sound": {
+    "category": "player",
+    "subtitle": "subtitles.necronmod.ussr_canned_fish_sound",
+    "sounds": [
+      "necronmod:ussr_canned_fish_sound"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "itemGroup.necronmod": "Necron Mod Tab",
+  "item.necronmod.slon_music_disc": "SLON Music Disc",
+  "item.necronmod.slon_music_disc.desc": "Legendary song by Albina Seksova (minus)",
+
+  "item.necronmod.necro_helmet": "Living Metal Helmet",
+  "item.necronmod.necro_chestplate": "Living Metal Chestplate",
+  "item.necronmod.necro_leggings": "Living Metal Leggings",
+  "item.necronmod.necro_boots": "Living Metal Boots",
+  "tooltip.necronmod.necro_armor_set_bonus": "Set Bonus: Necrodermis",
+  "tooltip.necronmod.necro_armor_effect_desc": "%s%% damage reduction, applies Phylactery effect",
+
+  "item.necronmod.necron_staff": "Necron Staff",
+  "tooltip.necronmod.necron_staff_bonus": "Necron Weapon",
+  "tooltip.necronmod.necron_staff_bonus_desc": "Applies Slowness II on hit",
+
+  "item.necronmod.ussr_canned_fish": "USSR Canned Fish",
+  "tooltip.necronmod.ussr_canned_fish_desc": "It stinks!",
+
+  "item.necronmod.sawdust_bread": "Sawdust bread",
+  "item.necronmod.shaurma": "Sharuma",
+  "item.necronmod.potato_pirozhok": "Potato Pirozhok",
+  "item.necronmod.necrodermis_pie": "Living Metal Pie",
+  "item.necronmod.cobblestone_pie": "Cobblestone Pie",
+  "item.necronmod.cobblestone_pie_enhanced": "Andesite Pie with Basalt Topping",
+  "item.necronmod.redstone_soup": "Redstone Soup",
+  "item.necronmod.sawdust_soup": "Sawdust Stew",
+  "item.necronmod.living_metal_plate": "Living Metal plate",
+  "item.necronmod.monolith_seeds": "Monolith Seeds",
+  "item.necronmod.poop_helmet": "Poop Helmet",
+
+  "item.necronmod.bamboo_cigarette": "Bamboo Cigarette",
+  "tooltip.necronmod.bamboo_cigarette_desc": "Smoke Bamboo!",
+
+  "necronmod.configuration.title": "Necron Mod Configs",
+  "necronmod.configuration.section.necronmod.common.toml": "Necron Mod Configs",
+  "necronmod.configuration.section.necronmod.common.toml.title": "Necron Mod Configs",
+
+  "necronmod.configuration.necroArmorSetDamageReduction": "Necrodermis Armor Set Damage Reduction",
+  "necronmod.configuration.necroArmorSetDamageReduction.tooltip": "Multiplier applied to all incoming damage. Default: 0.5",
+
+  "necronmod.configuration.necroArmorDurability": "Necron armor durability",
+  "necronmod.configuration.necroArmorDurability.tooltip": "Necron armor durability. Default: 1488",
+
+  "necronmod.configuration.necroStaffDurability": "Necron staff durability",
+  "necronmod.configuration.necroStaffDurability.tooltip": "Necron staff durability. Default: 1488",
+
+  "necronmod.configuration.necroItemsRepairPower": "Necron items repair power",
+  "necronmod.configuration.necroItemsRepairPower.tooltip": "The durability added to necron items by Phylactery. Default: 1",
+
+  "necronmod.configuration.phylacteryEffectCooldown": "Phylactery effect cooldown",
+  "necronmod.configuration.phylacteryEffectCooldown.tooltip": "Cooldown (in ticks) between effect. Default: 100",
+
+  "necronmod.configuration.showPhylacteryParticles": "Phylactery potion particles",
+  "necronmod.configuration.showPhylacteryParticles.tooltip": "Should potion particles be visible. Default: true",
+
+  "effect.necronmod.phylactery_effect": "Phylactery",
+  "effect.necronmod.lung_cancer_effect": "Lung cancer"
+
+}

@@ -1,0 +1,59 @@
+{
+  "itemGroup.necronmod": "Мод Деда Некрона",
+  "item.necronmod.slon_music_disc": "СЛОН",
+  "item.necronmod.slon_music_disc.desc": "Легендарная песня Альбины Сексовой (минус)",
+
+  "item.necronmod.necro_helmet": "Шлем из живого металла",
+  "item.necronmod.necro_chestplate": "Нагрудник из живого металла",
+  "item.necronmod.necro_leggings": "Поножи из живого металла",
+  "item.necronmod.necro_boots": "Сапоги из живого металла",
+  "tooltip.necronmod.necro_armor_set_bonus": "Бонус сета: Некродермис",
+  "tooltip.necronmod.necro_armor_effect_desc": "%s%% снижение всего входящего урона, накладывает эффект Филактерия",
+
+  "item.necronmod.necron_staff": "Некронский посох",
+  "tooltip.necronmod.necron_staff_bonus": "Некронское оружие",
+  "tooltip.necronmod.necron_staff_bonus_desc": "Накладывает Замедление II при попадании",
+
+  "item.necronmod.ussr_canned_fish": "Рыбные консервы времен СССР",
+  "tooltip.necronmod.ussr_canned_fish_desc": "Я ЕЩЕ НЕ ОТКРЫЛ А ОНИ УЖЕ ВОНЯЮТ",
+
+  "item.necronmod.sawdust_bread": "Хлеб из опилок",
+  "item.necronmod.shaurma": "Шаурма",
+  "item.necronmod.potato_pirozhok": "Пирожок с картошкой",
+  "item.necronmod.necrodermis_pie": "Пирог из живого металла",
+  "item.necronmod.cobblestone_pie": "Пирог из булыжника",
+  "item.necronmod.cobblestone_pie_enhanced": "Андезитовый пирог с посыпкой из базальта",
+  "item.necronmod.redstone_soup": "Редстоуновый суп",
+  "item.necronmod.sawdust_soup": "Суп из опилок",
+  "item.necronmod.living_metal_plate": "Пластина из живого металла",
+  "item.necronmod.monolith_seeds": "Семена Монолита",
+  "item.necronmod.poop_helmet": "Нурглитский шлем",
+
+  "item.necronmod.bamboo_cigarette": "Бамбуковая сигарета",
+  "tooltip.necronmod.bamboo_cigarette_desc": "Кури бамбук",
+
+  "necronmod.configuration.title": "Конфигурация Necron Mod",
+  "necronmod.configuration.section.necronmod.common.toml": "Конфигурация Necron Mod",
+  "necronmod.configuration.section.necronmod.common.toml.title": "Конфигурация Necron Mod",
+
+  "necronmod.configuration.necroArmorSetDamageReduction": "Уменьшение входящего урона от комплекта из живого металла",
+  "necronmod.configuration.necroArmorSetDamageReduction.tooltip": "Множитель, применимый ко всему входящему урону. Default: 0.5",
+
+  "necronmod.configuration.necroArmorDurability": "Прочность брони из некродермиса",
+  "necronmod.configuration.necroArmorDurability.tooltip": "Очки прочности каждого элемента брони из живого металла. Default: 1488",
+
+  "necronmod.configuration.necroStaffDurability": "Прочность некронского посоха",
+  "necronmod.configuration.necroStaffDurability.tooltip": "Очки прочности некронского посоха. Default: 1488",
+
+  "necronmod.configuration.necroItemsRepairPower": "Сила восстановления некронских предметов",
+  "necronmod.configuration.necroItemsRepairPower.tooltip": "Количество прочности, восстанавливаемое Филактерией некронским предметам. Default: 1",
+
+  "necronmod.configuration.phylacteryEffectCooldown": "Частота эффекта Филактерии",
+  "necronmod.configuration.phylacteryEffectCooldown.tooltip": "Задержка (в тиках) между применениями эффекта. Default: 100",
+
+  "necronmod.configuration.showPhylacteryParticles": "Частицы зелья от эффекта Филактерии",
+  "necronmod.configuration.showPhylacteryParticles.tooltip": "Делает частицы зелья видимыми. Default: true",
+
+  "effect.necronmod.phylactery_effect": "Филактерия",
+  "effect.necronmod.lung_cancer_effect": "Рак лёгких"
+}

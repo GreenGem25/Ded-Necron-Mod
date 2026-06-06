@@ -1,0 +1,7 @@
+{
+  "components": {
+    "minecraft:jukebox_playable": {
+      "song": "necronmod:slon_music"
+    }
+  }
+}
