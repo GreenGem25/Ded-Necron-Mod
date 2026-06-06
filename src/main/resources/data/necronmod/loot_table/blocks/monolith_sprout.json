@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "necronmod:monolith_sprout",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "name": "necronmod:living_metal_plate"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "necronmod:monolith_seeds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:binomial_with_bonus_count",
+              "parameters": {
+                "extra": 3,
+                "probability": 0.5714286
+              }
+            }
+          ],
+          "name": "necronmod:monolith_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "necronmod:monolith_sprout",
+          "properties": {
+            "age": "7"
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "necronmod:blocks/monolith_sprout"
+}
