@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FFF",
+    "RRR",
+    "III"
+  ],
+  "key": {
+    "F": {
+      "tag": "minecraft:cat_food"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:ussr_canned_fish"
+  }
+}

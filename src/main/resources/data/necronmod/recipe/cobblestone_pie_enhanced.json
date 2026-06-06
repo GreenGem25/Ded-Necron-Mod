@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "AAA",
+    "BBB"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:basalt"
+    },
+    "A": {
+      "item": "minecraft:andesite"
+    },
+    "B": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:cobblestone_pie_enhanced"
+  }
+}

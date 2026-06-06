@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BFC",
+    "BFC"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "F": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "C": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:shaurma"
+  }
+}
