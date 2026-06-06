@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DAD",
+    "DBD",
+    "DCD"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_sword"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "C": {
+      "item": "minecraft:breeze_rod"
+    },
+    "D": {
+      "item": "necronmod:living_metal_plate"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:necron_staff"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ACA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "necronmod:living_metal_plate"
+    },
+    "C": {
+      "item": "minecraft:netherite_leggings"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:necro_leggings"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IBI"
+  ],
+  "key": {
+    "I": {
+      "item": "necronmod:living_metal_plate"
+    },
+    "B": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:necrodermis_pie"
+  }
+}
