@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cake_slice1",
+  "textures": {
+    "particle": "necronmod:block/napoleon_cake_top",
+    "bottom": "necronmod:block/napoleon_cake_bottom",
+    "top": "necronmod:block/napoleon_cake_top",
+    "side": "necronmod:block/napoleon_cake_side",
+    "inside": "necronmod:block/napoleon_cake_inner"
+  }
+}

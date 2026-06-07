@@ -54,11 +54,10 @@ public class ModItems {
 
     public static final DeferredHolder<Item, NecronStaffitem> NECRON_STAFF = ITEMS.register("necron_staff",
             () -> new NecronStaffitem(
-                    ModToolTiers.NECRO, // 1. Передаем наш Тир материала
-                    new Item.Properties().attributes(createSwordAttributes()) // 2. Настраиваем урон и скорость через атрибуты свойства
+                    ModToolTiers.NECRO,
+                    new Item.Properties().attributes(createSwordAttributes())
             ));
 
-    // хлеб из опилок
     public static final DeferredHolder<Item, Item> SAWDUST_BREAD = ITEMS.register("sawdust_bread",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -68,7 +67,6 @@ public class ModItems {
                             .build()
             )));
 
-    // Шаурма (голод, тошноат)
     public static final DeferredHolder<Item, Item> SHAURMA = ITEMS.register("shaurma",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -80,7 +78,6 @@ public class ModItems {
                             .build()
             )));
 
-    // Пирожок с картофелем (отравл)
     public static final DeferredHolder<Item, Item> POTATO_PIROZHOK = ITEMS.register("potato_pirozhok",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -92,7 +89,6 @@ public class ModItems {
                             .build()
             )));
 
-    // Коснервы времен ссср
     public static final DeferredHolder<Item, Item> USSR_CANNED_FISH = ITEMS.register("ussr_canned_fish",
             () -> new UssrCannedFishItem(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -110,7 +106,6 @@ public class ModItems {
                             .build()
             )));
 
-    // пирог из некродермиса
     public static final DeferredHolder<Item, Item> NECRODERMIS_PIE = ITEMS.register("necrodermis_pie",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -120,7 +115,6 @@ public class ModItems {
                             .build()
             )));
 
-    // пирог из булыжнка
     public static final DeferredHolder<Item, Item> COBBLESTONE_PIE = ITEMS.register("cobblestone_pie",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -131,7 +125,6 @@ public class ModItems {
                             .build()
             )));
 
-    // пирог из андезита с базальтовой посыпкой
     public static final DeferredHolder<Item, Item> COBBLESTONE_PIE_ENHANCED = ITEMS.register("cobblestone_pie_enhanced",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -143,7 +136,6 @@ public class ModItems {
                             .build()
             )));
 
-    // редстоуновая каша
     public static final DeferredHolder<Item, Item> REDSTONE_PORRIDGE = ITEMS.register("redstone_porridge",
             () -> new Item(new Item.Properties()
                     .stacksTo(1)
@@ -157,7 +149,6 @@ public class ModItems {
                             .build()
                     )));
 
-    // суп из опилок
     public static final DeferredHolder<Item, Item> SAWDUST_SOUP = ITEMS.register("sawdust_soup",
             () -> new Item(new Item.Properties()
                     .stacksTo(1)
@@ -169,7 +160,6 @@ public class ModItems {
                             .build()
                     )));
 
-    // бамбуковая сигарета
     public static final DeferredHolder<Item, Item> BAMBOO_CIGARETTE = ITEMS.register("bamboo_cigarette",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
@@ -207,11 +197,11 @@ public class ModItems {
 
     public static final DeferredHolder<Item, Item> STEKLOVATA_CANDY = ITEMS.register("steklovata_candy",
             () -> new Item(new Item.Properties()
-                    .stacksTo(1)
+                    .stacksTo(16)
                     .food(new FoodProperties.Builder()
                             .nutrition(3)
                             .saturationModifier(0.5F)
-                            .effect(() -> new MobEffectInstance(MobEffects.HARM, 100, 0), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.HARM, 20, 0), 1.0F)
                             .build()
                     )));
 
@@ -224,12 +214,34 @@ public class ModItems {
                             .build()
                     )));
 
+    public static final DeferredHolder<Item, BlockItem> NAPOLEON_CAKE_ITEM = ITEMS.register("napoleon_cake",
+            () -> new BlockItem(ModBlocks.NAPOLEON_CAKE.get(), new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, Item> PERCH = ITEMS.register("perch",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )));
+
+    public static final DeferredHolder<Item, BlockItem> SHLAKOBLOCK = ITEMS.register("shlakoblock",
+            () -> new BlockItem(ModBlocks.SHLAKOBLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, Item> SHLAKOBLOKUN = ITEMS.register("shlakoblokun",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8F)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), 1.0F)
+                            .build()
+                    )));
+
     // питьевой клей
     // кака кола
     // жевачка со вкусом наждачки
     // шлакоблок
     // шлакоблокунь
-    // стекловата
     // черемша
     // мясо ендермена
     // Пояс шахида
@@ -239,10 +251,8 @@ public class ModItems {
     // шашлык из блоков плоти
     // люля кебаб из мяса эндермана
     // сладкая вата из лисов лесей лисов
-    // сладкая вата из стекловаты
     // одежда из стекловаты
     // кровать из стекловаты
-    // торт наполеон из стекловаты как блок
     // брдыщ
 
     private static ItemAttributeModifiers createSwordAttributes() {

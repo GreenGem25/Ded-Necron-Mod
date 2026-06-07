@@ -31,9 +31,17 @@
   "item.necronmod.steklovata": "Steklovata",
   "item.necronmod.steklovata_candy": "Steklovata Candy",
   "item.necronmod.corpse_starch_bar": "Corpse Starch Bar",
+  "item.necronmod.perch": "Raw Perch",
+  "item.necronmod.shlakoblokun": "Shlakoblokun",
 
   "item.necronmod.bamboo_cigarette": "Bamboo Cigarette",
   "tooltip.necronmod.bamboo_cigarette_desc": "Smoke Bamboo!",
+
+  "item.necronmod.napoleon_cake": "Napoleon Cake",
+  "block.necronmod.napoleon_cake": "Napoleon Cake",
+
+  "item.necronmod.shlakoblock": "Shlakoblock",
+  "block.necronmod.shlakoblock": "Shlakoblock",
 
   "necronmod.configuration.title": "Necron Mod Configs",
   "necronmod.configuration.section.necronmod.common.toml": "Necron Mod Configs",

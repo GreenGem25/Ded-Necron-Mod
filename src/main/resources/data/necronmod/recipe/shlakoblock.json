@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:cobblestone" },
+    { "item": "minecraft:gravel" },
+    { "tag": "c:concrete_powders" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "necronmod:shlakoblock"
+  }
+}

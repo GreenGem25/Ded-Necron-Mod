@@ -1,0 +1,14 @@
+{
+  "type": "necronmod:replace_fish",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing/fish"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.15
+    }
+  ],
+  "custom_fish": "necronmod:perch"
+}

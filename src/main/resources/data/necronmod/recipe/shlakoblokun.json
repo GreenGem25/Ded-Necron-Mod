@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "necronmod:shlakoblock" },
+    { "item": "necronmod:perch" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "necronmod:shlakoblokun"
+  }
+}

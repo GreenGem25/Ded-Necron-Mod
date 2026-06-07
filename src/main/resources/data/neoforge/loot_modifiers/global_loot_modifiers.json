@@ -3,6 +3,7 @@
   "entries": [
     "necronmod:add_monolith_seeds_to_desert_pyramid",
     "necronmod:add_slon_to_dungeon",
-    "necronmod:add_slon_to_mineshaft"
+    "necronmod:add_slon_to_mineshaft",
+    "necronmod:add_perch_to_fishing"
   ]
 }

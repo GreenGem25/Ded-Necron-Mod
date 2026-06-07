@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "bites=0": { "model": "necronmod:block/napoleon_cake" },
+    "bites=1": { "model": "necronmod:block/napoleon_cake_slice1" },
+    "bites=2": { "model": "necronmod:block/napoleon_cake_slice2" },
+    "bites=3": { "model": "necronmod:block/napoleon_cake_slice3" },
+    "bites=4": { "model": "necronmod:block/napoleon_cake_slice4" },
+    "bites=5": { "model": "necronmod:block/napoleon_cake_slice5" },
+    "bites=6": { "model": "necronmod:block/napoleon_cake_slice6" }
+  }
+}

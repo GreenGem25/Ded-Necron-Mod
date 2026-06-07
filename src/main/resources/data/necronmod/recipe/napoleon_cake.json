@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "item": "necronmod:steklovata"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:egg"
+    },
+    "D": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:napoleon_cake"
+  }
+}

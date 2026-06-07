@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "necronmod:block/shlakoblock_top",
+    "side": "necronmod:block/shlakoblock_side"
+  }
+}

@@ -31,9 +31,17 @@
   "item.necronmod.steklovata": "Стекловата",
   "item.necronmod.steklovata_candy": "Сладкая стекловата на палочке",
   "item.necronmod.corpse_starch_bar": "Трупный батончик",
+  "item.necronmod.perch": "Окунь",
+  "item.necronmod.shlakoblokun": "Шлакоблокунь",
 
   "item.necronmod.bamboo_cigarette": "Бамбуковая сигарета",
   "tooltip.necronmod.bamboo_cigarette_desc": "Кури бамбук",
+
+  "item.necronmod.napoleon_cake": "Торт \"Наполеон\"",
+  "block.necronmod.napoleon_cake": "Торт \"Наполеон\"",
+
+  "item.necronmod.shlakoblock": "Шлакоблок",
+  "block.necronmod.shlakoblock": "Шлакоблок",
 
   "necronmod.configuration.title": "Конфигурация Necron Mod",
   "necronmod.configuration.section.necronmod.common.toml": "Конфигурация Necron Mod",
