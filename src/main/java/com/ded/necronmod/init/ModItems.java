@@ -106,6 +106,7 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(MobEffects.INFESTED, 200, 0), 1.0F)
                             .effect(() -> new MobEffectInstance(MobEffects.WEAKNESS, 200, 0), 1.0F)
                             .effect(() -> new MobEffectInstance(MobEffects.POISON, 200, 1), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1), 1.0F)
                             .build()
             )));
 
@@ -123,7 +124,7 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> COBBLESTONE_PIE = ITEMS.register("cobblestone_pie",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
-                            .nutrition(5)
+                            .nutrition(6)
                             .saturationModifier(1.0F)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1), 1.0F)
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1), 1.0F)
@@ -134,7 +135,7 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> COBBLESTONE_PIE_ENHANCED = ITEMS.register("cobblestone_pie_enhanced",
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
-                            .nutrition(7)
+                            .nutrition(8)
                             .saturationModifier(1.0F)
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1), 1.0F)
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1), 1.0F)
@@ -143,7 +144,7 @@ public class ModItems {
             )));
 
     // редстоуновая каша
-    public static final DeferredHolder<Item, Item> REDSTONE_SOUP = ITEMS.register("redstone_soup",
+    public static final DeferredHolder<Item, Item> REDSTONE_PORRIDGE = ITEMS.register("redstone_porridge",
             () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .food(new FoodProperties.Builder()
@@ -161,7 +162,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .food(new FoodProperties.Builder()
-                            .nutrition(4)
+                            .nutrition(5)
                             .saturationModifier(1.0F)
                             .usingConvertsTo(Items.BOWL)
                             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 100, 0), 1.0F)
@@ -201,6 +202,28 @@ public class ModItems {
             () -> new PoopHelmetItem(ModArmorMaterials.POOP_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(120)));
 
+    public static final DeferredHolder<Item, Item> STEKLOVATA = ITEMS.register("steklovata",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_CANDY = ITEMS.register("steklovata_candy",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationModifier(0.5F)
+                            .effect(() -> new MobEffectInstance(MobEffects.HARM, 100, 0), 1.0F)
+                            .build()
+                    )));
+
+    public static final DeferredHolder<Item, Item> CORPSE_STARCH_BAR = ITEMS.register("corpse_starch_bar",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.7F)
+                            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 100, 1), 0.5F)
+                            .build()
+                    )));
+
     // питьевой клей
     // кака кола
     // жевачка со вкусом наждачки
@@ -209,6 +232,18 @@ public class ModItems {
     // стекловата
     // черемша
     // мясо ендермена
+    // Пояс шахида
+    // скарабейчики пчелы
+    // фпв дрон пчела
+    // мясная карабулька (блок)
+    // шашлык из блоков плоти
+    // люля кебаб из мяса эндермана
+    // сладкая вата из лисов лесей лисов
+    // сладкая вата из стекловаты
+    // одежда из стекловаты
+    // кровать из стекловаты
+    // торт наполеон из стекловаты как блок
+    // брдыщ
 
     private static ItemAttributeModifiers createSwordAttributes() {
         return ItemAttributeModifiers.builder()
