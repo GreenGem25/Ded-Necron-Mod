@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " BA",
+    "BA ",
+    "AC "
+  ],
+  "key": {
+    "A": {
+      "item": "necronmod:rotten_flesh_block"
+    },
+    "B": {
+      "item": "minecraft:spider_eye"
+    },
+    "C": {
+      "item": "necronmod:shampur"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:shashlik"
+  }
+}

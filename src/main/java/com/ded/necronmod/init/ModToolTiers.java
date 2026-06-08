@@ -12,8 +12,17 @@ public class ModToolTiers {
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             1,
             100.0F,
-            10.0F,
+            19.0F,
             22,
-            () -> Ingredient.of(Items.NETHERITE_SCRAP)
+            () -> Ingredient.of(ModItems.LIVING_METAL_PLATE.get())
+    );
+
+    public static final Tier SHAMPUR = new SimpleTier(
+            BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+            256,
+            100.0F,
+            2.0F,
+            1,
+            () -> Ingredient.of(Items.IRON_INGOT)
     );
 }

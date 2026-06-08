@@ -3,6 +3,7 @@ package com.ded.necronmod.init;
 import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.Item.*;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -15,7 +16,9 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.component.Unbreakable;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.SimpleTier;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
@@ -52,7 +55,7 @@ public class ModItems {
     public static final DeferredHolder<Item, NecronStaffitem> NECRON_STAFF = ITEMS.register("necron_staff",
             () -> new NecronStaffitem(
                     ModToolTiers.NECRO,
-                    new Item.Properties().attributes(createSwordAttributes())
+                    new Item.Properties().attributes(createSwordAttributes(0.7F, ModToolTiers.NECRO))
             ));
 
     public static final DeferredHolder<Item, Item> SAWDUST_BREAD = ITEMS.register("sawdust_bread",
@@ -205,7 +208,7 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> CORPSE_STARCH_BAR = ITEMS.register("corpse_starch_bar",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
-                            .nutrition(6)
+                            .nutrition(5)
                             .saturationModifier(0.7F)
                             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 100, 1), 0.5F)
                             .build()
@@ -260,27 +263,43 @@ public class ModItems {
     public static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK = ITEMS.register("rotten_flesh_block",
             () -> new BlockItem(ModBlocks.ROTTEN_FLESH_BLOCK.get(), new Item.Properties()));
 
+    public static final DeferredHolder<Item, SwordItem> SHAMPUR = ITEMS.register("shampur",
+            () -> new SwordItem(
+                    ModToolTiers.SHAMPUR,
+                    new Item.Properties().component(DataComponents.UNBREAKABLE,
+                            new Unbreakable(false)).attributes(createSwordAttributes(0.5F, ModToolTiers.SHAMPUR))
+            ));
+
+    public static final DeferredHolder<Item, Item> SHASHLIK = ITEMS.register("shashlik",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(8)
+                            .saturationModifier(1.0F)
+                            .usingConvertsTo(SHAMPUR.get())
+                            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 160, 1), 0.2F)
+                            .build()
+                    )));
+
     // питьевой клей
     // жевачка со вкусом наждачки
     // мясо ендермена
     // Пояс шахида
     // скарабейчики пчелы
     // фпв дрон пчела
-    // шашлык из блоков плоти
     // люля кебаб из мяса эндермана
     // сладкая вата из лисов лесей лисов
     // кровать из стекловаты
 
-    private static ItemAttributeModifiers createSwordAttributes() {
+    private static ItemAttributeModifiers createSwordAttributes(float speed, Tier tier) {
         return ItemAttributeModifiers.builder()
                 .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(
                         ResourceLocation.withDefaultNamespace("base_attack_damage"),
-                        (float) 5.0 + ModToolTiers.NECRO.getAttackDamageBonus(),
+                        tier.getAttackDamageBonus(),
                         AttributeModifier.Operation.ADD_VALUE
                 ), EquipmentSlotGroup.MAINHAND)
                 .add(Attributes.ATTACK_SPEED, new AttributeModifier(
                         ResourceLocation.withDefaultNamespace("base_attack_speed"),
-                        (float) -0.4,
+                        -speed,
                         AttributeModifier.Operation.ADD_VALUE
                 ), EquipmentSlotGroup.MAINHAND)
                 .build();
