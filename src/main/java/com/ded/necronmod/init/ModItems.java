@@ -254,20 +254,22 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> STEKLOVATA_BOOTS = ITEMS.register("steklovata_boots",
             () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
 
+    public static final DeferredHolder<Item, BlockItem> STEKLOVATA_BLOCK = ITEMS.register("steklovata_block",
+            () -> new BlockItem(ModBlocks.STEKLOVATA_BLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK = ITEMS.register("rotten_flesh_block",
+            () -> new BlockItem(ModBlocks.ROTTEN_FLESH_BLOCK.get(), new Item.Properties()));
+
     // питьевой клей
-    // кака кола
     // жевачка со вкусом наждачки
-    // черемша
     // мясо ендермена
     // Пояс шахида
     // скарабейчики пчелы
     // фпв дрон пчела
-    // мясная карабулька (блок)
     // шашлык из блоков плоти
     // люля кебаб из мяса эндермана
     // сладкая вата из лисов лесей лисов
     // кровать из стекловаты
-    // брдыщ
 
     private static ItemAttributeModifiers createSwordAttributes() {
         return ItemAttributeModifiers.builder()

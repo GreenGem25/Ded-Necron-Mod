@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:rotten_flesh_block"
+  }
+}

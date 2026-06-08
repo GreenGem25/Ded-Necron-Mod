@@ -3,6 +3,8 @@ package com.ded.necronmod.init;
 import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.block.MonolithSprout;
 import com.ded.necronmod.block.NapoleonCake;
+import com.ded.necronmod.block.RottenFleshBlock;
+import com.ded.necronmod.block.SteklovataBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -25,6 +27,12 @@ public class ModBlocks {
 
     public static final DeferredHolder<Block, Block> SHLAKOBLOCK = BLOCKS.register("shlakoblock",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+
+    public static final DeferredHolder<Block, SteklovataBlock> STEKLOVATA_BLOCK = BLOCKS.register("steklovata_block",
+            () -> new SteklovataBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK)));
+
+    public static final DeferredHolder<Block, RottenFleshBlock> ROTTEN_FLESH_BLOCK = BLOCKS.register("rotten_flesh_block",
+            () -> new RottenFleshBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HONEY_BLOCK)));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

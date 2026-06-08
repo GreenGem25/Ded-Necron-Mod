@@ -49,6 +49,12 @@
   "item.necronmod.shlakoblock": "Shlakoblock",
   "block.necronmod.shlakoblock": "Shlakoblock",
 
+  "item.necronmod.steklovata_block": "Steklovata Block",
+  "block.necronmod.steklovata_block": "Steklovata Block",
+
+  "item.necronmod.rotten_flesh_block": "Rotten Flesh Block",
+  "block.necronmod.rotten_flesh_block": "Rotten Flesh Block",
+
   "necronmod.configuration.title": "Necron Mod Configs",
   "necronmod.configuration.section.necronmod.common.toml": "Necron Mod Configs",
   "necronmod.configuration.section.necronmod.common.toml.title": "Necron Mod Configs",

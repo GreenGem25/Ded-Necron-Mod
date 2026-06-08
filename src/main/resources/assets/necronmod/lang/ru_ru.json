@@ -49,6 +49,12 @@
   "item.necronmod.shlakoblock": "Шлакоблок",
   "block.necronmod.shlakoblock": "Шлакоблок",
 
+  "item.necronmod.steklovata_block": "Блок стекловаты",
+  "block.necronmod.steklovata_block": "Блок стекловаты",
+
+  "item.necronmod.rotten_flesh_block": "Мясная карабулька",
+  "block.necronmod.rotten_flesh_block": "Мясная карабулька",
+
   "necronmod.configuration.title": "Конфигурация Necron Mod",
   "necronmod.configuration.section.necronmod.common.toml": "Конфигурация Necron Mod",
   "necronmod.configuration.section.necronmod.common.toml.title": "Конфигурация Necron Mod",
