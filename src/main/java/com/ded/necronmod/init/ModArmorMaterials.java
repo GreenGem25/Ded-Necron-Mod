@@ -59,6 +59,27 @@ public class ModArmorMaterials {
                 );
             });
 
+    public static final Holder<ArmorMaterial> STEKLOVATA_ARMOR_MATERIAL = ARMOR_MATERIALS.register("steklovata_material",
+            () -> {
+                EnumMap<ArmorItem.Type, Integer> defense = Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                    map.put(ArmorItem.Type.BOOTS, 1);
+                    map.put(ArmorItem.Type.LEGGINGS, 2);
+                    map.put(ArmorItem.Type.CHESTPLATE, 4);
+                    map.put(ArmorItem.Type.HELMET, 3);
+                });
+
+                return new ArmorMaterial(
+                        defense,
+                        1, // Enchantability
+                        SoundEvents.ARMOR_EQUIP_LEATHER,
+                        () -> Ingredient.of(ModItems.STEKLOVATA.get()), // Anvil repair item
+                        List.of(new ArmorMaterial.Layer(ResourceLocation.
+                                fromNamespaceAndPath(DedNecronMod.MODID, "steklovata_armor"))),
+                        1.0F, // Toughness
+                        0.0F // KB Resistance
+                );
+            });
+
     public static void register(IEventBus bus) {
         ARMOR_MATERIALS.register(bus);
     }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A A",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "necronmod:steklovata"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:steklovata_boots"
+  }
+}

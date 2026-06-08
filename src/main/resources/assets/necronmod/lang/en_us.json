@@ -32,7 +32,13 @@
   "item.necronmod.steklovata_candy": "Steklovata Candy",
   "item.necronmod.corpse_starch_bar": "Corpse Starch Bar",
   "item.necronmod.perch": "Raw Perch",
+  "item.necronmod.cooked_perch": "Cooked Perch",
   "item.necronmod.shlakoblokun": "Shlakoblokun",
+
+  "item.necronmod.steklovata_helmet": "Steklovata Helmet",
+  "item.necronmod.steklovata_chestplate": "Steklovata Chestplate",
+  "item.necronmod.steklovata_leggings": "Steklovata Leggings",
+  "item.necronmod.steklovata_boots": "Steklovata Boots",
 
   "item.necronmod.bamboo_cigarette": "Bamboo Cigarette",
   "tooltip.necronmod.bamboo_cigarette_desc": "Smoke Bamboo!",

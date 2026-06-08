@@ -1,10 +1,7 @@
 package com.ded.necronmod.init;
 
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.Item.NecronArmorItem;
-import com.ded.necronmod.Item.NecronStaffitem;
-import com.ded.necronmod.Item.PoopHelmetItem;
-import com.ded.necronmod.Item.UssrCannedFishItem;
+import com.ded.necronmod.Item.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -225,6 +222,14 @@ public class ModItems {
                             .build()
                     )));
 
+    public static final DeferredHolder<Item, Item> COOKED_PERCH = ITEMS.register("cooked_perch",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationModifier(0.8F)
+                            .build()
+                    )));
+
     public static final DeferredHolder<Item, BlockItem> SHLAKOBLOCK = ITEMS.register("shlakoblock",
             () -> new BlockItem(ModBlocks.SHLAKOBLOCK.get(), new Item.Properties()));
 
@@ -237,11 +242,21 @@ public class ModItems {
                             .build()
                     )));
 
+    public static final DeferredHolder<Item, Item> STEKLOVATA_HELMET = ITEMS.register("steklovata_helmet",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_CHESTPLATE = ITEMS.register("steklovata_chestplate",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_LEGGINGS = ITEMS.register("steklovata_leggings",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_BOOTS = ITEMS.register("steklovata_boots",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
+
     // питьевой клей
     // кака кола
     // жевачка со вкусом наждачки
-    // шлакоблок
-    // шлакоблокунь
     // черемша
     // мясо ендермена
     // Пояс шахида
@@ -251,7 +266,6 @@ public class ModItems {
     // шашлык из блоков плоти
     // люля кебаб из мяса эндермана
     // сладкая вата из лисов лесей лисов
-    // одежда из стекловаты
     // кровать из стекловаты
     // брдыщ
 

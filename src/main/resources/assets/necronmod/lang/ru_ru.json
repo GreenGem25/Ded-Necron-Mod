@@ -32,7 +32,13 @@
   "item.necronmod.steklovata_candy": "Сладкая стекловата на палочке",
   "item.necronmod.corpse_starch_bar": "Трупный батончик",
   "item.necronmod.perch": "Окунь",
+  "item.necronmod.cooked_perch": "Приготовленный окунь",
   "item.necronmod.shlakoblokun": "Шлакоблокунь",
+
+  "item.necronmod.steklovata_helmet": "Шапка из стекловаты",
+  "item.necronmod.steklovata_chestplate": "Куртка из стекловаты",
+  "item.necronmod.steklovata_leggings": "Штаны из стекловаты",
+  "item.necronmod.steklovata_boots": "Ботинки из стекловаты",
 
   "item.necronmod.bamboo_cigarette": "Бамбуковая сигарета",
   "tooltip.necronmod.bamboo_cigarette_desc": "Кури бамбук",
