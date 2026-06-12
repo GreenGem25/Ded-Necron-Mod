@@ -12,7 +12,7 @@
 
   "item.necronmod.necron_staff": "Necron Staff",
   "tooltip.necronmod.necron_staff_bonus": "Necron Weapon",
-  "tooltip.necronmod.necron_staff_bonus_desc": "Applies Slowness II on hit",
+  "tooltip.necronmod.necron_staff_bonus_desc": "Applies Slowness II on hit\nShoots laser on right-click",
 
   "item.necronmod.ussr_canned_fish": "USSR Canned Fish",
   "tooltip.necronmod.ussr_canned_fish_desc": "It stinks!",

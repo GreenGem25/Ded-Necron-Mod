@@ -7,7 +7,7 @@
     },
     {
       "condition": "minecraft:random_chance",
-      "chance": 0.25
+      "chance": 0.15
     }
   ],
   "item": "necronmod:slon_music_disc"

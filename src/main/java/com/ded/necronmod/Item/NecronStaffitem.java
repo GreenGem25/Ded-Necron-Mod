@@ -2,10 +2,28 @@ package com.ded.necronmod.Item;
 
 import com.ded.necronmod.Config;
 import com.ded.necronmod.client.renderer.NecronStaffRenderer;
+import com.ded.necronmod.init.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoItem;
@@ -43,6 +61,12 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
     }
 
     @Override
+    public void postHurtEnemy(ItemStack stack, LivingEntity target, @NotNull LivingEntity attacker) {
+        target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1, false, true));
+        stack.hurtAndBreak(1, attacker, EquipmentSlot.MAINHAND);
+    }
+
+    @Override
     public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
 
         tooltipComponents.add(Component.empty());
@@ -69,5 +93,80 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
                 return this.renderer;
             }
         });
+    }
+
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, @NotNull InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+
+        player.getCooldowns().addCooldown(this, 60);
+        RandomSource random = player.getRandom();
+
+        level.playSound(
+                null,
+                player.getX(), player.getY(), player.getZ(),
+                ModSounds.NECRON_STAFF_SHOT.get(),
+                SoundSource.PLAYERS,
+                1.0F,
+                0.8F + random.nextFloat() * 0.4F
+        );
+
+        if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {
+            double maxDistance = 30.0;
+            float damage = 12.0F;
+
+            Vec3 startPos = player.getEyePosition(1.0F);
+            Vec3 lookVector = player.getViewVector(1.0F);
+            Vec3 endPos = startPos.add(lookVector.scale(maxDistance));
+
+            double step = 0.25;
+
+            for (double d = 0; d < maxDistance; d += step) {
+                Vec3 currentCheckPos = startPos.add(lookVector.scale(d));
+
+                BlockPos blockPos = BlockPos.containing(currentCheckPos);
+                BlockState blockState = level.getBlockState(blockPos);
+
+                if (!blockState.isAir() && !blockState.canBeReplaced()) {
+                    if (blockState.getFluidState().isEmpty()) {
+                        endPos = currentCheckPos;
+                        break;
+                    }
+                }
+
+                AABB boundingBox = new AABB(currentCheckPos.add(-0.3, -0.3, -0.3), currentCheckPos.add(0.3, 0.3, 0.3));
+                List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, boundingBox, entity -> entity != player);
+
+                if (!targets.isEmpty()) {
+                    for (LivingEntity target : targets) {
+                        target.hurt(player.damageSources().playerAttack(player), damage);
+                        target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1, false, true));
+                    }
+                    endPos = currentCheckPos;
+                    break;
+                }
+            }
+
+            net.minecraft.core.particles.DustParticleOptions greenLaserParticle =
+                    new net.minecraft.core.particles.DustParticleOptions(
+                            new org.joml.Vector3f(0.0F, 1.0F, 0.0F), 1.5F
+                    );
+
+            Vec3 particleTrack = endPos.subtract(startPos);
+            double totalDistance = particleTrack.length();
+            Vec3 direction = particleTrack.normalize();
+
+            for (double i = 0; i < totalDistance; i += 0.15) {
+                Vec3 spawnPoint = startPos.add(direction.scale(i));
+
+                serverLevel.sendParticles(greenLaserParticle,
+                        spawnPoint.x, spawnPoint.y, spawnPoint.z,
+                        1, 0, 0, 0, 0);
+            }
+
+            serverLevel.sendParticles(greenLaserParticle, endPos.x, endPos.y, endPos.z, 10, 0.2, 0.2, 0.2, 0.05);
+        }
+
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
     }
 }

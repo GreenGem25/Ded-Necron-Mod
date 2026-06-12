@@ -7,8 +7,8 @@
     },
     {
       "condition": "minecraft:random_chance",
-      "chance": 0.15
+      "chance": 0.05
     }
   ],
-  "item": "necronmod:slon_music_disc"
+  "item": "necronmod:monolith_seeds"
 }

@@ -21,5 +21,12 @@
     "sounds": [
       "necronmod:ussr_canned_fish_sound"
     ]
+  },
+  "necron_staff_shot": {
+    "category": "player",
+    "subtitle": "subtitles.necronmod.necron_staff_shot",
+    "sounds": [
+      "necronmod:necron_staff_shot"
+    ]
   }
 }

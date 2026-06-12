@@ -23,10 +23,10 @@ public class ModArmorMaterials {
     public static final Holder<ArmorMaterial> NECRODERMIS_ARMOR_MATERIAL = ARMOR_MATERIALS.register("necro_material",
             () -> {
                 EnumMap<ArmorItem.Type, Integer> defense = Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                   map.put(ArmorItem.Type.BOOTS, 5);
+                   map.put(ArmorItem.Type.BOOTS, 6);
                    map.put(ArmorItem.Type.LEGGINGS, 12);
                    map.put(ArmorItem.Type.CHESTPLATE, 16);
-                   map.put(ArmorItem.Type.HELMET, 6);
+                   map.put(ArmorItem.Type.HELMET, 7);
                 });
 
                 return new ArmorMaterial(
@@ -36,8 +36,8 @@ public class ModArmorMaterials {
                         () -> Ingredient.of(ModItems.LIVING_METAL_PLATE.get()), // Anvil repair item
                         List.of(new ArmorMaterial.Layer(ResourceLocation.
                                 fromNamespaceAndPath(DedNecronMod.MODID, "necro_armor"))),
-                        4.0F, // Toughness
-                        0.1F // KB Resistance
+                        5.0F, // Toughness
+                        0.2F // KB Resistance
                 );
             });
 

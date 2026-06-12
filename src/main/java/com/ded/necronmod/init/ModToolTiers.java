@@ -12,7 +12,7 @@ public class ModToolTiers {
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             1,
             100.0F,
-            19.0F,
+            29.0F,
             22,
             () -> Ingredient.of(ModItems.LIVING_METAL_PLATE.get())
     );

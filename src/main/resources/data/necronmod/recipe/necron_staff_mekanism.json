@@ -1,11 +1,12 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:mod_loaded",
-        "modid": "mekanismtools"
-      }
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanismtools"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
     }
   ],
   "type": "minecraft:crafting_shaped",
@@ -17,13 +18,13 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:netherite_sword"
+      "item": "mekanismtools:refined_obsidian_sword"
     },
     "B": {
-      "item": "minecraft:blaze_rod"
+      "item": "mekanism:energy_tablet"
     },
     "C": {
-      "item": "minecraft:breeze_rod"
+      "item": "minecraft:blaze_rod"
     },
     "D": {
       "item": "necronmod:living_metal_plate"

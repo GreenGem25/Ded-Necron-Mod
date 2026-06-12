@@ -1,11 +1,8 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:mod_loaded",
-        "modid": "mekanismtools"
-      }
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanismtools"
     }
   ],
   "type": "minecraft:crafting_shaped",
@@ -20,7 +17,7 @@
       "item": "necronmod:living_metal_plate"
     },
     "C": {
-      "item": "minecraft:netherite_chestplate"
+      "item": "mekanismtools:refined_obsidian_chestplate"
     }
   },
   "result": {

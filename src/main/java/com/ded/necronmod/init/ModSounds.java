@@ -20,6 +20,9 @@ public class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> USSR_CANNED_FISH_SOUND = SOUNDS.register("ussr_canned_fish_sound",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "ussr_canned_fish_sound")));
 
+    public static final DeferredHolder<SoundEvent, SoundEvent> NECRON_STAFF_SHOT = SOUNDS.register("necron_staff_shot",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "necron_staff_shot")));
+
     public static void register(IEventBus bus) {
         SOUNDS.register(bus);
     }

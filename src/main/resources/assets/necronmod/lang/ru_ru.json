@@ -12,7 +12,7 @@
 
   "item.necronmod.necron_staff": "Некронский посох",
   "tooltip.necronmod.necron_staff_bonus": "Некронское оружие",
-  "tooltip.necronmod.necron_staff_bonus_desc": "Накладывает Замедление II при попадании",
+  "tooltip.necronmod.necron_staff_bonus_desc": "Накладывает Замедление II при попадании\nСтреляет лазером на правую кнопку",
 
   "item.necronmod.ussr_canned_fish": "Рыбные консервы времен СССР",
   "tooltip.necronmod.ussr_canned_fish_desc": "Я ЕЩЕ НЕ ОТКРЫЛ А ОНИ УЖЕ ВОНЯЮТ",

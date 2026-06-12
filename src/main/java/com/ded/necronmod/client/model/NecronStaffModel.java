@@ -20,9 +20,4 @@ public class NecronStaffModel extends GeoModel<NecronStaffitem> {
     public ResourceLocation getAnimationResource(NecronStaffitem animatable) {
         return ResourceLocation.fromNamespaceAndPath("necronmod", "animations/item/necron_staff.animation.json");
     }
-
-    @Override
-    public RenderType getRenderType(NecronStaffitem animatable, ResourceLocation texture) {
-        return RenderType.armorCutoutNoCull(texture);
-    }
 }

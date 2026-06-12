@@ -3,12 +3,12 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+      "loot_table_id": "minecraft:chests/simple_dungeon"
     },
     {
       "condition": "minecraft:random_chance",
-      "chance": 0.15
+      "chance": 0.05
     }
   ],
-  "item": "necronmod:slon_music_disc"
+  "item": "necronmod:monolith_seeds"
 }

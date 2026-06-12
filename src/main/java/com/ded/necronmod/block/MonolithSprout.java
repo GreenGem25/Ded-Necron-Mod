@@ -5,10 +5,7 @@ import com.ded.necronmod.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,6 +13,8 @@ import net.minecraft.world.level.material.MapColor;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
+
+import static net.minecraft.world.level.block.RenderShape.ENTITYBLOCK_ANIMATED;
 
 public class MonolithSprout extends CropBlock implements EntityBlock {
     public MonolithSprout() {
@@ -26,6 +25,7 @@ public class MonolithSprout extends CropBlock implements EntityBlock {
                 .randomTicks()
                 .instabreak()
                 .sound(SoundType.CROP)
+                .lightLevel(state -> 5)
         );
     }
 
@@ -57,7 +57,7 @@ public class MonolithSprout extends CropBlock implements EntityBlock {
     }
 
     @Override
-    public net.minecraft.world.level.block.@NotNull RenderShape getRenderShape(@NotNull BlockState state) {
-        return net.minecraft.world.level.block.RenderShape.ENTITYBLOCK_ANIMATED;
+    public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
+        return ENTITYBLOCK_ANIMATED;
     }
 }
