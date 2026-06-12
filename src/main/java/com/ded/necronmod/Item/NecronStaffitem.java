@@ -6,6 +6,7 @@ import com.ded.necronmod.init.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -147,7 +148,7 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
                 }
             }
 
-            net.minecraft.core.particles.DustParticleOptions greenLaserParticle =
+            DustParticleOptions greenLaserParticle =
                     new net.minecraft.core.particles.DustParticleOptions(
                             new org.joml.Vector3f(0.0F, 1.0F, 0.0F), 1.5F
                     );

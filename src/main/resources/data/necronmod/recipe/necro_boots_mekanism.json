@@ -2,21 +2,31 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "mekanismtools"
+      "modid": "mekanism"
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ACA",
-    "A A"
+    "CDC",
+    "ABA",
+    "AEA"
   ],
   "key": {
     "A": {
       "item": "necronmod:living_metal_plate"
     },
+    "B": {
+      "item": "minecraft:netherite_boots"
+    },
     "C": {
-      "item": "mekanismtools:refined_obsidian_boots"
+      "tag": "c:dusts/emerald"
+    },
+    "D": {
+      "item": "mekanism:basic_control_circuit"
+    },
+    "E": {
+      "tag": "c:ingots/uranium"
     }
   },
   "result": {
