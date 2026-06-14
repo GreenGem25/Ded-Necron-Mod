@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "necronmod:block/necron_tomb_block"
+    }
+  }
+}

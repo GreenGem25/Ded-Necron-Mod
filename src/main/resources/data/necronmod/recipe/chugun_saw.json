@@ -2,20 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "  B",
-    " A ",
-    "A  "
+    " AB",
+    "AB ",
+    "C  "
   ],
   "key": {
     "A": {
       "tag": "c:ingots/iron"
     },
     "B": {
-      "tag": "c:nuggets/iron"
+      "item": "necronmod:living_metal_plate"
+    },
+    "C": {
+      "tag": "c:rods/wooden"
     }
   },
   "result": {
     "count": 1,
-    "id": "necronmod:shampur"
+    "id": "necronmod:chugun_saw"
   }
 }

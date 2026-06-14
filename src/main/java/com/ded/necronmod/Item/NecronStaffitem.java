@@ -42,7 +42,6 @@ import java.util.function.Consumer;
 public class NecronStaffitem extends SwordItem implements GeoItem {
     public NecronStaffitem(Tier tier, Properties properties) {
         super(tier, properties);
-
     }
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);

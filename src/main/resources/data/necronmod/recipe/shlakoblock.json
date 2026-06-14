@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    { "item": "minecraft:cobblestone" },
-    { "item": "minecraft:gravel" },
+    { "tag": "c:cobblestones/normal" },
+    { "tag": "c:gravels" },
     { "tag": "c:concrete_powders" }
   ],
   "result": {

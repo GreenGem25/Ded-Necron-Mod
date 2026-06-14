@@ -1,8 +1,6 @@
 package com.ded.necronmod;
 
 import com.ded.necronmod.init.*;
-import net.neoforged.fml.event.lifecycle.ModLifecycleEvent;
-import net.neoforged.neoforge.common.NeoForgeMod;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;

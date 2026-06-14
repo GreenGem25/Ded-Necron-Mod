@@ -8,7 +8,7 @@
   ],
   "key": {
     "C": {
-      "item": "minecraft:cobblestone"
+      "tag": "c:cobblestones/normal"
     },
     "B": {
       "item": "minecraft:bread"

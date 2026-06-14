@@ -36,6 +36,7 @@
   "item.necronmod.shlakoblokun": "Shlakoblokun",
   "item.necronmod.shampur": "Shampur",
   "item.necronmod.shashlik": "Shashlik",
+  "item.necronmod.chugun_saw": "Chugun Saw",
 
   "item.necronmod.steklovata_helmet": "Steklovata Helmet",
   "item.necronmod.steklovata_chestplate": "Steklovata Chestplate",
@@ -56,6 +57,9 @@
 
   "item.necronmod.rotten_flesh_block": "Rotten Flesh Block",
   "block.necronmod.rotten_flesh_block": "Rotten Flesh Block",
+
+  "item.necronmod.necron_tomb_block": "Necron Tomb Block",
+  "block.necronmod.necron_tomb_block": "Necron Tomb Block",
 
   "necronmod.configuration.title": "Necron Mod Configs",
   "necronmod.configuration.section.necronmod.common.toml": "Necron Mod Configs",
@@ -80,6 +84,9 @@
   "necronmod.configuration.showPhylacteryParticles.tooltip": "Should potion particles be visible. Default: true",
 
   "effect.necronmod.phylactery_effect": "Phylactery",
-  "effect.necronmod.lung_cancer_effect": "Lung cancer"
+  "effect.necronmod.lung_cancer_effect": "Lung cancer",
+
+  "config.jade.plugin_necronmod.chugun_saw": "Ueee",
+  "tooltip.necronmod.chugun_saw_required": "Chugun Saw required to break this"
 
 }

@@ -2,16 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "SSS",
-    "SSS"
+    "AAA",
+    "AAA",
+    "AAA"
   ],
   "key": {
-    "S": {
-      "tag": "c:rods/wooden"
+    "A": {
+      "item": "necronmod:living_metal_plate"
     }
   },
   "result": {
     "count": 1,
-    "id": "necronmod:sawdust_bread"
+    "id": "necronmod:necron_tomb_block"
   }
 }

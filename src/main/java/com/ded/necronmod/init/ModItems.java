@@ -16,9 +16,9 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.component.Unbreakable;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.common.SimpleTier;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
@@ -279,6 +279,18 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 160, 1), 0.2F)
                             .build()
                     )));
+
+    public static final DeferredHolder<Item, ChugunSaw> CHUGUN_SAW =
+            ITEMS.register(
+                    "chugun_saw",
+                    () -> new ChugunSaw(
+                            ModToolTiers.CHUGUN_SAW,
+                            new Item.Properties()
+                                    .durability(500)
+                    )
+            );
+    public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_BLOCK = ITEMS.register("necron_tomb_block",
+            () -> new BlockItem(ModBlocks.NECRON_TOMB_BLOCK.get(), new Item.Properties()));
 
     // питьевой клей
     // жевачка со вкусом наждачки

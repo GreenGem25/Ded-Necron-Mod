@@ -36,6 +36,7 @@
   "item.necronmod.shlakoblokun": "Шлакоблокунь",
   "item.necronmod.shampur": "Шампур",
   "item.necronmod.shashlik": "Шашлык из карабульки",
+  "item.necronmod.chugun_saw": "Ножовка по чугуну",
 
   "item.necronmod.steklovata_helmet": "Шапка из стекловаты",
   "item.necronmod.steklovata_chestplate": "Куртка из стекловаты",
@@ -56,6 +57,9 @@
 
   "item.necronmod.rotten_flesh_block": "Мясная карабулька",
   "block.necronmod.rotten_flesh_block": "Мясная карабулька",
+
+  "item.necronmod.necron_tomb_block": "Блок Гробницы",
+  "block.necronmod.necron_tomb_block": "Блок Гробницы",
 
   "necronmod.configuration.title": "Конфигурация Necron Mod",
   "necronmod.configuration.section.necronmod.common.toml": "Конфигурация Necron Mod",
@@ -80,5 +84,8 @@
   "necronmod.configuration.showPhylacteryParticles.tooltip": "Делает частицы зелья видимыми. Default: true",
 
   "effect.necronmod.phylactery_effect": "Филактерия",
-  "effect.necronmod.lung_cancer_effect": "Рак лёгких"
+  "effect.necronmod.lung_cancer_effect": "Рак лёгких",
+
+  "config.jade.plugin_necronmod.chugun_saw": "Уэээ",
+  "tooltip.necronmod.chugun_saw_required": "Для разрушения необходима Ножовка по чугуну"
 }

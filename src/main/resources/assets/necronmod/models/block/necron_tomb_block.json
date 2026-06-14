@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "necronmod:block/necron_tomb_block"
+  }
+}
