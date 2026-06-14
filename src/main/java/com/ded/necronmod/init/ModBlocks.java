@@ -33,7 +33,7 @@ public class ModBlocks {
 
     public static final DeferredHolder<Block, NecronTombBlock> NECRON_TOMB_BLOCK = BLOCKS.register("necron_tomb_block",
             () -> new NecronTombBlock(BlockBehaviour.Properties.of()
-                    .strength(5.0F, 3600000.0F)
+                    .strength(-1.0F, 3600000.0F)
                     .requiresCorrectToolForDrops()
             ));
 
