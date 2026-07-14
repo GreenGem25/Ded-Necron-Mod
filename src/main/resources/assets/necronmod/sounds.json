@@ -28,5 +28,17 @@
     "sounds": [
       "necronmod:necron_staff_shot"
     ]
+  },
+  "cat_caterpillar_ambient": {
+    "subtitle": "subtitles.necronmod.cat_caterpillar.ambient",
+    "sounds": [
+      "necronmod:cat_caterpillar_ambient"
+    ]
+  },
+  "cat_caterpillar_sit": {
+    "subtitle": "subtitles.necronmod.cat_caterpillar.sit",
+    "sounds": [
+      "necronmod:cat_caterpillar_sit"
+    ]
   }
 }

@@ -315,6 +315,14 @@ public class ModItems {
                 }
             });
 
+    public static final DeferredHolder<Item, Item> CAT_CATERPILLAR_SPAWN_EGG = ITEMS.register("cat_caterpillar_spawn_egg",
+            () -> new net.neoforged.neoforge.common.DeferredSpawnEggItem(
+                    ModEntities.CAT_CATERPILLAR, // Ссылка на зарегистрированного моба
+                    0x4C9F43, // Цвет фона яйца (зеленый под гусеницу)
+                    0xFFA6D5, // Цвет крапинок яйца (розовый под котика)
+                    new Item.Properties()
+            ));
+
     // питьевой клей
     // жевачка со вкусом наждачки
     // мясо ендермена

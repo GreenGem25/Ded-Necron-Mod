@@ -1,13 +1,18 @@
 package com.ded.necronmod.event;
 
 import com.ded.necronmod.DedNecronMod;
+import com.ded.necronmod.init.ModEntities;
 import com.ded.necronmod.init.ModItems;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 @EventBusSubscriber(modid = DedNecronMod.MODID)
 public class ModEvents {
@@ -39,5 +44,17 @@ public class ModEvents {
             event.setCanceled(true);
             System.out.println("SHOULD RETURN EMPTY");
         }
+    }
+
+    @SubscribeEvent
+    public static void registerSpawnPlacements(RegisterSpawnPlacementsEvent event) {
+        event.register(
+                ModEntities.CAT_CATERPILLAR.get(),
+                SpawnPlacementTypes.ON_GROUND, // Спавнится на земле
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, // Игнорируя листву деревьев
+                // Метод-условие проверки (проверяем, светло ли и есть ли трава под ногами)
+                Animal::checkAnimalSpawnRules,
+                RegisterSpawnPlacementsEvent.Operation.OR
+        );
     }
 }

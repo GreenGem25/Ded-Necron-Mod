@@ -48,6 +48,8 @@
 
   "item.necronmod.tesseract_labyrinth": "Тессерактовый лабиринт",
 
+  "item.necronmod.cat_caterpillar_spawn_egg": "Яйцо призыва котогусеницы",
+
   "item.necronmod.napoleon_cake": "Торт \"Наполеон\"",
   "block.necronmod.napoleon_cake": "Торт \"Наполеон\"",
 
@@ -92,6 +94,8 @@
 
   "effect.necronmod.phylactery_effect": "Филактерия",
   "effect.necronmod.lung_cancer_effect": "Рак лёгких",
+
+  "entity.necronmod.cat_caterpillar": "Котогусеница",
 
   "config.jade.plugin_necronmod.chugun_saw": "Уэээ",
   "tooltip.necronmod.chugun_saw_required": "Для разрушения необходима Ножовка по чугуну"

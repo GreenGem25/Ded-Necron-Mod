@@ -6,6 +6,7 @@ import com.ded.necronmod.client.renderer.NecronStaffRenderer;
 import com.ded.necronmod.client.renderer.PoopHelmetRenderer;
 import com.ded.necronmod.init.ModBlockEntities;
 import com.ded.necronmod.init.ModDataComponentTypes;
+import com.ded.necronmod.init.ModEntities;
 import com.ded.necronmod.init.ModItems;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -75,5 +76,10 @@ public class ModClientEvents {
     @SubscribeEvent
     public static void registerEntityRenderer(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.MONOLITH_SPROUT.get(), MonolithSproutRenderer::new);
+
+        event.registerEntityRenderer(
+                ModEntities.CAT_CATERPILLAR.get(),
+                com.ded.necronmod.client.renderer.CatCaterpillarRenderer::new
+        );
     }
 }

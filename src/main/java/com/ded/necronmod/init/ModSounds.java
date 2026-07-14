@@ -23,6 +23,12 @@ public class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> NECRON_STAFF_SHOT = SOUNDS.register("necron_staff_shot",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "necron_staff_shot")));
 
+    public static final DeferredHolder<SoundEvent, SoundEvent> CAT_CATERPILLAR_AMBIENT = SOUNDS.register("cat_caterpillar_ambient",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "cat_caterpillar_ambient")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> CAT_CATERPILLAR_SIT = SOUNDS.register("cat_caterpillar_sit",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "cat_caterpillar_sit")));
+
     public static void register(IEventBus bus) {
         SOUNDS.register(bus);
     }

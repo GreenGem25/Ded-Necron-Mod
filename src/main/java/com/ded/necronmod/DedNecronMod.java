@@ -1,6 +1,7 @@
 package com.ded.necronmod;
 
 import com.ded.necronmod.block.entity.ChunkLoaderObeliskBlockEntity;
+import com.ded.necronmod.entity.CatCaterpillarEntity;
 import com.ded.necronmod.init.*;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent;
@@ -49,12 +50,17 @@ public class DedNecronMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
         ModArmorMaterials.register(modEventBus);
         ModEffects.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModDataComponentTypes.register(modEventBus);
+
+        modEventBus.addListener(net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent.class, event -> {
+            event.put(ModEntities.CAT_CATERPILLAR.get(), CatCaterpillarEntity.createAttributes().build());
+        });
 
         NeoForge.EVENT_BUS.register(this);
     }

@@ -48,6 +48,8 @@
 
   "item.necronmod.tesseract_labyrinth": "Tesseract Labyrinth",
 
+  "item.necronmod.cat_caterpillar_spawn_egg": "Catterpillar Spawn Egg",
+
   "item.necronmod.napoleon_cake": "Napoleon Cake",
   "block.necronmod.napoleon_cake": "Napoleon Cake",
 
@@ -92,6 +94,8 @@
 
   "effect.necronmod.phylactery_effect": "Phylactery",
   "effect.necronmod.lung_cancer_effect": "Lung cancer",
+
+  "entity.necronmod.cat_caterpillar": "Cat Caterpillar",
 
   "config.jade.plugin_necronmod.chugun_saw": "Ueee",
   "tooltip.necronmod.chugun_saw_required": "Chugun Saw required to break this"
