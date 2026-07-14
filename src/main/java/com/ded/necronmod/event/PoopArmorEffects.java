@@ -1,8 +1,6 @@
 package com.ded.necronmod.event;
 
-import com.ded.necronmod.Config;
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.init.ModEffects;
 import com.ded.necronmod.init.ModItems;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -11,7 +9,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 import java.util.List;

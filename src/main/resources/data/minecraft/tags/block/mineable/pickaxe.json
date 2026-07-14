@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "necronmod:shlakoblock"
+    "necronmod:shlakoblock",
+    "necronmod:chunk_loader_obelisk_block"
   ]
 }

@@ -1,7 +1,6 @@
 package com.ded.necronmod.client.model;
 
 import com.ded.necronmod.Item.NecronStaffitem;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

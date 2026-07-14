@@ -1,15 +1,9 @@
 package com.ded.necronmod.init;
 
-import com.ded.necronmod.Config;
-import com.ded.necronmod.DedNecronMod;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.SimpleTier;
 
 public class ModToolTiers {

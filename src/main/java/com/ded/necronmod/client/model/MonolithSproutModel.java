@@ -1,7 +1,6 @@
 package com.ded.necronmod.client.model;
 
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.block.MonolithSprout;
 import com.ded.necronmod.block.entity.MonolithSproutBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;

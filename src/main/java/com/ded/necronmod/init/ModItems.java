@@ -16,7 +16,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.component.Unbreakable;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -290,7 +289,31 @@ public class ModItems {
                     )
             );
     public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_BLOCK = ITEMS.register("necron_tomb_block",
-            () -> new BlockItem(ModBlocks.NECRON_TOMB_BLOCK.get(), new Item.Properties()));
+            () -> new BlockItem(ModBlocks.NECRON_TOMB_BLOCK.get(), new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.necron_tomb_block_desc")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredHolder<Item, Item> TESSERACT_LABYRINTH = ITEMS.register("tesseract_labyrinth",
+            () -> new TesseractLabyrinthItem(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, BlockItem> CHUNK_LOADER_OBELISK_BLOCK = ITEMS.register("chunk_loader_obelisk_block",
+            () -> new BlockItem(ModBlocks.CHUNK_LOADER_OBELISK_BLOCK.get(), new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.chunk_loader_obelisk_block")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     // питьевой клей
     // жевачка со вкусом наждачки

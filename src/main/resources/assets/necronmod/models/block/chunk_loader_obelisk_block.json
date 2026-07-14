@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "necronmod:block/chunk_loader_obelisk_block_top",
+    "side": "necronmod:block/chunk_loader_obelisk_block_side"
+  }
+}

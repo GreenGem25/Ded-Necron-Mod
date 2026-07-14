@@ -1,7 +1,6 @@
 package com.ded.necronmod.effect;
 
 import com.ded.necronmod.Config;
-import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.init.ModItems;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;

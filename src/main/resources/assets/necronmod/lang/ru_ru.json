@@ -46,6 +46,8 @@
   "item.necronmod.bamboo_cigarette": "Бамбуковая сигарета",
   "tooltip.necronmod.bamboo_cigarette_desc": "Кури бамбук",
 
+  "item.necronmod.tesseract_labyrinth": "Тессерактовый лабиринт",
+
   "item.necronmod.napoleon_cake": "Торт \"Наполеон\"",
   "block.necronmod.napoleon_cake": "Торт \"Наполеон\"",
 
@@ -60,6 +62,11 @@
 
   "item.necronmod.necron_tomb_block": "Блок Гробницы",
   "block.necronmod.necron_tomb_block": "Блок Гробницы",
+  "tooltip.necronmod.necron_tomb_block_desc": "Разрушается с помощью ножовки по чугуну",
+
+  "item.necronmod.chunk_loader_obelisk_block": "Загрузочный Обелиск",
+  "block.necronmod.chunk_loader_obelisk_block": "Загрузочный Обелиск",
+  "tooltip.necronmod.chunk_loader_obelisk_block": "Загружает чанк, в котором расположен",
 
   "necronmod.configuration.title": "Конфигурация Necron Mod",
   "necronmod.configuration.section.necronmod.common.toml": "Конфигурация Necron Mod",
