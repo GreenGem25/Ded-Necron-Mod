@@ -1,7 +1,11 @@
 package com.ded.necronmod.entity;
 
+import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.init.ModSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.tags.ItemTags;
@@ -17,13 +21,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.neoforged.neoforge.common.Tags;
+import net.minecraft.world.level.storage.loot.LootTable;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animation.AnimatableManager;
-import software.bernie.geckolib.animation.AnimationController;
-import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
@@ -81,6 +82,15 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
     @Override
     protected SoundEvent getDeathSound() {
         return net.minecraft.sounds.SoundEvents.CAT_DEATH;
+    }
+
+    @Override
+    public ResourceKey<LootTable> getDefaultLootTable() {
+        // Указываем путь к нашей кастомной таблице лута
+        return ResourceKey.create(
+                Registries.LOOT_TABLE,
+                ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "entities/cat_caterpillar")
+        );
     }
 
     // 1. Настройка ИИ (Поведения) моба

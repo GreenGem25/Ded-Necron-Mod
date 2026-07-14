@@ -27,6 +27,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import org.jetbrains.annotations.NotNull;
+import org.joml.Vector3f;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
@@ -99,7 +100,7 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, @NotNull InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
 
-        player.getCooldowns().addCooldown(this, 60);
+        player.getCooldowns().addCooldown(this, 45);
         RandomSource random = player.getRandom();
 
         level.playSound(
@@ -112,8 +113,9 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
         );
 
         if (!level.isClientSide() && level instanceof ServerLevel serverLevel) {
-            double maxDistance = 30.0;
-            float damage = 12.0F;
+            double maxDistance = 60.0;
+            float damage = 20.0F;
+            int canHit = 3;
 
             Vec3 startPos = player.getEyePosition(1.0F);
             Vec3 lookVector = player.getViewVector(1.0F);
@@ -139,17 +141,23 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
 
                 if (!targets.isEmpty()) {
                     for (LivingEntity target : targets) {
+                        if (!target.isAlive()) {
+                            continue;
+                        }
+                        canHit--;
                         target.hurt(player.damageSources().playerAttack(player), damage);
                         target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1, false, true));
                     }
                     endPos = currentCheckPos;
-                    break;
+                    if (canHit <= 0) {
+                        break;
+                    }
                 }
             }
 
             DustParticleOptions greenLaserParticle =
-                    new net.minecraft.core.particles.DustParticleOptions(
-                            new org.joml.Vector3f(0.0F, 1.0F, 0.0F), 1.5F
+                    new DustParticleOptions(
+                            new Vector3f(0.0F, 1.0F, 0.0F), 1.5F
                     );
 
             Vec3 particleTrack = endPos.subtract(startPos);

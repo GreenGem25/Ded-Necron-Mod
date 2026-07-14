@@ -332,6 +332,14 @@ public class ModItems {
     // люля кебаб из мяса эндермана
     // сладкая вата из лисов лесей лисов
     // кровать из стекловаты
+    // лорд некронов (боится котогусеницы)
+    // гробница
+    // оживший монолит (питомец)
+    // заражение орками
+    // пивосквиг
+    // орковуха
+    // ром (звуки ельцена)
+    // чекушка (спавнит ельцина)
 
     private static ItemAttributeModifiers createSwordAttributes(float speed, Tier tier) {
         return ItemAttributeModifiers.builder()
