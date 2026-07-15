@@ -55,6 +55,7 @@ public class ModItems {
             () -> new NecronStaffitem(
                     ModToolTiers.NECRO,
                     new Item.Properties().attributes(createSwordAttributes(0.7F, ModToolTiers.NECRO))
+
             ));
 
     public static final DeferredHolder<Item, Item> SAWDUST_BREAD = ITEMS.register("sawdust_bread",
