@@ -23,8 +23,6 @@ public class NecronArmorItem extends ArmorItem {
     public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context,
                                 List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
 
-        tooltipComponents.add(Component.empty());
-
         tooltipComponents.add(Component.translatable("tooltip.necronmod.necro_armor_set_bonus")
                 .withStyle(ChatFormatting.GOLD));
 

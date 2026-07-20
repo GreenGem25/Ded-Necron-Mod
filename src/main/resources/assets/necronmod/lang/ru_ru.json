@@ -66,8 +66,14 @@
   "item.necronmod.rotten_flesh_block": "Мясная карабулька",
   "block.necronmod.rotten_flesh_block": "Мясная карабулька",
 
-  "item.necronmod.necron_tomb_block": "Блок Гробницы",
-  "block.necronmod.necron_tomb_block": "Блок Гробницы",
+  "item.necronmod.necron_tomb_block": "Блок гробницы",
+  "block.necronmod.necron_tomb_block": "Блок гробницы",
+  "item.necronmod.necron_tomb_stairs": "Ступени гробницы",
+  "block.necronmod.necron_tomb_stairs": "Ступени гробницы",
+  "item.necronmod.necron_tomb_slab": "Полублок гробницы",
+  "block.necronmod.necron_tomb_slab": "Полублок гробницы",
+  "item.necronmod.necron_tomb_wall": "Стена гробницы",
+  "block.necronmod.necron_tomb_wall": "Стена гробницы",
   "tooltip.necronmod.necron_tomb_block_desc": "Разрушается с помощью ножовки по чугуну",
 
   "item.necronmod.chunk_loader_obelisk_block": "Загрузочный Обелиск",

@@ -1,3 +1,13 @@
+//
+сделать element модели эмиссивным:
+"shade": false,
+"neoforge_data": {
+        "block_light": 15,
+        "sky_light": 15,
+        "ambient_occlusion": false
+},
+//
+
 питьевой клей
 
 жевачка со вкусом наждачки

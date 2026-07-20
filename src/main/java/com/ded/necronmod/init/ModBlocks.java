@@ -41,6 +41,15 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ));
 
+    public static final DeferredHolder<Block, Block> NECRON_TOMB_STAIRS = BLOCKS.register("necron_tomb_stairs",
+            () -> new NecronTombStairsBlock(NECRON_TOMB_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(NECRON_TOMB_BLOCK.get())));
+
+    public static final DeferredHolder<Block, Block> NECRON_TOMB_SLAB = BLOCKS.register("necron_tomb_slab",
+            () -> new NecronTombSlabBlock(BlockBehaviour.Properties.ofFullCopy(NECRON_TOMB_BLOCK.get())));
+
+    public static final DeferredHolder<Block, Block> NECRON_TOMB_WALL = BLOCKS.register("necron_tomb_wall",
+            () -> new NecronTombWallBlock(BlockBehaviour.Properties.ofFullCopy(NECRON_TOMB_BLOCK.get())));
+
     public static final DeferredHolder<Block, Block> CHUNK_LOADER_OBELISK_BLOCK = BLOCKS.register("chunk_loader_obelisk_block",
             () -> new ChunkLoaderObeliskBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE)
                     .strength(4.0F, 1200.0F)

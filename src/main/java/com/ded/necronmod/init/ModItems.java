@@ -28,36 +28,12 @@ import java.util.List;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, DedNecronMod.MODID);
 
-    // Crafting Items
-
-    public static final DeferredHolder<Item, Item> LIVING_METAL_PLATE = ITEMS.register("living_metal_plate",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA = ITEMS.register("steklovata",
-            () -> new Item(new Item.Properties()));
-
     // Usable Items
 
     public static final DeferredHolder<Item, Item> TESSERACT_LABYRINTH = ITEMS.register("tesseract_labyrinth",
             () -> new TesseractLabyrinthItem(new Item.Properties().stacksTo(1)));
 
-    // Weapons & Instruments & armor
-
-    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_HELMET = ITEMS.register("necro_helmet",
-            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(1)));
-
-    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_CHESTPLATE = ITEMS.register("necro_chestplate",
-            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(1)));
-
-    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_LEGGINGS = ITEMS.register("necro_leggings",
-            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(1)));
-
-    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_BOOTS = ITEMS.register("necro_boots",
-            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(1)));
+    // Weapons & Instruments
 
     public static final DeferredHolder<Item, NecronStaffitem> NECRON_STAFF = ITEMS.register("necron_staff",
             () -> new NecronStaffitem(
@@ -65,22 +41,6 @@ public class ModItems {
                     new Item.Properties().attributes(createSwordAttributes(0.7F, ModToolTiers.NECRO))
 
             ));
-
-    public static final DeferredHolder<Item, PoopHelmetItem> POOP_HELMET = ITEMS.register("poop_helmet",
-            () -> new PoopHelmetItem(ModArmorMaterials.POOP_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(120)));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_HELMET = ITEMS.register("steklovata_helmet",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_CHESTPLATE = ITEMS.register("steklovata_chestplate",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15))));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_LEGGINGS = ITEMS.register("steklovata_leggings",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15))));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_BOOTS = ITEMS.register("steklovata_boots",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
 
     public static final DeferredHolder<Item, SwordItem> SHAMPUR = ITEMS.register("shampur",
             () -> new SwordItem(
@@ -99,6 +59,44 @@ public class ModItems {
                     )
             );
 
+    // Armors
+
+    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_HELMET = ITEMS.register("necro_helmet",
+            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(1)));
+
+    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_CHESTPLATE = ITEMS.register("necro_chestplate",
+            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(1)));
+
+    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_LEGGINGS = ITEMS.register("necro_leggings",
+            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(1)));
+
+    public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_BOOTS = ITEMS.register("necro_boots",
+            () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(1)));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_HELMET = ITEMS.register("steklovata_helmet",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_CHESTPLATE = ITEMS.register("steklovata_chestplate",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_LEGGINGS = ITEMS.register("steklovata_leggings",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_BOOTS = ITEMS.register("steklovata_boots",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
+
+    public static final DeferredHolder<Item, PoopHelmetItem> POOP_HELMET = ITEMS.register("poop_helmet",
+            () -> new PoopHelmetItem(ModArmorMaterials.POOP_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(120)));
+
     public static final DeferredHolder<Item, TinFoilHat> TIN_FOIL_HAT = ITEMS.register("tin_foil_hat",
             () -> new TinFoilHat(ModArmorMaterials.TIN_FOIL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(1024)){
@@ -112,7 +110,98 @@ public class ModItems {
                 }
             });
 
+    // Crafting Items
+
+    public static final DeferredHolder<Item, Item> LIVING_METAL_PLATE = ITEMS.register("living_metal_plate",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA = ITEMS.register("steklovata",
+            () -> new Item(new Item.Properties()));
+
+    // Block Items
+
+    public static final DeferredHolder<Item, Item> MONOLITH_SEEDS = ITEMS.register("monolith_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.MONOLITH_SPROUT.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_BLOCK = ITEMS.register("necron_tomb_block",
+            () -> new BlockItem(ModBlocks.NECRON_TOMB_BLOCK.get(), new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.necron_tomb_block_desc")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_STAIRS = ITEMS.register("necron_tomb_stairs",
+            () -> new BlockItem(ModBlocks.NECRON_TOMB_STAIRS.get(), new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.necron_tomb_block_desc")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_SLAB = ITEMS.register("necron_tomb_slab",
+            () -> new BlockItem(ModBlocks.NECRON_TOMB_SLAB.get(), new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.necron_tomb_block_desc")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_WALL = ITEMS.register("necron_tomb_wall",
+            () -> new BlockItem(ModBlocks.NECRON_TOMB_WALL.get(), new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.necron_tomb_block_desc")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredHolder<Item, BlockItem> CHUNK_LOADER_OBELISK_BLOCK = ITEMS.register("chunk_loader_obelisk_block",
+            () -> new BlockItem(ModBlocks.CHUNK_LOADER_OBELISK_BLOCK.get(), new Item.Properties()){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.chunk_loader_obelisk_block")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredHolder<Item, BlockItem> SHLAKOBLOCK = ITEMS.register("shlakoblock",
+            () -> new BlockItem(ModBlocks.SHLAKOBLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> STEKLOVATA_BLOCK = ITEMS.register("steklovata_block",
+            () -> new BlockItem(ModBlocks.STEKLOVATA_BLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK = ITEMS.register("rotten_flesh_block",
+            () -> new BlockItem(ModBlocks.ROTTEN_FLESH_BLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> TOWER_BASE = ITEMS.register("tower_base",
+            () -> new BlockItem(ModBlocks.TOWER_BASE.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> TOWER_TOP = ITEMS.register("tower_top",
+            () -> new BlockItem(ModBlocks.TOWER_TOP.get(), new Item.Properties()));
+
     // Foods
+
+    public static final DeferredHolder<Item, BlockItem> NAPOLEON_CAKE = ITEMS.register("napoleon_cake",
+            () -> new BlockItem(ModBlocks.NAPOLEON_CAKE.get(), new Item.Properties().stacksTo(1)));
 
     public static final DeferredHolder<Item, Item> SAWDUST_BREAD = ITEMS.register("sawdust_bread",
             () -> new Item(new Item.Properties().food(
@@ -291,53 +380,6 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 160, 1), 0.2F)
                             .build()
                     )));
-
-    // Block Items
-
-    public static final DeferredHolder<Item, Item> MONOLITH_SEEDS = ITEMS.register("monolith_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.MONOLITH_SPROUT.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, BlockItem> NAPOLEON_CAKE_ITEM = ITEMS.register("napoleon_cake",
-            () -> new BlockItem(ModBlocks.NAPOLEON_CAKE.get(), new Item.Properties().stacksTo(1)));
-
-    public static final DeferredHolder<Item, BlockItem> SHLAKOBLOCK = ITEMS.register("shlakoblock",
-            () -> new BlockItem(ModBlocks.SHLAKOBLOCK.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, BlockItem> STEKLOVATA_BLOCK = ITEMS.register("steklovata_block",
-            () -> new BlockItem(ModBlocks.STEKLOVATA_BLOCK.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK = ITEMS.register("rotten_flesh_block",
-            () -> new BlockItem(ModBlocks.ROTTEN_FLESH_BLOCK.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_BLOCK = ITEMS.register("necron_tomb_block",
-            () -> new BlockItem(ModBlocks.NECRON_TOMB_BLOCK.get(), new Item.Properties()){
-                @Override
-                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-
-                    tooltipComponents.add(Component.translatable("tooltip.necronmod.necron_tomb_block_desc")
-                            .withStyle(ChatFormatting.GRAY));
-
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
-
-    public static final DeferredHolder<Item, BlockItem> CHUNK_LOADER_OBELISK_BLOCK = ITEMS.register("chunk_loader_obelisk_block",
-            () -> new BlockItem(ModBlocks.CHUNK_LOADER_OBELISK_BLOCK.get(), new Item.Properties()){
-                @Override
-                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-
-                    tooltipComponents.add(Component.translatable("tooltip.necronmod.chunk_loader_obelisk_block")
-                            .withStyle(ChatFormatting.GRAY));
-
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
-
-    public static final DeferredHolder<Item, BlockItem> TOWER_BASE = ITEMS.register("tower_base",
-            () -> new BlockItem(ModBlocks.TOWER_BASE.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, BlockItem> TOWER_TOP = ITEMS.register("tower_top",
-            () -> new BlockItem(ModBlocks.TOWER_TOP.get(), new Item.Properties()));
 
     // Spawn Eggs
 

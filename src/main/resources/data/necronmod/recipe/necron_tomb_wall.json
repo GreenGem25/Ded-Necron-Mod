@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "necronmod:living_metal_plate"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "necronmod:necron_tomb_wall"
+  }
+}

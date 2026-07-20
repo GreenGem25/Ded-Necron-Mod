@@ -65,8 +65,6 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
     public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context,
                                 List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
 
-        tooltipComponents.add(Component.empty());
-
         tooltipComponents.add(Component.translatable("tooltip.necronmod.necron_staff_bonus")
                 .withStyle(ChatFormatting.GOLD));
 

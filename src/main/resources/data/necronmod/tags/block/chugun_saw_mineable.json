@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "necronmod:necron_tomb_block"
+    "necronmod:necron_tomb_block",
+    "necronmod:necron_tomb_stairs",
+    "necronmod:necron_tomb_slab",
+    "necronmod:necron_tomb_wall"
   ]
 }

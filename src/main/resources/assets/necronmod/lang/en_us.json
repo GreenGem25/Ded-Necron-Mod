@@ -68,6 +68,12 @@
 
   "item.necronmod.necron_tomb_block": "Necron Tomb Block",
   "block.necronmod.necron_tomb_block": "Necron Tomb Block",
+  "item.necronmod.necron_tomb_stairs": "Necron Tomb Stairs",
+  "block.necronmod.necron_tomb_stairs": "Necron Tomb Stairs",
+  "item.necronmod.necron_tomb_slab": "Necron Tomb Slab",
+  "block.necronmod.necron_tomb_slab": "Necron Tomb Slab",
+  "item.necronmod.necron_tomb_wall": "Necron Tomb Wall",
+  "block.necronmod.necron_tomb_wall": "Necron Tomb Wall",
   "tooltip.necronmod.necron_tomb_block_desc": "Use Chugun Saw to break",
 
   "item.necronmod.chunk_loader_obelisk_block": "Chunk Loader Obelisk",

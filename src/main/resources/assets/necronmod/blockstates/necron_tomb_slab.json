@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "necronmod:block/necron_tomb_slab"
+    },
+    "type=double": {
+      "model": "necronmod:block/necron_tomb"
+    },
+    "type=top": {
+      "model": "necronmod:block/necron_tomb_slab_top"
+    }
+  }
+}

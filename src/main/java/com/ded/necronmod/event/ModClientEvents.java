@@ -5,7 +5,6 @@ import com.ded.necronmod.client.renderer.armor.TinFoilHatRenderer;
 import com.ded.necronmod.client.renderer.block.MonolithSproutRenderer;
 import com.ded.necronmod.client.renderer.Item.NecronStaffRenderer;
 import com.ded.necronmod.client.renderer.armor.PoopHelmetRenderer;
-import com.ded.necronmod.client.renderer.block.TowerBaseRenderer;
 import com.ded.necronmod.client.renderer.block.TowerTopRenderer;
 import com.ded.necronmod.client.renderer.entity.CatCaterpillarRenderer;
 import com.ded.necronmod.client.renderer.entity.TarakanRenderer;
@@ -97,7 +96,6 @@ public class ModClientEvents {
     @SubscribeEvent
     public static void registerEntityRenderer(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.MONOLITH_SPROUT.get(), MonolithSproutRenderer::new);
-        event.registerBlockEntityRenderer(ModBlockEntities.TOWER_BASE.get(), TowerBaseRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.TOWER_TOP.get(), TowerTopRenderer::new);
 
         event.registerEntityRenderer(ModEntities.CAT_CATERPILLAR.get(), CatCaterpillarRenderer::new);
