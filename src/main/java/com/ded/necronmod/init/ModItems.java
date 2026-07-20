@@ -18,6 +18,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Unbreakable;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
@@ -27,13 +28,20 @@ import java.util.List;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, DedNecronMod.MODID);
 
-    public static final DeferredHolder<Item, Item> SLON_MUSIC_DISC = ITEMS.register("slon_music_disc",
-            () -> new Item(new Item.Properties()
-                    .stacksTo(1)
-                    .jukeboxPlayable(ResourceKey.create(
-                            Registries.JUKEBOX_SONG,
-                            ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "slon_music")
-                    ))));
+    // Crafting Items
+
+    public static final DeferredHolder<Item, Item> LIVING_METAL_PLATE = ITEMS.register("living_metal_plate",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA = ITEMS.register("steklovata",
+            () -> new Item(new Item.Properties()));
+
+    // Usable Items
+
+    public static final DeferredHolder<Item, Item> TESSERACT_LABYRINTH = ITEMS.register("tesseract_labyrinth",
+            () -> new TesseractLabyrinthItem(new Item.Properties().stacksTo(1)));
+
+    // Weapons & Instruments & armor
 
     public static final DeferredHolder<Item, NecronArmorItem> NECRODERMIS_HELMET = ITEMS.register("necro_helmet",
             () -> new NecronArmorItem(ModArmorMaterials.NECRODERMIS_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
@@ -57,6 +65,54 @@ public class ModItems {
                     new Item.Properties().attributes(createSwordAttributes(0.7F, ModToolTiers.NECRO))
 
             ));
+
+    public static final DeferredHolder<Item, PoopHelmetItem> POOP_HELMET = ITEMS.register("poop_helmet",
+            () -> new PoopHelmetItem(ModArmorMaterials.POOP_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(120)));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_HELMET = ITEMS.register("steklovata_helmet",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_CHESTPLATE = ITEMS.register("steklovata_chestplate",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_LEGGINGS = ITEMS.register("steklovata_leggings",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15))));
+
+    public static final DeferredHolder<Item, Item> STEKLOVATA_BOOTS = ITEMS.register("steklovata_boots",
+            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
+
+    public static final DeferredHolder<Item, SwordItem> SHAMPUR = ITEMS.register("shampur",
+            () -> new SwordItem(
+                    ModToolTiers.SHAMPUR,
+                    new Item.Properties().component(DataComponents.UNBREAKABLE,
+                            new Unbreakable(false)).attributes(createSwordAttributes(0.5F, ModToolTiers.SHAMPUR))
+            ));
+
+    public static final DeferredHolder<Item, ChugunSaw> CHUGUN_SAW =
+            ITEMS.register(
+                    "chugun_saw",
+                    () -> new ChugunSaw(
+                            ModToolTiers.CHUGUN_SAW,
+                            new Item.Properties()
+                                    .durability(500)
+                    )
+            );
+
+    public static final DeferredHolder<Item, TinFoilHat> TIN_FOIL_HAT = ITEMS.register("tin_foil_hat",
+            () -> new TinFoilHat(ModArmorMaterials.TIN_FOIL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(1024)){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.tin_foil_hat_desc")
+                            .withStyle(ChatFormatting.GRAY));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    // Foods
 
     public static final DeferredHolder<Item, Item> SAWDUST_BREAD = ITEMS.register("sawdust_bread",
             () -> new Item(new Item.Properties().food(
@@ -182,19 +238,6 @@ public class ModItems {
                 }
             });
 
-    public static final DeferredHolder<Item, Item> MONOLITH_SEEDS = ITEMS.register("monolith_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.MONOLITH_SPROUT.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, Item> LIVING_METAL_PLATE = ITEMS.register("living_metal_plate",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredHolder<Item, PoopHelmetItem> POOP_HELMET = ITEMS.register("poop_helmet",
-            () -> new PoopHelmetItem(ModArmorMaterials.POOP_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(120)));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA = ITEMS.register("steklovata",
-            () -> new Item(new Item.Properties()));
-
     public static final DeferredHolder<Item, Item> STEKLOVATA_CANDY = ITEMS.register("steklovata_candy",
             () -> new Item(new Item.Properties()
                     .stacksTo(16)
@@ -214,9 +257,6 @@ public class ModItems {
                             .build()
                     )));
 
-    public static final DeferredHolder<Item, BlockItem> NAPOLEON_CAKE_ITEM = ITEMS.register("napoleon_cake",
-            () -> new BlockItem(ModBlocks.NAPOLEON_CAKE.get(), new Item.Properties().stacksTo(1)));
-
     public static final DeferredHolder<Item, Item> PERCH = ITEMS.register("perch",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
@@ -233,9 +273,6 @@ public class ModItems {
                             .build()
                     )));
 
-    public static final DeferredHolder<Item, BlockItem> SHLAKOBLOCK = ITEMS.register("shlakoblock",
-            () -> new BlockItem(ModBlocks.SHLAKOBLOCK.get(), new Item.Properties()));
-
     public static final DeferredHolder<Item, Item> SHLAKOBLOKUN = ITEMS.register("shlakoblokun",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
@@ -244,31 +281,6 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), 1.0F)
                             .build()
                     )));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_HELMET = ITEMS.register("steklovata_helmet",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_CHESTPLATE = ITEMS.register("steklovata_chestplate",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15))));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_LEGGINGS = ITEMS.register("steklovata_leggings",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15))));
-
-    public static final DeferredHolder<Item, Item> STEKLOVATA_BOOTS = ITEMS.register("steklovata_boots",
-            () -> new SteklovataArmorItem(ModArmorMaterials.STEKLOVATA_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
-
-    public static final DeferredHolder<Item, BlockItem> STEKLOVATA_BLOCK = ITEMS.register("steklovata_block",
-            () -> new BlockItem(ModBlocks.STEKLOVATA_BLOCK.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK = ITEMS.register("rotten_flesh_block",
-            () -> new BlockItem(ModBlocks.ROTTEN_FLESH_BLOCK.get(), new Item.Properties()));
-
-    public static final DeferredHolder<Item, SwordItem> SHAMPUR = ITEMS.register("shampur",
-            () -> new SwordItem(
-                    ModToolTiers.SHAMPUR,
-                    new Item.Properties().component(DataComponents.UNBREAKABLE,
-                            new Unbreakable(false)).attributes(createSwordAttributes(0.5F, ModToolTiers.SHAMPUR))
-            ));
 
     public static final DeferredHolder<Item, Item> SHASHLIK = ITEMS.register("shashlik",
             () -> new Item(new Item.Properties()
@@ -280,15 +292,23 @@ public class ModItems {
                             .build()
                     )));
 
-    public static final DeferredHolder<Item, ChugunSaw> CHUGUN_SAW =
-            ITEMS.register(
-                    "chugun_saw",
-                    () -> new ChugunSaw(
-                            ModToolTiers.CHUGUN_SAW,
-                            new Item.Properties()
-                                    .durability(500)
-                    )
-            );
+    // Block Items
+
+    public static final DeferredHolder<Item, Item> MONOLITH_SEEDS = ITEMS.register("monolith_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.MONOLITH_SPROUT.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> NAPOLEON_CAKE_ITEM = ITEMS.register("napoleon_cake",
+            () -> new BlockItem(ModBlocks.NAPOLEON_CAKE.get(), new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, BlockItem> SHLAKOBLOCK = ITEMS.register("shlakoblock",
+            () -> new BlockItem(ModBlocks.SHLAKOBLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> STEKLOVATA_BLOCK = ITEMS.register("steklovata_block",
+            () -> new BlockItem(ModBlocks.STEKLOVATA_BLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> ROTTEN_FLESH_BLOCK = ITEMS.register("rotten_flesh_block",
+            () -> new BlockItem(ModBlocks.ROTTEN_FLESH_BLOCK.get(), new Item.Properties()));
+
     public static final DeferredHolder<Item, BlockItem> NECRON_TOMB_BLOCK = ITEMS.register("necron_tomb_block",
             () -> new BlockItem(ModBlocks.NECRON_TOMB_BLOCK.get(), new Item.Properties()){
                 @Override
@@ -300,9 +320,6 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
-
-    public static final DeferredHolder<Item, Item> TESSERACT_LABYRINTH = ITEMS.register("tesseract_labyrinth",
-            () -> new TesseractLabyrinthItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredHolder<Item, BlockItem> CHUNK_LOADER_OBELISK_BLOCK = ITEMS.register("chunk_loader_obelisk_block",
             () -> new BlockItem(ModBlocks.CHUNK_LOADER_OBELISK_BLOCK.get(), new Item.Properties()){
@@ -316,31 +333,39 @@ public class ModItems {
                 }
             });
 
+    public static final DeferredHolder<Item, BlockItem> TOWER_BASE = ITEMS.register("tower_base",
+            () -> new BlockItem(ModBlocks.TOWER_BASE.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> TOWER_TOP = ITEMS.register("tower_top",
+            () -> new BlockItem(ModBlocks.TOWER_TOP.get(), new Item.Properties()));
+
+    // Spawn Eggs
+
     public static final DeferredHolder<Item, Item> CAT_CATERPILLAR_SPAWN_EGG = ITEMS.register("cat_caterpillar_spawn_egg",
-            () -> new net.neoforged.neoforge.common.DeferredSpawnEggItem(
+            () -> new DeferredSpawnEggItem(
                     ModEntities.CAT_CATERPILLAR, // Ссылка на зарегистрированного моба
                     0x4C9F43, // Цвет фона яйца (зеленый под гусеницу)
                     0xFFA6D5, // Цвет крапинок яйца (розовый под котика)
                     new Item.Properties()
             ));
 
-    // питьевой клей
-    // жевачка со вкусом наждачки
-    // мясо ендермена
-    // Пояс шахида
-    // скарабейчики пчелы
-    // фпв дрон пчела
-    // люля кебаб из мяса эндермана
-    // сладкая вата из лисов лесей лисов
-    // кровать из стекловаты
-    // лорд некронов (боится котогусеницы)
-    // гробница
-    // оживший монолит (питомец)
-    // заражение орками
-    // пивосквиг
-    // орковуха
-    // ром (звуки ельцена)
-    // чекушка (спавнит ельцина)
+    public static final DeferredHolder<Item, Item> TARAKAN_SPAWN_EGG = ITEMS.register("tarakan_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    ModEntities.TARAKAN, // Ссылка на зарегистрированного моба
+                    0x754a0d, // Цвет фона яйца (зеленый под гусеницу)
+                    0x916e3c, // Цвет крапинок яйца (розовый под котика)
+                    new Item.Properties()
+            ));
+
+    // Records
+
+    public static final DeferredHolder<Item, Item> SLON_MUSIC_DISC = ITEMS.register("slon_music_disc",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .jukeboxPlayable(ResourceKey.create(
+                            Registries.JUKEBOX_SONG,
+                            ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "slon_music")
+                    ))));
 
     private static ItemAttributeModifiers createSwordAttributes(float speed, Tier tier) {
         return ItemAttributeModifiers.builder()

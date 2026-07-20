@@ -40,5 +40,16 @@
     "sounds": [
       "necronmod:cat_caterpillar_sit"
     ]
+  },
+  "brainrot_sound": {
+    "category": "block",
+    "subtitle": "subtitles.necronmod.brainrot_sound",
+    "sounds": [
+      {
+        "name": "necronmod:brainrot_sound",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
   }
 }

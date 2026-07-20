@@ -12,11 +12,13 @@ import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 
-public class MonolithSproutEmissiveRenderLayer<T extends GeoAnimatable>
-        extends GeoRenderLayer<T> {
+public class MyEmissiveRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> {
 
-    public MonolithSproutEmissiveRenderLayer(GeoRenderer<T> renderer) {
+    private final String texturePath;
+
+    public MyEmissiveRenderLayer(GeoRenderer<T> renderer, String Path) {
         super(renderer);
+        texturePath = Path;
     }
 
     @Override
@@ -34,7 +36,7 @@ public class MonolithSproutEmissiveRenderLayer<T extends GeoAnimatable>
         RenderType emissiveType =
                 RenderType.entityTranslucentEmissive(ResourceLocation.fromNamespaceAndPath(
                         DedNecronMod.MODID,
-                        "textures/block/monolith_sprout_glowmask.png"
+                        texturePath
                 ));
 
         getRenderer().reRender(

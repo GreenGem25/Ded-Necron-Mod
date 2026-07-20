@@ -1,6 +1,8 @@
 package com.ded.necronmod.entity;
 
 import com.ded.necronmod.DedNecronMod;
+import com.ded.necronmod.init.ModEntities;
+import com.ded.necronmod.init.ModItems;
 import com.ded.necronmod.init.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -17,6 +19,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Blocks;
@@ -28,6 +31,7 @@ import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
+import java.util.UUID;
 
 public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
 
@@ -40,8 +44,6 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
     @Override
     public void registerControllers(software.bernie.geckolib.animation.AnimatableManager.ControllerRegistrar controllers) {
         controllers.add(new software.bernie.geckolib.animation.AnimationController<>(this, "controller", 5, event -> {
-
-            // ПРОВЕРЯЕМ СЕТЕВОЙ ФЛАГ ПОЗЫ (он теперь идеально синхронизирован!)
             if (this.isInSittingPose()) {
                 return event.setAndContinue(software.bernie.geckolib.animation.RawAnimation.begin().thenLoop("sit"));
             }
@@ -63,7 +65,6 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
     public void tick() {
         super.tick();
         if (this.level().isClientSide()) {
-            // Синхронизируем позу сидения с приказом ИИ на клиенте
             this.setInSittingPose(this.isOrderedToSit());
         }
     }
@@ -73,10 +74,9 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
         return ModSounds.CAT_CATERPILLAR_AMBIENT.get();
     }
 
-    // Также можно сразу переопределить звуки получения урона и смерти, если захочешь:
     @Override
     protected SoundEvent getHurtSound(net.minecraft.world.damagesource.@NotNull DamageSource damageSource) {
-        return net.minecraft.sounds.SoundEvents.CAT_HURT; // Временно используем ванильный кошачий
+        return net.minecraft.sounds.SoundEvents.CAT_HURT;
     }
 
     @Override
@@ -85,59 +85,77 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
     }
 
     @Override
-    public ResourceKey<LootTable> getDefaultLootTable() {
-        // Указываем путь к нашей кастомной таблице лута
+    public @NotNull ResourceKey<LootTable> getDefaultLootTable() {
         return ResourceKey.create(
                 Registries.LOOT_TABLE,
                 ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "entities/cat_caterpillar")
         );
     }
 
-    // 1. Настройка ИИ (Поведения) моба
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
-        this.goalSelector.addGoal(2, new SitWhenOrderedToGoal(this)); // Команда "сидеть"
-        this.goalSelector.addGoal(3, new CaterpillarSitOnBedGoal(this, 1.1D, 8)); // Кастомный прыжок на кровать!
-        this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1.1D, 10.0F, 2.0F)); // Следование за хозяином
-        this.goalSelector.addGoal(5, new EatGrassGoal(this)); // Поедание мелкой травы
-        this.goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 1.0D)); // Обычные прогулки
-        this.goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, 6.0F));
-        this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+        this.goalSelector.addGoal(2, new SitWhenOrderedToGoal(this));
+        this.goalSelector.addGoal(3, new CaterpillarSitOnBedGoal(this, 1.1D, 8));
+        this.goalSelector.addGoal(4, new FollowOwnerGoal(this,
+                1.1D, 10.0F, 2.0F));
+        this.goalSelector.addGoal(5, new PanicGoal(this, 1.25D));
+
+        this.goalSelector.addGoal(3, new BreedGoal(this, 1.0D));
+        this.goalSelector.addGoal(4, new TemptGoal(this, 1.25D,
+                Ingredient.of(ItemTags.LEAVES), false));
+
+        this.goalSelector.addGoal(6, new EatGrassGoal(this));
+        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 6.0F));
+        this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
     }
 
-    // 2. Характеристики (Здоровье и скорость)
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 12.0D) // 6 сердечек
-                .add(Attributes.MOVEMENT_SPEED, 0.2D); // Медленная, как гусеница
+                .add(Attributes.MAX_HEALTH, 12.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.2D);
     }
 
-    // ИСПРАВЛЕНИЕ ОШИБКИ 1: Метод, определяющий, что является едой (листва)
     @Override
     public boolean isFood(ItemStack itemStack) {
-        // Проверяем по ванильному тегу предметов листвы
         return itemStack.is(ItemTags.LEAVES);
     }
 
-    // 3. Логика взаимодействия (Приручение и лечение листвой)
     @Override
-    public InteractionResult mobInteract(Player player, InteractionHand hand) {
+    public @NotNull InteractionResult mobInteract(Player player, @NotNull InteractionHand hand) {
         ItemStack itemStack = player.getItemInHand(hand);
 
-        // ИСПРАВЛЕНИЕ ОШИБКИ 3: Используем ItemTags.LEAVES вместо несуществующего Tags.Items.LEAVES
         if (itemStack.is(ItemTags.LEAVES)) {
             if (this.isTame()) {
-                // Если уже приручена и ранена — лечим
+                boolean processed = false;
+
                 if (this.getHealth() < this.getMaxHealth()) {
+                    this.heal(3.0F);
+                    processed = true;
+                }
+
+                else if (this.getAge() == 0 && this.canFallInLove()) {
+                    this.setInLove(player);
+                    processed = true;
+                }
+
+                if (processed) {
                     if (!player.getAbilities().instabuild) {
                         itemStack.shrink(1);
                     }
-                    this.heal(3.0F); // Лечит 1.5 сердечка
+
+                    if (this.level().isClientSide()) {
+                        this.level().addParticle(
+                                net.minecraft.core.particles.ParticleTypes.HEART,
+                                this.getRandomX(1.0D), this.getRandomY() + 0.5D, this.getRandomZ(1.0D),
+                                0.0D, 0.0D, 0.0D
+                        );
+                    }
                     return InteractionResult.sidedSuccess(this.level().isClientSide());
                 }
+
             } else {
-                // Если не приручена — пытаемся приручить (шанс 33%)
                 if (!player.getAbilities().instabuild) {
                     itemStack.shrink(1);
                 }
@@ -147,10 +165,10 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
                         this.tame(player);
                         this.navigation.stop();
                         this.setTarget(null);
-                        this.setOrderedToSit(true); // Сажаем после приручения
-                        this.level().broadcastEntityEvent(this, (byte)7); // Сердечки
+                        this.setOrderedToSit(true);
+                        this.level().broadcastEntityEvent(this, (byte)7);
                     } else {
-                        this.level().broadcastEntityEvent(this, (byte)6); // Дымок неудачи
+                        this.level().broadcastEntityEvent(this, (byte)6);
                     }
                 }
                 return InteractionResult.sidedSuccess(this.level().isClientSide());
@@ -159,21 +177,18 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
 
         if (this.isTame() && this.isOwnedBy(player)) {
             if (!this.level().isClientSide()) {
-                // 1. Меняем логику ИИ на сервере
                 boolean willSit = !this.isOrderedToSit();
                 this.setOrderedToSit(willSit);
-
-                // 2. Мгновенно синхронизируем это с клиентом через сетевой флаг позы!
                 this.setInSittingPose(willSit);
 
                 if (willSit) {
                     this.level().playSound(
-                            null,                       // Если null, звук услышат ВСЕ игроки рядом
+                            null,
                             this.getX(), this.getY(), this.getZ(),
                             ModSounds.CAT_CATERPILLAR_SIT.get(),
                             this.getSoundSource(),
-                            1.0F,                       // Громкость (1.0 = дефолт)
-                            (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F // Слегка рандомим питч/высоту звука
+                            1.0F,
+                            (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F
                     );
                 }
             }
@@ -185,14 +200,23 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
 
     @Nullable
     @Override
-    public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
-        // Для размножения (если в будущем потребуется)
-        return null;
+    public AgeableMob getBreedOffspring(@NotNull ServerLevel serverLevel, @NotNull AgeableMob ageableMob) {
+        CatCaterpillarEntity baby = new CatCaterpillarEntity(ModEntities.CAT_CATERPILLAR.get(), serverLevel);
+
+        UUID ownerUUID = this.getOwnerUUID();
+
+        if (ownerUUID == null && ageableMob instanceof TamableAnimal tamableParent) {
+            ownerUUID = tamableParent.getOwnerUUID();
+        }
+
+        if (ownerUUID != null) {
+            baby.setOwnerUUID(ownerUUID);
+            baby.setTame(true, true);
+        }
+
+        return baby;
     }
 
-    // --- ДОПОЛНИТЕЛЬНЫЕ ИИ-ЦЕЛИ ---
-
-    // Кастомная цель для поедания травы
     private static class EatGrassGoal extends Goal {
         private final Mob mob;
         private int timer;
@@ -205,7 +229,8 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
         public boolean canUse() {
             if (this.mob.getRandom().nextInt(this.mob.isBaby() ? 50 : 1000) != 0) return false;
             BlockPos pos = this.mob.blockPosition();
-            return this.mob.level().getBlockState(pos).is(Blocks.SHORT_GRASS) || this.mob.level().getBlockState(pos).is(Blocks.FERN);
+            return this.mob.level().getBlockState(pos).is(Blocks.SHORT_GRASS) ||
+                    this.mob.level().getBlockState(pos).is(Blocks.FERN);
         }
 
         @Override
@@ -230,7 +255,8 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
             this.timer = Math.max(0, this.timer - 1);
             if (this.timer == 4) {
                 BlockPos pos = this.mob.blockPosition();
-                if (this.mob.level().getBlockState(pos).is(Blocks.SHORT_GRASS) || this.mob.level().getBlockState(pos).is(Blocks.FERN)) {
+                if (this.mob.level().getBlockState(pos).is(Blocks.SHORT_GRASS) ||
+                        this.mob.level().getBlockState(pos).is(Blocks.FERN)) {
                     if (!this.mob.level().isClientSide()) {
                         this.mob.level().destroyBlock(pos, false);
                     }
@@ -239,7 +265,6 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
         }
     }
 
-    // ИСПРАВЛЕНИЕ ОШИБКИ 2: Кастомная цель забегания на кровать, адаптированная под нашего моба
     private static class CaterpillarSitOnBedGoal extends MoveToBlockGoal {
         private final CatCaterpillarEntity caterpillar;
 
@@ -250,7 +275,6 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
 
         @Override
         public boolean canUse() {
-            // Моб пойдет на кровать, только если приручен, не сидит по команде, и хозяин близко
             return this.caterpillar.isTame() && !this.caterpillar.isOrderedToSit() && super.canUse();
         }
 
@@ -261,7 +285,7 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
         }
 
         @Override
-        protected int nextStartTick(PathfinderMob creature) {
+        protected int nextStartTick(@NotNull PathfinderMob creature) {
             return 40;
         }
 

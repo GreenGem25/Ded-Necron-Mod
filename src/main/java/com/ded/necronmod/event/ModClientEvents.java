@@ -1,13 +1,15 @@
 package com.ded.necronmod.event;
 
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.client.renderer.MonolithSproutRenderer;
-import com.ded.necronmod.client.renderer.NecronStaffRenderer;
-import com.ded.necronmod.client.renderer.PoopHelmetRenderer;
-import com.ded.necronmod.init.ModBlockEntities;
-import com.ded.necronmod.init.ModDataComponentTypes;
-import com.ded.necronmod.init.ModEntities;
-import com.ded.necronmod.init.ModItems;
+import com.ded.necronmod.client.renderer.armor.TinFoilHatRenderer;
+import com.ded.necronmod.client.renderer.block.MonolithSproutRenderer;
+import com.ded.necronmod.client.renderer.Item.NecronStaffRenderer;
+import com.ded.necronmod.client.renderer.armor.PoopHelmetRenderer;
+import com.ded.necronmod.client.renderer.block.TowerBaseRenderer;
+import com.ded.necronmod.client.renderer.block.TowerTopRenderer;
+import com.ded.necronmod.client.renderer.entity.CatCaterpillarRenderer;
+import com.ded.necronmod.client.renderer.entity.TarakanRenderer;
+import com.ded.necronmod.init.*;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -30,14 +32,11 @@ public class ModClientEvents {
     @SubscribeEvent
     public static void registerItemProperties(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            // Регистрируем свойство "filled" для нашего лабиринта
             ItemProperties.register(
                     ModItems.TESSERACT_LABYRINTH.get(),
                     ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "filled"),
-                    (stack, level, entity, seed) -> {
-                        // Если компонент CAPTURED_MOB присутствует — возвращаем 1.0 (заполнен)
-                        return stack.has(ModDataComponentTypes.CAPTURED_MOB.get()) ? 1.0F : 0.0F;
-                    }
+                    (stack, level, entity, seed) ->
+                            stack.has(ModDataComponentTypes.CAPTURED_MOB.get()) ? 1.0F : 0.0F
             );
         });
     }
@@ -60,7 +59,10 @@ public class ModClientEvents {
             private PoopHelmetRenderer renderer;
 
             @Override
-            public @NotNull HumanoidModel<?> getHumanoidArmorModel(@NotNull LivingEntity entity, @NotNull ItemStack itemStack, @NotNull EquipmentSlot equipmentSlot, @NotNull HumanoidModel<?> original) {
+            public @NotNull HumanoidModel<?> getHumanoidArmorModel(@NotNull LivingEntity entity,
+                                                                   @NotNull ItemStack itemStack,
+                                                                   @NotNull EquipmentSlot equipmentSlot,
+                                                                   @NotNull HumanoidModel<?> original) {
                 if (renderer == null) {
                     renderer = new PoopHelmetRenderer();
                 }
@@ -71,15 +73,34 @@ public class ModClientEvents {
                 return renderer;
             }
         }, ModItems.POOP_HELMET.get());
+
+        event.registerItem(new IClientItemExtensions() {
+            private TinFoilHatRenderer renderer;
+
+            @Override
+            public @NotNull HumanoidModel<?> getHumanoidArmorModel(@NotNull LivingEntity entity,
+                                                                   @NotNull ItemStack itemStack,
+                                                                   @NotNull EquipmentSlot equipmentSlot,
+                                                                   @NotNull HumanoidModel<?> original) {
+                if (renderer == null) {
+                    renderer = new TinFoilHatRenderer();
+                }
+
+                renderer.prepForRender(entity, itemStack, equipmentSlot, original,
+                        null, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+
+                return renderer;
+            }
+        }, ModItems.TIN_FOIL_HAT.get());
     }
 
     @SubscribeEvent
     public static void registerEntityRenderer(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.MONOLITH_SPROUT.get(), MonolithSproutRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.TOWER_BASE.get(), TowerBaseRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.TOWER_TOP.get(), TowerTopRenderer::new);
 
-        event.registerEntityRenderer(
-                ModEntities.CAT_CATERPILLAR.get(),
-                com.ded.necronmod.client.renderer.CatCaterpillarRenderer::new
-        );
+        event.registerEntityRenderer(ModEntities.CAT_CATERPILLAR.get(), CatCaterpillarRenderer::new);
+        event.registerEntityRenderer(ModEntities.TARAKAN.get(), TarakanRenderer::new);
     }
 }

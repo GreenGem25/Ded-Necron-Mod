@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#c:is_cave",
+  "spawners": [
+    {
+      "type": "necronmod:tarakan",
+      "weight": 20,
+      "minCount": 2,
+      "maxCount": 4
+    }
+  ]
+}

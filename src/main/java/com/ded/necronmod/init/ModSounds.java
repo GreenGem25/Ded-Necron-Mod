@@ -29,6 +29,9 @@ public class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> CAT_CATERPILLAR_SIT = SOUNDS.register("cat_caterpillar_sit",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "cat_caterpillar_sit")));
 
+    public static final DeferredHolder<SoundEvent, SoundEvent> BRAINROT_SOUND = SOUNDS.register("brainrot_sound",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "brainrot_sound")));
+
     public static void register(IEventBus bus) {
         SOUNDS.register(bus);
     }

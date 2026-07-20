@@ -28,7 +28,6 @@ public class AddItemModifier extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, @NotNull LootContext context) {
-        // Adds your item to the chest loot
         generatedLoot.add(new ItemStack(this.item, 1));
         return generatedLoot;
     }

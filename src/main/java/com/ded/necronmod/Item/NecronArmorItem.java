@@ -20,7 +20,8 @@ public class NecronArmorItem extends ArmorItem {
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context,
+                                List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
 
         tooltipComponents.add(Component.empty());
 

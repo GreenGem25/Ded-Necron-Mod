@@ -7,8 +7,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.chunk.LevelChunk;
-import net.neoforged.neoforge.common.world.chunk.ForcedChunkManager;
 
 public class ChunkLoaderObeliskBlockEntity extends BlockEntity {
 

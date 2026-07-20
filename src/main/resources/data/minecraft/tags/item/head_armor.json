@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "necronmod:necro_helmet"
+    "necronmod:necro_helmet",
+    "necronmod:steklovata_helmet",
+    "necronmod:poop_helmet",
+    "necronmod:tin_foil_hat"
   ]
 }

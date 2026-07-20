@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "necronmod:necron_staff"
+    "necronmod:necron_staff",
+    "necronmod:shampur"
   ]
 }

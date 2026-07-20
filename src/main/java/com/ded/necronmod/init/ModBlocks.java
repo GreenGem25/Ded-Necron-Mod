@@ -47,6 +47,18 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ));
 
+    public static final DeferredHolder<Block, Block> TOWER_BASE = BLOCKS.register("tower_base",
+            () -> new TowerBaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion()
+            ));
+
+    public static final DeferredHolder<Block, Block> TOWER_TOP = BLOCKS.register("tower_top",
+            () -> new TowerTopBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion()
+            ));
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

@@ -49,6 +49,10 @@
   "item.necronmod.tesseract_labyrinth": "Тессерактовый лабиринт",
 
   "item.necronmod.cat_caterpillar_spawn_egg": "Яйцо призыва котогусеницы",
+  "item.necronmod.tarakan_spawn_egg": "Яйцо призыва таракана",
+
+  "item.necronmod.tin_foil_hat": "Шапочка из фольги",
+  "tooltip.necronmod.tin_foil_hat_desc": "Защищает от 5G излучения",
 
   "item.necronmod.napoleon_cake": "Торт \"Наполеон\"",
   "block.necronmod.napoleon_cake": "Торт \"Наполеон\"",
@@ -69,6 +73,12 @@
   "item.necronmod.chunk_loader_obelisk_block": "Загрузочный Обелиск",
   "block.necronmod.chunk_loader_obelisk_block": "Загрузочный Обелиск",
   "tooltip.necronmod.chunk_loader_obelisk_block": "Загружает чанк, в котором расположен",
+
+  "item.necronmod.tower_base": "Основание 5G вышки",
+  "block.necronmod.tower_base": "Основание 5G вышки",
+
+  "item.necronmod.tower_top": "Антенна 5G вышки",
+  "block.necronmod.tower_top": "Антенна 5G вышки",
 
   "necronmod.configuration.title": "Конфигурация Necron Mod",
   "necronmod.configuration.section.necronmod.common.toml": "Конфигурация Necron Mod",
@@ -96,6 +106,7 @@
   "effect.necronmod.lung_cancer_effect": "Рак лёгких",
 
   "entity.necronmod.cat_caterpillar": "Котогусеница",
+  "entity.necronmod.tarakan": "Таракан",
 
   "config.jade.plugin_necronmod.chugun_saw": "Уэээ",
   "tooltip.necronmod.chugun_saw_required": "Для разрушения необходима Ножовка по чугуну"

@@ -59,6 +59,24 @@ public class ModArmorMaterials {
                 );
             });
 
+    public static final Holder<ArmorMaterial> TIN_FOIL_ARMOR_MATERIAL = ARMOR_MATERIALS.register("tin_foil_material",
+            () -> {
+                EnumMap<ArmorItem.Type, Integer> defense = Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                    map.put(ArmorItem.Type.HELMET, 2);
+                });
+
+                return new ArmorMaterial(
+                        defense,
+                        1, // Enchantability
+                        SoundEvents.ARMOR_EQUIP_LEATHER,
+                        () -> Ingredient.of(Items.IRON_NUGGET), // Anvil repair item
+                        List.of(new ArmorMaterial.Layer(ResourceLocation.
+                                fromNamespaceAndPath(DedNecronMod.MODID, "tin_foil_armor"))),
+                        0.1F, // Toughness
+                        0.0F // KB Resistance
+                );
+            });
+
     public static final Holder<ArmorMaterial> STEKLOVATA_ARMOR_MATERIAL = ARMOR_MATERIALS.register("steklovata_material",
             () -> {
                 EnumMap<ArmorItem.Type, Integer> defense = Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {

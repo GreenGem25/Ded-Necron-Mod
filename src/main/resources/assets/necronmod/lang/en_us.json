@@ -49,6 +49,10 @@
   "item.necronmod.tesseract_labyrinth": "Tesseract Labyrinth",
 
   "item.necronmod.cat_caterpillar_spawn_egg": "Catterpillar Spawn Egg",
+  "item.necronmod.tarakan_spawn_egg": "Tarakan Spawn Egg",
+
+  "item.necronmod.tin_foil_hat": "Tin Foil Hat",
+  "tooltip.necronmod.tin_foil_hat_desc": "Защищает от 5G излучения",
 
   "item.necronmod.napoleon_cake": "Napoleon Cake",
   "block.necronmod.napoleon_cake": "Napoleon Cake",
@@ -69,6 +73,12 @@
   "item.necronmod.chunk_loader_obelisk_block": "Chunk Loader Obelisk",
   "block.necronmod.chunk_loader_obelisk_block": "Chunk Loader Obelisk",
   "tooltip.necronmod.chunk_loader_obelisk_block": "Loads the chunk in which it is placed",
+
+  "item.necronmod.tower_base": "5G Tower Base",
+  "block.necronmod.tower_base": "5G Tower Base",
+
+  "item.necronmod.tower_top": "5G Tower Top",
+  "block.necronmod.tower_top": "5G Tower Top",
 
   "necronmod.configuration.title": "Necron Mod Configs",
   "necronmod.configuration.section.necronmod.common.toml": "Necron Mod Configs",
@@ -96,6 +106,7 @@
   "effect.necronmod.lung_cancer_effect": "Lung cancer",
 
   "entity.necronmod.cat_caterpillar": "Cat Caterpillar",
+  "entity.necronmod.tarakan": "Tarakan",
 
   "config.jade.plugin_necronmod.chugun_saw": "Ueee",
   "tooltip.necronmod.chugun_saw_required": "Chugun Saw required to break this"

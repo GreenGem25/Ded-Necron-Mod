@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:tin_foil_hat"
+  }
+}

@@ -30,7 +30,8 @@ public class PoopArmorEffects {
 
                 for (Player target : nearbyPlayers) {
                     if (target != player) {
-                        target.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 220, 0, false, true));
+                        target.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 220, 0,
+                                false, true));
                     }
                 }
 

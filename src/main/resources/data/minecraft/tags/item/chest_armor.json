@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "necronmod:necro_chestplate"
+    "necronmod:necro_chestplate",
+    "necronmod:steklovata_chestplate"
   ]
 }

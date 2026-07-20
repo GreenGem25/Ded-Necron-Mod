@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "necronmod:block/tower_top" },
+    "facing=south": { "model": "necronmod:block/tower_top", "y": 180 },
+    "facing=west":  { "model": "necronmod:block/tower_top", "y": 270 },
+    "facing=east":  { "model": "necronmod:block/tower_top", "y": 90 }
+  }
+}

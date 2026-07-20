@@ -1,0 +1,10 @@
+{
+  "type": "necronmod:communications_tower",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:snowy_plains",
+    "minecraft:desert"
+  ],
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

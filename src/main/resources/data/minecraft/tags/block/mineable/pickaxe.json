@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "necronmod:shlakoblock",
-    "necronmod:chunk_loader_obelisk_block"
+    "necronmod:chunk_loader_obelisk_block",
+    "necronmod:tower_base",
+    "necronmod:tower_top"
   ]
 }

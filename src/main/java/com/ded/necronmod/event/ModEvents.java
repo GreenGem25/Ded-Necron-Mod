@@ -50,9 +50,16 @@ public class ModEvents {
     public static void registerSpawnPlacements(RegisterSpawnPlacementsEvent event) {
         event.register(
                 ModEntities.CAT_CATERPILLAR.get(),
-                SpawnPlacementTypes.ON_GROUND, // Спавнится на земле
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, // Игнорируя листву деревьев
-                // Метод-условие проверки (проверяем, светло ли и есть ли трава под ногами)
+                SpawnPlacementTypes.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Animal::checkAnimalSpawnRules,
+                RegisterSpawnPlacementsEvent.Operation.OR
+        );
+
+        event.register(
+                ModEntities.TARAKAN.get(),
+                SpawnPlacementTypes.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Animal::checkAnimalSpawnRules,
                 RegisterSpawnPlacementsEvent.Operation.OR
         );

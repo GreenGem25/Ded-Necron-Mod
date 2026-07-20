@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "necronmod:necro_boots"
+    "necronmod:necro_boots",
+    "necronmod:steklovata_boots"
   ]
 }

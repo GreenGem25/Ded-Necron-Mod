@@ -16,8 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
-import software.bernie.geckolib.animation.AnimationController;
-import software.bernie.geckolib.animation.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.List;
@@ -31,13 +29,10 @@ public class PoopHelmetItem extends ArmorItem implements GeoItem {
 
     @Override
     public void inventoryTick(@NotNull ItemStack stack, Level level, @NotNull Entity entity, int slotId, boolean isSelected) {
-        // Проверяем, что это игрок и мы работаем на сервере
         if (!level.isClientSide() && entity instanceof Player wearer) {
 
-            // Проверяем, что шлем сейчас надет НА ГОЛОВЕ, а не просто лежит в кармане инвентаря
             if (wearer.getItemBySlot(EquipmentSlot.HEAD) == stack) {
 
-                // Оптимизация: проверка раз в секунду (20 тиков)
                 if ((wearer.tickCount + wearer.hashCode()) % 20 == 0) {
                     double radius = 5.0;
                     AABB area = wearer.getBoundingBox().inflate(radius);
@@ -45,7 +40,8 @@ public class PoopHelmetItem extends ArmorItem implements GeoItem {
 
                     for (Player target : nearbyPlayers) {
                         if (target != wearer && !target.isCreative() && !target.isSpectator()) {
-                            target.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 80, 0, false, true));
+                            target.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 80, 0,
+                                    false, true));
                         }
                     }
                 }
@@ -56,7 +52,6 @@ public class PoopHelmetItem extends ArmorItem implements GeoItem {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<>(this, "controller", 0, state -> PlayState.CONTINUE));
     }
 
     @Override

@@ -14,14 +14,12 @@ import javax.annotation.Nullable;
 
 public class ChunkLoaderObeliskBlock extends BaseEntityBlock {
 
-    // 1. Создаем кодек для регистрации блока в системе сериализации Mojang
     public static final MapCodec<ChunkLoaderObeliskBlock> CODEC = simpleCodec(ChunkLoaderObeliskBlock::new);
 
     public ChunkLoaderObeliskBlock(Properties properties) {
         super(properties);
     }
 
-    // 2. Реализуем обязательный абстрактный метод codec()
     @Override
     protected @NotNull MapCodec<? extends BaseEntityBlock> codec() {
         return CODEC;

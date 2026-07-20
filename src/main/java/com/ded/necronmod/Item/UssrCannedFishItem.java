@@ -32,19 +32,16 @@ public class UssrCannedFishItem extends Item {
 
     @Override
     public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity entity) {
-        // 1. Сначала выполняем стандартный код (накладываются эффекты, восстанавливается голод)
         ItemStack resultStack = super.finishUsingItem(stack, level, entity);
 
-        // 2. Проверяем, что код выполняется на сервере
         if (!level.isClientSide()) {
-            // Воспроизводим звук прямо на позиции того, кто съел еду
             level.playSound(
                     null,
                     entity.getX(), entity.getY(), entity.getZ(),
-                    ModSounds.USSR_CANNED_FISH_SOUND.get(), // Твой кастомный звук
+                    ModSounds.USSR_CANNED_FISH_SOUND.get(),
                     SoundSource.PLAYERS,
-                    1.0F, // Громкость
-                    1.0F  // Тональность
+                    1.0F,
+                    1.0F
             );
         }
 

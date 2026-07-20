@@ -34,14 +34,11 @@ public class ReplaceFishModifier extends LootModifier {
 
         RandomSource random = context.getRandom();
 
-        // Loop through the generated loot to find vanilla fish
         for (int i = 0; i < generatedLoot.size(); i++) {
             ItemStack stack = generatedLoot.get(i);
             Item item = stack.getItem();
 
-            // Check if the caught item is a basic vanilla fish
             if (item == Items.COD || item == Items.SALMON || item == Items.PUFFERFISH || item == Items.TROPICAL_FISH) {
-                // Swap the item stack for your custom fish, preserving the original count (usually 1)
                 generatedLoot.set(i, new ItemStack(this.customFish, stack.getCount()));
             }
         }

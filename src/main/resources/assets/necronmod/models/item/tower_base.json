@@ -1,0 +1,66 @@
+{
+  "format_version": "1.21.11",
+  "credit": "Made with Blockbench",
+  "texture_size": [64, 64],
+  "textures": {
+    "0": "necronmod:block/tower_base",
+    "particle": "necronmod:block/tower_base"
+  },
+  "elements": [
+    {
+      "from": [4, 0, 4],
+      "to": [12, 16, 12],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+      "faces": {
+        "north": {"uv": [2, 2, 4, 6], "texture": "#0"},
+        "east": {"uv": [0, 2, 2, 6], "texture": "#0"},
+        "south": {"uv": [6, 2, 8, 6], "texture": "#0"},
+        "west": {"uv": [4, 2, 6, 6], "texture": "#0"},
+        "up": {"uv": [4, 2, 2, 0], "texture": "#0"},
+        "down": {"uv": [6, 0, 4, 2], "texture": "#0"}
+      }
+    },
+    {
+      "from": [3.75, 13, 3.75],
+      "to": [12.25, 14, 12.25],
+      "rotation": {"angle": 0, "axis": "y", "origin": [12, 13, 8]},
+      "faces": {
+        "north": {"uv": [10, 2, 12, 2.25], "texture": "#0"},
+        "east": {"uv": [8, 2, 10, 2.25], "texture": "#0"},
+        "south": {"uv": [14, 2, 16, 2.25], "texture": "#0"},
+        "west": {"uv": [12, 2, 14, 2.25], "texture": "#0"},
+        "up": {"uv": [12, 2, 10, 0], "texture": "#0"},
+        "down": {"uv": [14, 0, 12, 2], "texture": "#0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [0, 1.25, 0],
+      "scale": [0.40039, 0.40039, 0.40039]
+    },
+    "thirdperson_lefthand": {
+      "translation": [0, 1.25, 0],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "firstperson_righthand": {
+      "translation": [0, 2.25, 0],
+      "scale": [0.51, 0.51, 0.51]
+    },
+    "firstperson_lefthand": {
+      "translation": [0, 2.25, 0],
+      "scale": [0.51, 0.51, 0.51]
+    },
+    "ground": {
+      "translation": [0, 2.25, 0],
+      "scale": [0.51, 0.51, 0.51]
+    },
+    "gui": {
+      "rotation": [28, 46, 0],
+      "scale": [0.61, 0.61, 0.61]
+    },
+    "head": {
+      "translation": [0, 3.5, 0]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+package com.ded.necronmod.client.model;
+
+import com.ded.necronmod.DedNecronMod;
+import com.ded.necronmod.entity.TarakanEntity;
+import net.minecraft.resources.ResourceLocation;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.constant.DataTickets;
+import software.bernie.geckolib.model.GeoModel;
+import software.bernie.geckolib.model.data.EntityModelData;
+
+public class TarakanModel extends GeoModel<TarakanEntity> {
+
+    @Override
+    public ResourceLocation getModelResource(TarakanEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "geo/entity/tarakan.geo.json");
+    }
+
+    @Override
+    public ResourceLocation getTextureResource(TarakanEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "textures/entity/tarakan.png");
+    }
+
+    @Override
+    public ResourceLocation getAnimationResource(TarakanEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "animations/entity/tarakan.animation.json");
+    }
+
+    @Override
+    public void setCustomAnimations(TarakanEntity animatable, long instanceId, AnimationState<TarakanEntity> animationState) {
+        super.setCustomAnimations(animatable, instanceId, animationState);
+
+        EntityModelData entityData = animationState.getData(DataTickets.ENTITY_MODEL_DATA);
+
+        GeoBone head = this.getAnimationProcessor().getBone("head");
+
+        if (head != null) {
+            head.setRotX(entityData.headPitch() * ((float) Math.PI / 180F));
+            head.setRotY(entityData.netHeadYaw() * ((float) Math.PI / 180F));
+        }
+    }
+}

@@ -2,10 +2,12 @@ package com.ded.necronmod;
 
 import com.ded.necronmod.block.entity.ChunkLoaderObeliskBlockEntity;
 import com.ded.necronmod.entity.CatCaterpillarEntity;
+import com.ded.necronmod.entity.TarakanEntity;
 import com.ded.necronmod.init.*;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent;
 import net.neoforged.neoforge.common.world.chunk.TicketController;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -29,11 +31,9 @@ public class DedNecronMod {
     public static final TicketController OBELISK_TICKET_CONTROLLER = new TicketController(
             ResourceLocation.fromNamespaceAndPath("necronmod", "obelisk_chunks"),
             (level, ticketHelper) -> {
-                // Валидатор: при запуске мира проверяем, стоит ли по-прежнему наш блок по координатам билета
                 ticketHelper.getBlockTickets().keySet().forEach(pos -> {
-                    // Если блока на месте нет (например, его убрали сторонней программой или сетом)
                     if (!(level.getBlockEntity(pos) instanceof ChunkLoaderObeliskBlockEntity)) {
-                        ticketHelper.removeAllTickets(pos); // Удаляем билеты для этой позиции
+                        ticketHelper.removeAllTickets(pos);
                     }
                 });
             }
@@ -57,9 +57,14 @@ public class DedNecronMod {
         ModCreativeTabs.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModDataComponentTypes.register(modEventBus);
+        ModStructures.register(modEventBus);
 
-        modEventBus.addListener(net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent.class, event -> {
+        modEventBus.addListener(EntityAttributeCreationEvent.class, event -> {
             event.put(ModEntities.CAT_CATERPILLAR.get(), CatCaterpillarEntity.createAttributes().build());
+        });
+
+        modEventBus.addListener(EntityAttributeCreationEvent.class, event -> {
+            event.put(ModEntities.TARAKAN.get(), TarakanEntity.createAttributes().build());
         });
 
         NeoForge.EVENT_BUS.register(this);

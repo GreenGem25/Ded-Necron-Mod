@@ -7,8 +7,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
-import software.bernie.geckolib.animation.AnimationController;
-import software.bernie.geckolib.animation.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class MonolithSproutBlockEntity extends BlockEntity implements GeoBlockEntity {
@@ -20,8 +18,6 @@ public class MonolithSproutBlockEntity extends BlockEntity implements GeoBlockEn
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        // Добавляем контроллер анимации (даже если растение статично, контроллер нужен для инициализации)
-        controllers.add(new AnimationController<>(this, "controller", 0, state -> PlayState.CONTINUE));
     }
 
     @Override
