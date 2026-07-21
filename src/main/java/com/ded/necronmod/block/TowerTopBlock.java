@@ -2,6 +2,7 @@ package com.ded.necronmod.block;
 
 import com.ded.necronmod.block.entity.TowerTopBlockEntity;
 import com.ded.necronmod.init.ModBlockEntities;
+import com.ded.necronmod.tick.ClientTickHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -62,7 +63,7 @@ public class TowerTopBlock extends Block implements EntityBlock {
 
         if (level.isClientSide) {
             return (lvl, pos, st, be) ->
-                    TowerTopBlockEntity.clientTick(lvl, pos, st, (TowerTopBlockEntity) be);
+                    ClientTickHandler.tickTower((TowerTopBlockEntity) be);
         }
 
         return (lvl, pos, st, be) ->

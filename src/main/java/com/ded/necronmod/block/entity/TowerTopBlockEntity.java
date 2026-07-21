@@ -2,7 +2,6 @@ package com.ded.necronmod.block.entity;
 
 import com.ded.necronmod.init.ModBlockEntities;
 import com.ded.necronmod.init.ModItems;
-import com.ded.necronmod.sound.BrainrotSoundInstance;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.damagesource.DamageSource;
@@ -69,38 +68,6 @@ public class TowerTopBlockEntity extends BlockEntity implements GeoBlockEntity {
                     entity.hurt(damageSource, 2.0F);
                     entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 60, 0, false, false));
                 }
-            }
-        }
-    }
-
-    private BrainrotSoundInstance sound;
-
-    public static void clientTick(Level level,
-                                  BlockPos pos,
-                                  BlockState state,
-                                  TowerTopBlockEntity blockEntity)
-    {
-        Minecraft minecraft = Minecraft.getInstance();
-
-        if (minecraft.player == null)
-            return;
-
-        if (blockEntity.sound != null && blockEntity.sound.isStopped()) {
-            blockEntity.sound = null;
-        }
-
-        double distance = minecraft.player.position()
-                .distanceTo(Vec3.atCenterOf(pos));
-
-        boolean inRange = distance <= RADIUS;
-
-        if (inRange)
-        {
-            if (blockEntity.sound == null || blockEntity.sound.isStopped())
-            {
-                blockEntity.sound = new BrainrotSoundInstance(blockEntity);
-
-                minecraft.getSoundManager().play(blockEntity.sound);
             }
         }
     }
