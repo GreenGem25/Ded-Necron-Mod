@@ -50,6 +50,8 @@ neoForge {
     runs {
         client {
             client()
+            // Назначаем клиенту собственную подпапку
+            gameDirectory = project.file('run/client')
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
@@ -57,6 +59,9 @@ neoForge {
 
         server {
             server()
+            // Назначаем серверу собственную подпапку
+            gameDirectory = project.file('run/server')
+
             programArgument '--nogui'
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }

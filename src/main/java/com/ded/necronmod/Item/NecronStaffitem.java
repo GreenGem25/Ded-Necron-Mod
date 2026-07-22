@@ -30,6 +30,7 @@ import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.util.JsonUtil;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -77,16 +78,19 @@ public class NecronStaffitem extends SwordItem implements GeoItem {
     @Override
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
         consumer.accept(new GeoRenderProvider() {
-            private NecronStaffRenderer renderer;
+            private final NecronStaffRenderer renderer =
+                    new NecronStaffRenderer();
 
             @Override
             public BlockEntityWithoutLevelRenderer getGeoItemRenderer() {
-                if (this.renderer == null) {
-                    this.renderer = new NecronStaffRenderer();
-                }
-                return this.renderer;
+                return renderer;
             }
         });
+    }
+
+    @Override
+    public boolean isFoil(@NotNull ItemStack stack) {
+        return false;
     }
 
     @Override

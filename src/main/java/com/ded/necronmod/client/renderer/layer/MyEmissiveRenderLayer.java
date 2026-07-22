@@ -16,9 +16,9 @@ public class MyEmissiveRenderLayer<T extends GeoAnimatable> extends GeoRenderLay
 
     private final String texturePath;
 
-    public MyEmissiveRenderLayer(GeoRenderer<T> renderer, String path) {
+    public MyEmissiveRenderLayer(GeoRenderer<T> renderer, String Path) {
         super(renderer);
-        this.texturePath = path;
+        texturePath = Path;
     }
 
     @Override
@@ -33,24 +33,19 @@ public class MyEmissiveRenderLayer<T extends GeoAnimatable> extends GeoRenderLay
             int packedLight,
             int packedOverlay) {
 
-        // Формируем RenderType для свечения
-        RenderType emissiveType = RenderType.entityTranslucentEmissive(
-                ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, texturePath)
-        );
+        RenderType emissiveType =
+                RenderType.entityTranslucentEmissive(ResourceLocation.fromNamespaceAndPath(
+                        DedNecronMod.MODID,
+                        texturePath
+                ));
 
-        // Чтобы не создавать дубликат деликата (Duplicate delegates) с Iris/Relics,
-        // мы получаем буфер непосредственно из переданного bufferSource для нашего emissiveType
-        VertexConsumer emissiveBuffer = bufferSource.getBuffer(emissiveType);
-
-        // Используем метод renderActually из GeckoLib вместо reRender,
-        // чтобы напрямую передать светящуюся текстуру и максимальную яркость LightTexture.FULL_BRIGHT
         getRenderer().reRender(
                 model,
                 poseStack,
                 bufferSource,
                 animatable,
                 emissiveType,
-                emissiveBuffer,
+                bufferSource.getBuffer(emissiveType),
                 partialTick,
                 LightTexture.FULL_BRIGHT,
                 packedOverlay,
