@@ -9,21 +9,42 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.model.data.EntityModelData;
 
+import java.util.Locale;
+import java.util.Objects;
+
 public class TarakanModel extends GeoModel<TarakanEntity> {
+
+
+    private static final ResourceLocation DEFAULT_MODEL = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "geo/entity/tarakan.geo.json");
+    private static final ResourceLocation DEFAULT_TEXTURE = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "textures/entity/tarakan.png");
+    private static final ResourceLocation FEMBOY_TEXTURE = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "textures/entity/tarakan_femboy.png");
+    private static final ResourceLocation DEFAULT_ANIMATION = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "animations/entity/tarakan.animation.json");
 
     @Override
     public ResourceLocation getModelResource(TarakanEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "geo/entity/tarakan.geo.json");
+        return DEFAULT_MODEL;
     }
 
     @Override
     public ResourceLocation getTextureResource(TarakanEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "textures/entity/tarakan.png");
+        if (animatable.hasCustomName()) {
+            String name = Objects.requireNonNull(animatable.getCustomName()).getString().toLowerCase(Locale.ROOT);
+
+            if (name.equals("nizir")) {
+                return FEMBOY_TEXTURE;
+            }
+        }
+
+        return DEFAULT_TEXTURE;
     }
 
     @Override
     public ResourceLocation getAnimationResource(TarakanEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "animations/entity/tarakan.animation.json");
+        return DEFAULT_ANIMATION;
     }
 
     @Override

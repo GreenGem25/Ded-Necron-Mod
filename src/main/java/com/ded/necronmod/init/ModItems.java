@@ -381,6 +381,24 @@ public class ModItems {
                             .build()
                     )));
 
+    public static final DeferredHolder<Item, Item> TARAKAN_MEAT = ITEMS.register("tarakan_meat",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.6F)
+                            .build()
+                    )));
+
+    public static final DeferredHolder<Item, Item> WHITE_MONSTER = ITEMS.register("white_monster",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationModifier(0.6F)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 200, 1), 1.0F)
+                            .build()
+                    )));
+
     // Spawn Eggs
 
     public static final DeferredHolder<Item, Item> CAT_CATERPILLAR_SPAWN_EGG = ITEMS.register("cat_caterpillar_spawn_egg",

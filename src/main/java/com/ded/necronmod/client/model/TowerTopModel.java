@@ -10,19 +10,27 @@ import software.bernie.geckolib.model.GeoModel;
 import java.util.Objects;
 
 public class TowerTopModel extends GeoModel<TowerTopBlockEntity> {
+
+    private static final ResourceLocation DEFAULT_MODEL = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "geo/block/tower_top.geo.json");
+    private static final ResourceLocation DEFAULT_TEXTURE = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "textures/block/tower_top.png");
+    private static final ResourceLocation DEFAULT_ANIMATION = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "animations/block/tower_top.animation.json");
+
     @Override
     public ResourceLocation getModelResource(TowerTopBlockEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "geo/block/tower_top.geo.json");
+        return DEFAULT_MODEL;
     }
 
     @Override
     public ResourceLocation getTextureResource(TowerTopBlockEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "textures/block/tower_top.png");
+        return DEFAULT_TEXTURE;
     }
 
     @Override
     public ResourceLocation getAnimationResource(TowerTopBlockEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "animations/block/tower_top.animation.json");
+        return DEFAULT_ANIMATION;
     }
 
     @Override

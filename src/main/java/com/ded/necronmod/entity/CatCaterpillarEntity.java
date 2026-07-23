@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -311,7 +312,7 @@ public class CatCaterpillarEntity extends TamableAnimal implements GeoEntity {
                 return false;
             } else {
                 BlockState state = level.getBlockState(pos);
-                return state.is(net.minecraft.tags.BlockTags.BEDS);
+                return state.is(BlockTags.BEDS);
             }
         }
     }

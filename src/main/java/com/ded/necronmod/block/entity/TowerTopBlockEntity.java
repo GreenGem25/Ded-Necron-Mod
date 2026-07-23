@@ -1,5 +1,6 @@
 package com.ded.necronmod.block.entity;
 
+import com.ded.necronmod.entity.TarakanEntity;
 import com.ded.necronmod.init.ModBlockEntities;
 import com.ded.necronmod.init.ModItems;
 import net.minecraft.client.Minecraft;
@@ -56,10 +57,13 @@ public class TowerTopBlockEntity extends BlockEntity implements GeoBlockEntity {
                 if (entity instanceof Player player && player.isCreative()) {
                     return false;
                 }
+                if (entity instanceof TarakanEntity) {
+                    return false;
+                }
 
                 ItemStack headItem = entity.getItemBySlot(EquipmentSlot.HEAD);
 
-                return headItem.isEmpty() || !headItem.is(ModItems.TIN_FOIL_HAT.get());
+                return headItem.isEmpty() || !headItem.is(ModItems.TIN_FOIL_HAT.get()) || !headItem.is(ModItems.NECRODERMIS_HELMET.get());
             });
 
             if (!entities.isEmpty()) {

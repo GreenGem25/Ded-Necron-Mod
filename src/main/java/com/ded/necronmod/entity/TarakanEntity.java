@@ -4,23 +4,30 @@ import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.init.ModEntities;
 import com.ded.necronmod.init.ModItems;
 import com.ded.necronmod.init.ModSounds;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.StructureTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LightLayer;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.storage.loot.LootTable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -57,7 +64,7 @@ public class TarakanEntity extends Animal implements GeoEntity {
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 10.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.4D);
+                .add(Attributes.MOVEMENT_SPEED, 0.3D);
     }
 
     @Override
@@ -115,8 +122,31 @@ public class TarakanEntity extends Animal implements GeoEntity {
         }));
     }
 
+
+
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
+    }
+
+    public static boolean canSpawn(EntityType<TarakanEntity> type,
+                                   ServerLevelAccessor level,
+                                   MobSpawnType spawnType,
+                                   BlockPos pos,
+                                   RandomSource random) {
+
+        var structureManager = level.getLevel().structureManager();
+        boolean inVillage = structureManager.getStructureWithPieceAt(pos, StructureTags.VILLAGE).isValid();
+        if (inVillage) {
+            return true;
+        }
+
+        if (pos.getY() < 50
+                && !level.canSeeSky(pos))
+        {
+        }
+
+        return pos.getY() < 50
+                && !level.canSeeSky(pos);
     }
 }

@@ -11,19 +11,27 @@ import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.model.GeoModel;
 
 public class MonolithSproutModel extends GeoModel<MonolithSproutBlockEntity> {
+
+    private static final ResourceLocation DEFAULT_MODEL = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "geo/block/monolith_sprout.geo.json");
+    private static final ResourceLocation DEFAULT_TEXTURE = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "textures/block/monolith_sprout.png");
+    private static final ResourceLocation DEFAULT_ANIMATION = ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID,
+            "animations/block/monolith_sprout.animation.json");
+
     @Override
     public ResourceLocation getModelResource(MonolithSproutBlockEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "geo/block/monolith_sprout.geo.json");
+        return DEFAULT_MODEL;
     }
 
     @Override
     public ResourceLocation getTextureResource(MonolithSproutBlockEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "textures/block/monolith_sprout.png");
+        return DEFAULT_TEXTURE;
     }
 
     @Override
     public ResourceLocation getAnimationResource(MonolithSproutBlockEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "animations/block/monolith_sprout.animation.json");
+        return DEFAULT_ANIMATION;
     }
 
     @Override

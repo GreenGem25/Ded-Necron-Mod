@@ -23,7 +23,7 @@ public class ModEntities {
 
     public static final DeferredHolder<EntityType<?>, EntityType<TarakanEntity>> TARAKAN =
             ENTITY_TYPES.register("tarakan",
-                    () -> EntityType.Builder.of(TarakanEntity::new, MobCategory.CREATURE)
+                    () -> EntityType.Builder.of(TarakanEntity::new, MobCategory.MONSTER)
                             .sized(0.5F, 0.2F)
                             .build("tarakan")
             );

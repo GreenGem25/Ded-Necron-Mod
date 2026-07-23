@@ -62,7 +62,7 @@ public class BrainrotSoundInstance extends AbstractTickableSoundInstance {
             return;
         }
 
-        if (player.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.TIN_FOIL_HAT)) {
+        if (player.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.TIN_FOIL_HAT) || player.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.NECRODERMIS_HELMET)) {
             volume = 0.0F;
             return;
         }
