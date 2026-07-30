@@ -1,8 +1,9 @@
 package com.ded.necronmod.event;
 
 import com.ded.necronmod.DedNecronMod;
+import com.ded.necronmod.client.renderer.Item.PsykerBookRenderer;
+import com.ded.necronmod.client.renderer.Item.WaterGunRenderer;
 import com.ded.necronmod.client.renderer.armor.TinFoilHatRenderer;
-import com.ded.necronmod.client.renderer.block.MonolithSproutRenderer;
 import com.ded.necronmod.client.renderer.Item.NecronStaffRenderer;
 import com.ded.necronmod.client.renderer.armor.PoopHelmetRenderer;
 import com.ded.necronmod.client.renderer.block.TowerTopRenderer;
@@ -11,16 +12,20 @@ import com.ded.necronmod.client.renderer.entity.TarakanRenderer;
 import com.ded.necronmod.init.*;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.client.renderer.entity.NoopRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RenderPlayerEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import org.jetbrains.annotations.NotNull;
@@ -30,14 +35,12 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void registerItemProperties(FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            ItemProperties.register(
-                    ModItems.TESSERACT_LABYRINTH.get(),
-                    ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "filled"),
-                    (stack, level, entity, seed) ->
-                            stack.has(ModDataComponentTypes.CAPTURED_MOB.get()) ? 1.0F : 0.0F
-            );
-        });
+        event.enqueueWork(() -> ItemProperties.register(
+                ModItems.TESSERACT_LABYRINTH.get(),
+                ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "filled"),
+                (stack, level, entity, seed) ->
+                        stack.has(ModDataComponents.CAPTURED_MOB.get()) ? 1.0F : 0.0F
+        ));
     }
 
     @SubscribeEvent
@@ -53,6 +56,30 @@ public class ModClientEvents {
                 return renderer;
             }
         }, ModItems.NECRON_STAFF.get());
+
+        event.registerItem(new IClientItemExtensions() {
+            private PsykerBookRenderer renderer;
+
+            @Override
+            public @NotNull BlockEntityWithoutLevelRenderer getCustomRenderer() {
+                if (renderer == null) {
+                    renderer = new PsykerBookRenderer();
+                }
+                return renderer;
+            }
+        }, ModItems.PSYKER_BOOK.get());
+
+        event.registerItem(new IClientItemExtensions() {
+            private WaterGunRenderer renderer;
+
+            @Override
+            public @NotNull BlockEntityWithoutLevelRenderer getCustomRenderer() {
+                if (renderer == null) {
+                    renderer = new WaterGunRenderer();
+                }
+                return renderer;
+            }
+        }, ModItems.WATER_GUN.get());
 
         event.registerItem(new IClientItemExtensions() {
             private PoopHelmetRenderer renderer;
@@ -95,10 +122,29 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void registerEntityRenderer(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerBlockEntityRenderer(ModBlockEntities.MONOLITH_SPROUT.get(), MonolithSproutRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.TOWER_TOP.get(), TowerTopRenderer::new);
 
         event.registerEntityRenderer(ModEntities.CAT_CATERPILLAR.get(), CatCaterpillarRenderer::new);
         event.registerEntityRenderer(ModEntities.TARAKAN.get(), TarakanRenderer::new);
+        event.registerEntityRenderer(ModEntities.WATER_PROJECTILE.get(), NoopRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void onPlayerRender(RenderPlayerEvent.Pre event) {
+        Player player = event.getEntity();
+        HumanoidModel<?> playerModel = event.getRenderer().getModel();
+
+        // Проверяем правую руку
+        ItemStack mainHandStack = player.getItemInHand(InteractionHand.MAIN_HAND);
+        if (mainHandStack.is(ModItems.WATER_GUN.get())) {
+            // Задаем позу вытянутой руки (как с арбалетом или при прицеливании)
+            playerModel.rightArmPose = HumanoidModel.ArmPose.CROSSBOW_HOLD;
+        }
+
+        // Проверяем левую руку (если пистолет взяли в левую)
+        ItemStack offHandStack = player.getItemInHand(InteractionHand.OFF_HAND);
+        if (offHandStack.is(ModItems.WATER_GUN.get())) {
+            playerModel.leftArmPose = HumanoidModel.ArmPose.CROSSBOW_HOLD;
+        }
     }
 }

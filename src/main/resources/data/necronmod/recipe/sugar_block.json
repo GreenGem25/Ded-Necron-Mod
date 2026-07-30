@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:sugar_block"
+  }
+}

@@ -24,13 +24,9 @@ public class SteklovataArmorEffects {
         if (victim.level().isClientSide()) return;
 
         if (hasFullSetOfArmor(victim)) {
-
             if (event.getSource().getEntity() instanceof LivingEntity attacker) {
-
                 if (attacker != victim) {
-
                     float returnDamage = event.getAmount();
-
                     attacker.hurt(victim.damageSources().thorns(victim), returnDamage);
                 }
             }

@@ -33,6 +33,12 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> TESSERACT_LABYRINTH = ITEMS.register("tesseract_labyrinth",
             () -> new TesseractLabyrinthItem(new Item.Properties().stacksTo(1)));
 
+    public static final DeferredHolder<Item, Item> PSYKER_BOOK = ITEMS.register("psyker_book",
+            () -> new PsykerBook(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredHolder<Item, WaterGunItem> WATER_GUN = ITEMS.register("water_gun",
+            () -> new WaterGunItem(new Item.Properties()));
+
     // Weapons & Instruments
 
     public static final DeferredHolder<Item, NecronStaffitem> NECRON_STAFF = ITEMS.register("necron_staff",
@@ -185,6 +191,9 @@ public class ModItems {
 
     public static final DeferredHolder<Item, BlockItem> SHLAKOBLOCK = ITEMS.register("shlakoblock",
             () -> new BlockItem(ModBlocks.SHLAKOBLOCK.get(), new Item.Properties()));
+
+    public static final DeferredHolder<Item, BlockItem> SUGAR_BLOCK = ITEMS.register("sugar_block",
+            () -> new BlockItem(ModBlocks.SUGAR_BLOCK.get(), new Item.Properties()));
 
     public static final DeferredHolder<Item, BlockItem> STEKLOVATA_BLOCK = ITEMS.register("steklovata_block",
             () -> new BlockItem(ModBlocks.STEKLOVATA_BLOCK.get(), new Item.Properties()));
@@ -390,7 +399,7 @@ public class ModItems {
                     )));
 
     public static final DeferredHolder<Item, Item> WHITE_MONSTER = ITEMS.register("white_monster",
-            () -> new Item(new Item.Properties()
+            () -> new WhiteMonsterItem(new Item.Properties()
                     .food(new FoodProperties.Builder()
                             .nutrition(2)
                             .saturationModifier(0.6F)
@@ -403,17 +412,17 @@ public class ModItems {
 
     public static final DeferredHolder<Item, Item> CAT_CATERPILLAR_SPAWN_EGG = ITEMS.register("cat_caterpillar_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    ModEntities.CAT_CATERPILLAR, // Ссылка на зарегистрированного моба
-                    0x4C9F43, // Цвет фона яйца (зеленый под гусеницу)
-                    0xFFA6D5, // Цвет крапинок яйца (розовый под котика)
+                    ModEntities.CAT_CATERPILLAR,
+                    0x4C9F43, // Цвет фона яйца
+                    0xFFA6D5, // Цвет крапинок яйца
                     new Item.Properties()
             ));
 
     public static final DeferredHolder<Item, Item> TARAKAN_SPAWN_EGG = ITEMS.register("tarakan_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    ModEntities.TARAKAN, // Ссылка на зарегистрированного моба
-                    0x754a0d, // Цвет фона яйца (зеленый под гусеницу)
-                    0x916e3c, // Цвет крапинок яйца (розовый под котика)
+                    ModEntities.TARAKAN,
+                    0x754a0d,
+                    0x916e3c,
                     new Item.Properties()
             ));
 

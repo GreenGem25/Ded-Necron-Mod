@@ -31,15 +31,13 @@ public class ChunkLoaderObeliskBlockEntity extends BlockEntity {
     private void setChunkLoading(ServerLevel serverLevel, boolean force) {
         ChunkPos chunkPos = new ChunkPos(this.worldPosition);
 
-        // Передаем параметры:
-        // level, owner (BlockPos), chunkX, chunkZ, add (включаем или выключаем?), ticking
         DedNecronMod.OBELISK_TICKET_CONTROLLER.forceChunk(
                 serverLevel,
                 this.worldPosition,
                 chunkPos.x,
                 chunkPos.z,
                 force, // true добавит билет, false — удалит его
-                true   // ticking (даем тики блокам/редстоуну/мобам)
+                true
         );
     }
 

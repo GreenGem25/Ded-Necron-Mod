@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "AEA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "D": {
+      "item": "minecraft:book"
+    },
+    "E": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:psyker_book"
+  }
+}

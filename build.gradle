@@ -37,6 +37,10 @@ neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
 
+    accessTransformers {
+        file('src/main/resources/META-INF/accesstransformer.cfg')
+    }
+
     parchment {
         mappingsVersion = project.parchment_mappings_version
         minecraftVersion = project.parchment_minecraft_version
@@ -167,6 +171,11 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+// Решение проблемы неявной зависимости между тасками NeoForge/Gradle
+tasks.named('createMinecraftArtifacts') {
+    dependsOn tasks.named('generateModMetadata')
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.

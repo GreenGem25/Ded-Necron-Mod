@@ -8,7 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModDataComponentTypes {
+public class ModDataComponents {
     public static final DeferredRegister<DataComponentType<?>> COMPONENT_TYPES =
             DeferredRegister.create(Registries.DATA_COMPONENT_TYPE, DedNecronMod.MODID);
 

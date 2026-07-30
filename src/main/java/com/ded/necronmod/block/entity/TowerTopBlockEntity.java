@@ -3,7 +3,6 @@ package com.ded.necronmod.block.entity;
 import com.ded.necronmod.entity.TarakanEntity;
 import com.ded.necronmod.init.ModBlockEntities;
 import com.ded.necronmod.init.ModItems;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -16,7 +15,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -63,7 +61,7 @@ public class TowerTopBlockEntity extends BlockEntity implements GeoBlockEntity {
 
                 ItemStack headItem = entity.getItemBySlot(EquipmentSlot.HEAD);
 
-                return headItem.isEmpty() || !headItem.is(ModItems.TIN_FOIL_HAT.get()) || !headItem.is(ModItems.NECRODERMIS_HELMET.get());
+                return headItem.isEmpty() || !(headItem.is(ModItems.TIN_FOIL_HAT.get()) || headItem.is(ModItems.NECRODERMIS_HELMET.get()));
             });
 
             if (!entities.isEmpty()) {

@@ -30,11 +30,8 @@ public class NecroArmorEffects {
         Player player = event.getEntity();
 
         if (!player.level().isClientSide() && player.tickCount % 10 == 0) {
-
             if (hasFullSetOfArmor(player)) {
-
                 MobEffectInstance activeEffect = player.getEffect(ModEffects.PHYLACTERY_EFFECT);
-
                 if (activeEffect == null || activeEffect.getDuration() < 120) {
                     player.addEffect(new MobEffectInstance(
                             ModEffects.PHYLACTERY_EFFECT,
@@ -45,7 +42,6 @@ public class NecroArmorEffects {
                             true // icon
                     ));
                 }
-
             }
         }
     }

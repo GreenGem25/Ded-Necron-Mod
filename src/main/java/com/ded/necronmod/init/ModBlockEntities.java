@@ -2,7 +2,6 @@ package com.ded.necronmod.init;
 
 import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.block.entity.ChunkLoaderObeliskBlockEntity;
-import com.ded.necronmod.block.entity.MonolithSproutBlockEntity;
 import com.ded.necronmod.block.entity.TowerTopBlockEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -13,14 +12,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, DedNecronMod.MODID);
-
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MonolithSproutBlockEntity>> MONOLITH_SPROUT =
-            BLOCK_ENTITIES.register("monolith_sprout", () ->
-                    BlockEntityType.Builder.of(
-                            MonolithSproutBlockEntity::new,
-                            ModBlocks.MONOLITH_SPROUT.get()
-                    ).build(null)
-            );
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<TowerTopBlockEntity>> TOWER_TOP =
             BLOCK_ENTITIES.register("tower_top", () ->

@@ -20,9 +20,7 @@ public class PoopArmorEffects {
         Player player = event.getEntity();
 
         if (!player.level().isClientSide() && (player.tickCount + player.hashCode()) % 200 == 0) {
-
             if (player.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.POOP_HELMET.get())) {
-
                 double radius = 5.0;
 
                 AABB area = player.getBoundingBox().inflate(radius);
@@ -34,7 +32,6 @@ public class PoopArmorEffects {
                                 false, true));
                     }
                 }
-
             }
         }
     }

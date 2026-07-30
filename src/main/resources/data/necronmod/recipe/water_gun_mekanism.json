@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanismadditions"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABB",
+    "CDE",
+    " F "
+  ],
+  "key": {
+    "A": {
+      "item": "mekanismadditions:green_plastic_stairs"
+    },
+    "B": {
+      "item": "mekanismadditions:yellow_balloon"
+    },
+    "C": {
+      "item": "mekanismadditions:green_plastic_fence"
+    },
+    "D": {
+      "item": "mekanismadditions:green_plastic_fence_gate"
+    },
+    "E": {
+      "item": "mekanismadditions:green_plastic_slab"
+    },
+    "F": {
+      "item": "mekanismadditions:green_plastic"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "necronmod:water_gun"
+  }
+}

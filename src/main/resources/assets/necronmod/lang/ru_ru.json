@@ -56,11 +56,17 @@
   "item.necronmod.tin_foil_hat": "Шапочка из фольги",
   "tooltip.necronmod.tin_foil_hat_desc": "Защищает от 5G излучения",
 
+  "item.necronmod.psyker_book": "Книга анекдотов псайкера",
+  "item.necronmod.water_gun": "Водяной пистолет",
+
   "item.necronmod.napoleon_cake": "Торт \"Наполеон\"",
   "block.necronmod.napoleon_cake": "Торт \"Наполеон\"",
 
   "item.necronmod.shlakoblock": "Шлакоблок",
   "block.necronmod.shlakoblock": "Шлакоблок",
+
+  "item.necronmod.sugar_block": "Блок сахара",
+  "block.necronmod.sugar_block": "Блок сахара",
 
   "item.necronmod.steklovata_block": "Блок стекловаты",
   "block.necronmod.steklovata_block": "Блок стекловаты",

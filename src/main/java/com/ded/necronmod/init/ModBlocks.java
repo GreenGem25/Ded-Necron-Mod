@@ -23,6 +23,12 @@ public class ModBlocks {
     public static final DeferredHolder<Block, Block> SHLAKOBLOCK = BLOCKS.register("shlakoblock",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
 
+    public static final DeferredHolder<Block, Block> SUGAR_BLOCK = BLOCKS.register("sugar_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.4F, 3.0F)
+                    .sound(SoundType.DEEPSLATE)
+            ));
+
     public static final DeferredHolder<Block, SteklovataBlock> STEKLOVATA_BLOCK = BLOCKS.register("steklovata_block",
             () -> new SteklovataBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK)));
 

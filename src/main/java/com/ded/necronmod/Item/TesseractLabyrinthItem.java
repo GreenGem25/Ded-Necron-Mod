@@ -1,6 +1,6 @@
 package com.ded.necronmod.Item;
 
-import com.ded.necronmod.init.ModDataComponentTypes;
+import com.ded.necronmod.init.ModDataComponents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -35,7 +35,7 @@ public class TesseractLabyrinthItem extends Item {
         Level level = player.level();
 
         if (target instanceof Player || target.getType().is(Tags.EntityTypes.CAPTURING_NOT_SUPPORTED) ||
-                stack.has(ModDataComponentTypes.CAPTURED_MOB.get()) || !target.isAlive()) {
+                stack.has(ModDataComponents.CAPTURED_MOB.get()) || !target.isAlive()) {
             return InteractionResult.PASS;
         }
 
@@ -46,7 +46,7 @@ public class TesseractLabyrinthItem extends Item {
 
             target.saveWithoutId(mobData);
 
-            stack.set(ModDataComponentTypes.CAPTURED_MOB.get(), mobData);
+            stack.set(ModDataComponents.CAPTURED_MOB.get(), mobData);
 
             player.setItemInHand(hand, stack);
 
@@ -64,7 +64,7 @@ public class TesseractLabyrinthItem extends Item {
         Level level = context.getLevel();
         ItemStack stack = context.getItemInHand();
 
-        if (!stack.has(ModDataComponentTypes.CAPTURED_MOB.get())) {
+        if (!stack.has(ModDataComponents.CAPTURED_MOB.get())) {
             return InteractionResult.PASS;
         }
 
@@ -74,7 +74,7 @@ public class TesseractLabyrinthItem extends Item {
 
             BlockPos spawnPos = clickedPos.relative(clickedFace);
 
-            CompoundTag mobData = stack.get(ModDataComponentTypes.CAPTURED_MOB.get());
+            CompoundTag mobData = stack.get(ModDataComponents.CAPTURED_MOB.get());
 
             if (mobData != null && mobData.contains("id")) {
                 Entity entity = EntityType.loadEntityRecursive(mobData, serverLevel, (spawnedEntity) -> {
@@ -86,7 +86,7 @@ public class TesseractLabyrinthItem extends Item {
                 if (entity != null) {
                     serverLevel.addFreshEntityWithPassengers(entity);
 
-                    stack.remove(ModDataComponentTypes.CAPTURED_MOB.get());
+                    stack.remove(ModDataComponents.CAPTURED_MOB.get());
 
                     level.playSound(null, spawnPos.getX(), spawnPos.getY(), spawnPos.getZ(),
                             SoundEvents.CHORUS_FRUIT_TELEPORT, SoundSource.BLOCKS, 1.0F, 1.0F);
@@ -100,8 +100,8 @@ public class TesseractLabyrinthItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @NotNull TooltipContext context,
                                 @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-        if (stack.has(ModDataComponentTypes.CAPTURED_MOB.get())) {
-            CompoundTag mobData = stack.get(ModDataComponentTypes.CAPTURED_MOB.get());
+        if (stack.has(ModDataComponents.CAPTURED_MOB.get())) {
+            CompoundTag mobData = stack.get(ModDataComponents.CAPTURED_MOB.get());
             if (mobData != null && mobData.contains("id")) {
                 String mobId = mobData.getString("id").replace("minecraft:", "").toUpperCase();
 
