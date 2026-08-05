@@ -1,4 +1,4 @@
-package com.ded.necronmod.Item;
+package com.ded.necronmod.item;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;

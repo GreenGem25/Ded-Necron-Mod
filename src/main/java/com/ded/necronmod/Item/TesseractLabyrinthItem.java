@@ -1,4 +1,4 @@
-package com.ded.necronmod.Item;
+package com.ded.necronmod.item;
 
 import com.ded.necronmod.init.ModDataComponents;
 import net.minecraft.core.BlockPos;

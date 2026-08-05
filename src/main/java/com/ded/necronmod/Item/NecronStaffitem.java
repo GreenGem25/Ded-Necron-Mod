@@ -1,7 +1,7 @@
-package com.ded.necronmod.Item;
+package com.ded.necronmod.item;
 
 import com.ded.necronmod.Config;
-import com.ded.necronmod.client.renderer.Item.NecronStaffRenderer;
+import com.ded.necronmod.client.renderer.item.NecronStaffRenderer;
 import com.ded.necronmod.init.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -30,7 +30,6 @@ import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.util.JsonUtil;
 
 import java.util.List;
 import java.util.function.Consumer;

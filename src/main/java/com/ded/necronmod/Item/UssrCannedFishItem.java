@@ -1,4 +1,4 @@
-package com.ded.necronmod.Item;
+package com.ded.necronmod.item;
 
 import com.ded.necronmod.init.ModSounds;
 import net.minecraft.ChatFormatting;
