@@ -1,6 +1,6 @@
-package com.ded.necronmod.client.renderer.item;
+package com.ded.necronmod.client.renderer.item123;
 
-import com.ded.necronmod.item.WaterGunItem;
+import com.ded.necronmod.item123.WaterGunItem;
 import com.ded.necronmod.client.model.WaterGunModel;
 import software.bernie.geckolib.renderer.GeoItemRenderer;
 

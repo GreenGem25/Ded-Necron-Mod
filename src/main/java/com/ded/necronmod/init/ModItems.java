@@ -1,7 +1,7 @@
 package com.ded.necronmod.init;
 
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.item.*;
+import com.ded.necronmod.item123.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
