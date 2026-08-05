@@ -1,6 +1,6 @@
 package com.ded.necronmod.block;
 
-import com.ded.necronmod.Item.ChugunSaw;
+import com.ded.necronmod.item.ChugunSaw;
 import com.ded.necronmod.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;

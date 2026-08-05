@@ -1,10 +1,10 @@
 package com.ded.necronmod.event;
 
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.client.renderer.Item.PsykerBookRenderer;
-import com.ded.necronmod.client.renderer.Item.WaterGunRenderer;
+import com.ded.necronmod.client.renderer.item.PsykerBookRenderer;
+import com.ded.necronmod.client.renderer.item.WaterGunRenderer;
 import com.ded.necronmod.client.renderer.armor.TinFoilHatRenderer;
-import com.ded.necronmod.client.renderer.Item.NecronStaffRenderer;
+import com.ded.necronmod.client.renderer.item.NecronStaffRenderer;
 import com.ded.necronmod.client.renderer.armor.PoopHelmetRenderer;
 import com.ded.necronmod.client.renderer.block.TowerTopRenderer;
 import com.ded.necronmod.client.renderer.entity.CatCaterpillarRenderer;

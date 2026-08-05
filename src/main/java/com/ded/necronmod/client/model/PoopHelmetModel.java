@@ -1,7 +1,7 @@
 package com.ded.necronmod.client.model;
 
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.Item.PoopHelmetItem;
+import com.ded.necronmod.item.PoopHelmetItem;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 
