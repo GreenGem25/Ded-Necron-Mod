@@ -1,7 +1,7 @@
 package com.ded.necronmod.client.model;
 
 import com.ded.necronmod.DedNecronMod;
-import com.ded.necronmod.item123.WaterGunItem;
+import com.ded.necronmod.item.WaterGunItem;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

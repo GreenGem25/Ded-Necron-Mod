@@ -1,6 +1,6 @@
 package com.ded.necronmod.anekdot;
 
-import com.ded.necronmod.item123.PsykerBook;
+import com.ded.necronmod.item.PsykerBook;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
