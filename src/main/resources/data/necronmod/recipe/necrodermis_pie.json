@@ -2,6 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    "SSS",
     "III",
     "IBI"
   ],
@@ -11,6 +12,9 @@
     },
     "B": {
       "item": "minecraft:bread"
+    },
+    "S": {
+      "item": "minecraft:sugar"
     }
   },
   "result": {

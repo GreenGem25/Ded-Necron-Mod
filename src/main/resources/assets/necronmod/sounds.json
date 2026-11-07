@@ -3,7 +3,7 @@
     "category": "record",
     "sounds": [
       {
-        "name": "necronmod:music/slon",
+        "name": "necronmod:music_disc/slon",
         "stream": true
       }
     ]
@@ -13,6 +13,20 @@
     "subtitle": "subtitles.necronmod.coughing_sound",
     "sounds": [
       "necronmod:coughing_sound"
+    ]
+  },
+  "lighter": {
+    "category": "player",
+    "subtitle": "subtitles.necronmod.lighter",
+    "sounds": [
+      "necronmod:lighter"
+    ]
+  },
+  "bhop_music": {
+    "category": "player",
+    "subtitle": "subtitles.necronmod.bhop_music",
+    "sounds": [
+      "necronmod:bhop_music"
     ]
   },
   "ussr_canned_fish_sound": {
@@ -46,10 +60,62 @@
     "subtitle": "subtitles.necronmod.brainrot_sound",
     "sounds": [
       {
-        "name": "necronmod:brainrot_sound",
+        "name": "necronmod:brainrot/brainrot_sound",
         "stream": true,
         "attenuation_distance": 32
       }
+    ]
+  },
+  "brainrot_sound_2": {
+    "category": "block",
+    "subtitle": "subtitles.necronmod.brainrot_sound_2",
+    "sounds": [
+      {
+        "name": "necronmod:brainrot/brainrot_sound_2",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "brainrot_sound_3": {
+    "category": "block",
+    "subtitle": "subtitles.necronmod.brainrot_sound_3",
+    "sounds": [
+      {
+        "name": "necronmod:brainrot/brainrot_sound_3",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "radio_noise": {
+    "sounds": [
+      { "name": "necronmod:radio/noise", "attenuation_distance": 24 }
+    ]
+  },
+  "radio_stream": {
+    "sounds": [
+      { "name": "necronmod:radio/stream_stub", "stream": true, "attenuation_distance": 24 }
+    ]
+  },
+  "radio_noise_portable": {
+    "sounds": [
+      { "name": "necronmod:radio/noise", "attenuation_distance": 16 }
+    ]
+  },
+  "radio_stream_portable": {
+    "sounds": [
+      { "name": "necronmod:radio/stream_stub", "stream": true, "attenuation_distance": 16 }
+    ]
+  },
+  "radio_melody": {
+    "sounds": [
+      { "name": "necronmod:radio/melody", "attenuation_distance": 24 }
+    ]
+  },
+  "radio_melody_portable": {
+    "sounds": [
+      { "name": "necronmod:radio/melody", "attenuation_distance": 16 }
     ]
   }
 }

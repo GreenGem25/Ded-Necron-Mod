@@ -1,6 +1,7 @@
 package com.ded.necronmod.event;
 
 import com.ded.necronmod.DedNecronMod;
+import com.ded.necronmod.client.renderer.entity.CigarFlyRenderer;
 import com.ded.necronmod.client.renderer.item.PsykerBookRenderer;
 import com.ded.necronmod.client.renderer.item.WaterGunRenderer;
 import com.ded.necronmod.client.renderer.armor.TinFoilHatRenderer;
@@ -10,6 +11,7 @@ import com.ded.necronmod.client.renderer.block.TowerTopRenderer;
 import com.ded.necronmod.client.renderer.entity.CatCaterpillarRenderer;
 import com.ded.necronmod.client.renderer.entity.TarakanRenderer;
 import com.ded.necronmod.init.*;
+import com.ded.necronmod.radio.RadioStationsLoader;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.entity.NoopRenderer;
@@ -25,6 +27,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.neoforge.client.event.RenderPlayerEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
@@ -32,6 +35,11 @@ import org.jetbrains.annotations.NotNull;
 
 @EventBusSubscriber(modid = DedNecronMod.MODID, value = Dist.CLIENT)
 public class ModClientEvents {
+
+    @SubscribeEvent
+    public static void onRegisterReloadListeners(RegisterClientReloadListenersEvent event) {
+        event.registerReloadListener(new RadioStationsLoader());
+    }
 
     @SubscribeEvent
     public static void registerItemProperties(FMLClientSetupEvent event) {
@@ -126,6 +134,7 @@ public class ModClientEvents {
 
         event.registerEntityRenderer(ModEntities.CAT_CATERPILLAR.get(), CatCaterpillarRenderer::new);
         event.registerEntityRenderer(ModEntities.TARAKAN.get(), TarakanRenderer::new);
+        event.registerEntityRenderer(ModEntities.CIGARFLY.get(), CigarFlyRenderer::new);
         event.registerEntityRenderer(ModEntities.WATER_PROJECTILE.get(), NoopRenderer::new);
     }
 

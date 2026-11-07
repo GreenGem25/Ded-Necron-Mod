@@ -52,18 +52,23 @@
 
   "item.necronmod.cat_caterpillar_spawn_egg": "Яйцо призыва котогусеницы",
   "item.necronmod.tarakan_spawn_egg": "Яйцо призыва таракана",
+  "item.necronmod.cigarfly_spawn_egg": "Яйцо призыва сигаретной мухи",
 
   "item.necronmod.tin_foil_hat": "Шапочка из фольги",
   "tooltip.necronmod.tin_foil_hat_desc": "Защищает от 5G излучения",
 
   "item.necronmod.psyker_book": "Книга анекдотов псайкера",
   "item.necronmod.water_gun": "Водяной пистолет",
+  "item.necronmod.portable_radio": "Портативное радио",
 
   "item.necronmod.napoleon_cake": "Торт \"Наполеон\"",
   "block.necronmod.napoleon_cake": "Торт \"Наполеон\"",
 
   "item.necronmod.shlakoblock": "Шлакоблок",
   "block.necronmod.shlakoblock": "Шлакоблок",
+
+  "item.necronmod.radio_block": "Радио",
+  "block.necronmod.radio_block": "Радио",
 
   "item.necronmod.sugar_block": "Блок сахара",
   "block.necronmod.sugar_block": "Блок сахара",
@@ -116,12 +121,19 @@
   "necronmod.configuration.showPhylacteryParticles": "Частицы зелья от эффекта Филактерии",
   "necronmod.configuration.showPhylacteryParticles.tooltip": "Делает частицы зелья видимыми. Default: true",
 
+  "necronmod.configuration.internetRadio": "Интернет радио",
+  "necronmod.configuration.internetRadio.tooltip": "Включает функцию интернет радио. Default: true",
+
   "effect.necronmod.phylactery_effect": "Филактерия",
   "effect.necronmod.lung_cancer_effect": "Рак лёгких",
 
   "entity.necronmod.cat_caterpillar": "Котогусеница",
   "entity.necronmod.tarakan": "Таракан",
+  "entity.necronmod.cigarfly": "Сигаретная муха",
 
   "config.jade.plugin_necronmod.chugun_saw": "Уэээ",
-  "tooltip.necronmod.chugun_saw_required": "Для разрушения необходима Ножовка по чугуну"
+  "tooltip.necronmod.chugun_saw_required": "Для разрушения необходима Ножовка по чугуну",
+
+  "death.attack.lung_cancer": "%s, куренье вредно для здоровья!",
+  "death.attack.brainrot": "Мозги игрока %s были сожжены"
 }

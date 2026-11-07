@@ -39,6 +39,23 @@ public class ModItems {
     public static final DeferredHolder<Item, WaterGunItem> WATER_GUN = ITEMS.register("water_gun",
             () -> new WaterGunItem(new Item.Properties()));
 
+    public static final DeferredHolder<Item, PortableRadioItem> RADIO_ITEM = ITEMS.register("portable_radio",
+            () -> new PortableRadioItem(new Item.Properties()));
+
+    public static final DeferredHolder<Item, Item> BAMBOO_CIGARETTE = ITEMS.register("bamboo_cigarette",
+            () -> new BambooCigarette(new Item.Properties().stacksTo(32)){
+                @Override
+                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
+
+                    tooltipComponents.add(Component.empty());
+
+                    tooltipComponents.add(Component.translatable("tooltip.necronmod.bamboo_cigarette_desc")
+                            .withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
     // Weapons & Instruments
 
     public static final DeferredHolder<Item, NecronStaffitem> NECRON_STAFF = ITEMS.register("necron_staff",
@@ -207,6 +224,21 @@ public class ModItems {
     public static final DeferredHolder<Item, BlockItem> TOWER_TOP = ITEMS.register("tower_top",
             () -> new BlockItem(ModBlocks.TOWER_TOP.get(), new Item.Properties()));
 
+    public static final DeferredHolder<Item, BlockItem> RADIO_BLOCK = ITEMS.register("radio_block",
+            () -> new BlockItem(ModBlocks.RADIO_BLOCK.get(), new Item.Properties()));
+
+//    public static final DeferredHolder<Item, BlockItem> ORK_TOTEM = ITEMS.register("ork_totem",
+//            () -> new BlockItem(ModBlocks.ORK_TOTEM.get(), new Item.Properties()));
+//
+//    public static final DeferredHolder<Item, BlockItem> INFECTED_DIRT = ITEMS.register("infected_dirt",
+//            () -> new BlockItem(ModBlocks.INFECTED_DIRT.get(), new Item.Properties()));
+//
+//    public static final DeferredHolder<Item, BlockItem> INFECTED_STONE = ITEMS.register("infected_stone",
+//            () -> new BlockItem(ModBlocks.INFECTED_STONE.get(), new Item.Properties()));
+//
+//    public static final DeferredHolder<Item, BlockItem> INFECTED_GRASS_BLOCK = ITEMS.register("infected_grass_block",
+//            () -> new BlockItem(ModBlocks.INFECTED_GRASS_BLOCK.get(), new Item.Properties()));
+
     // Foods
 
     public static final DeferredHolder<Item, BlockItem> NAPOLEON_CAKE = ITEMS.register("napoleon_cake",
@@ -314,28 +346,6 @@ public class ModItems {
                             .build()
                     )));
 
-    public static final DeferredHolder<Item, Item> BAMBOO_CIGARETTE = ITEMS.register("bamboo_cigarette",
-            () -> new Item(new Item.Properties().food(
-                    new FoodProperties.Builder()
-                            .nutrition(1)
-                            .saturationModifier(1.0F)
-                            .fast()
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1), 1.0F)
-                            .effect(() -> new MobEffectInstance(ModEffects.LUNG_CANCER_EFFECT, 9999, 1), 1.0F)
-                            .build()
-            )){
-                @Override
-                public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-
-                    tooltipComponents.add(Component.empty());
-
-                    tooltipComponents.add(Component.translatable("tooltip.necronmod.bamboo_cigarette_desc")
-                            .withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
-
-                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-                }
-            });
-
     public static final DeferredHolder<Item, Item> STEKLOVATA_CANDY = ITEMS.register("steklovata_candy",
             () -> new Item(new Item.Properties()
                     .stacksTo(16)
@@ -423,6 +433,14 @@ public class ModItems {
                     ModEntities.TARAKAN,
                     0x754a0d,
                     0x916e3c,
+                    new Item.Properties()
+            ));
+
+    public static final DeferredHolder<Item, Item> CIGARFLY_SPAWN_EGG = ITEMS.register("cigarfly_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    ModEntities.CIGARFLY,
+                    0xcad6eb,
+                    0xba7918c,
                     new Item.Properties()
             ));
 

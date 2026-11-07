@@ -23,6 +23,9 @@ public class ModBlocks {
     public static final DeferredHolder<Block, Block> SHLAKOBLOCK = BLOCKS.register("shlakoblock",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
 
+    public static final DeferredHolder<Block, RadioBlock> RADIO_BLOCK = BLOCKS.register("radio_block",
+            () -> new RadioBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)));
+
     public static final DeferredHolder<Block, Block> SUGAR_BLOCK = BLOCKS.register("sugar_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.4F, 3.0F)
@@ -73,6 +76,20 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .noOcclusion()
             ));
+
+    public static final DeferredHolder<Block, Block> ORK_TOTEM = BLOCKS.register("ork_totem",
+            () -> new OrkTotemBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK)
+                    .noOcclusion()
+            ));
+
+    public static final DeferredHolder<Block, Block> INFECTED_DIRT = BLOCKS.register("infected_dirt",
+            () -> new OrkInfectedBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT)));
+
+    public static final DeferredHolder<Block, Block> INFECTED_STONE = BLOCKS.register("infected_stone",
+            () -> new OrkInfectedBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredHolder<Block, Block> INFECTED_GRASS_BLOCK = BLOCKS.register("infected_grass_block",
+            () -> new OrkInfectedBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

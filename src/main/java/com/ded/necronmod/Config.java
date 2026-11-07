@@ -35,6 +35,11 @@ public class Config {
             .translation("necronmod.configuration.showPhylacteryParticles")
             .define("showPhylacteryParticles", true);
 
+    public static final ModConfigSpec.BooleanValue INTERNET_RADIO = BUILDER
+            .comment("Should internet radio feature be enabled. Default: true")
+            .translation("necronmod.configuration.internetRadio")
+            .define("internetRadio", true);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
 }

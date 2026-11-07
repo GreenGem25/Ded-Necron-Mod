@@ -2,6 +2,7 @@ package com.ded.necronmod;
 
 import com.ded.necronmod.block.entity.ChunkLoaderObeliskBlockEntity;
 import com.ded.necronmod.init.*;
+import com.ded.necronmod.util.InfectionManager;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent;
 import net.neoforged.neoforge.common.world.chunk.TicketController;
@@ -59,6 +60,11 @@ public class DedNecronMod {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         LOGGER.info("HELLO FROM DED NECRON MOD COMMON SETUP");
+
+        event.enqueueWork(() -> {
+            InfectionManager.init();
+            LOGGER.info("InfectionManager successfully initialized!");
+        });
     }
 
     @SubscribeEvent

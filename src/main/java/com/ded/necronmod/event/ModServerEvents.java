@@ -3,9 +3,15 @@ package com.ded.necronmod.event;
 import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.anekdot.*;
 import com.ded.necronmod.entity.CatCaterpillarEntity;
+import com.ded.necronmod.entity.CigarFlyEntity;
 import com.ded.necronmod.entity.TarakanEntity;
+import com.ded.necronmod.init.ModDamageTypes;
+import com.ded.necronmod.init.ModEffects;
 import com.ded.necronmod.init.ModEntities;
 import com.ded.necronmod.init.ModItems;
+import com.ded.necronmod.util.FrameAnimationManager;
+import com.ded.necronmod.util.PlayCigaretteAnimationPayload;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.animal.Animal;
@@ -22,6 +28,8 @@ import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+
+import java.util.Objects;
 
 @EventBusSubscriber(modid = DedNecronMod.MODID)
 public class ModServerEvents {
@@ -41,6 +49,14 @@ public class ModServerEvents {
                 SpawnPlacementTypes.ON_GROUND,
                 Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 TarakanEntity::canSpawn,
+                RegisterSpawnPlacementsEvent.Operation.REPLACE
+        );
+
+        event.register(
+                ModEntities.CIGARFLY.get(),
+                SpawnPlacementTypes.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Animal::checkAnimalSpawnRules,
                 RegisterSpawnPlacementsEvent.Operation.REPLACE
         );
     }
@@ -107,6 +123,7 @@ public class ModServerEvents {
     @SubscribeEvent
     public static void registerEntityAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.CAT_CATERPILLAR.get(), CatCaterpillarEntity.createAttributes().build());
+        event.put(ModEntities.CIGARFLY.get(), CigarFlyEntity.createAttributes().build());
         event.put(ModEntities.TARAKAN.get(), TarakanEntity.createAttributes().build());
     }
 
@@ -124,6 +141,12 @@ public class ModServerEvents {
                 StopJokePayload.TYPE,
                 StopJokePayload.STREAM_CODEC,
                 (payload, context) -> context.enqueueWork(NativeTTS::stopSpeech)
+        );
+
+        registrar.playToClient(
+                PlayCigaretteAnimationPayload.TYPE,
+                PlayCigaretteAnimationPayload.STREAM_CODEC,
+                (payload, context) -> context.enqueueWork(FrameAnimationManager::play)
         );
     }
 }

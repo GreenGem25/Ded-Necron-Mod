@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "necronmod:block/radio_block_top",
+    "up": "necronmod:block/radio_block_top",
+    "down": "necronmod:block/radio_block_side",
+    "north": "necronmod:block/radio_block_side",
+    "south": "necronmod:block/radio_block_side",
+    "east": "necronmod:block/radio_block_side",
+    "west": "necronmod:block/radio_block_side"
+  }
+}

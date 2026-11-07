@@ -2,8 +2,10 @@ package com.ded.necronmod.block.entity;
 
 import com.ded.necronmod.entity.TarakanEntity;
 import com.ded.necronmod.init.ModBlockEntities;
+import com.ded.necronmod.init.ModDamageTypes;
 import com.ded.necronmod.init.ModItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -65,9 +67,9 @@ public class TowerTopBlockEntity extends BlockEntity implements GeoBlockEntity {
             });
 
             if (!entities.isEmpty()) {
-                DamageSource damageSource = level.damageSources().magic();
                 for (LivingEntity entity : entities) {
-                    entity.hurt(damageSource, 2.0F);
+                    entity.hurt(new DamageSource(level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE)
+                            .getHolderOrThrow(ModDamageTypes.BRAINROT)), 2.0F);
                     entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 60, 0, false, false));
                 }
             }

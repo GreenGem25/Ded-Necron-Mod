@@ -2,6 +2,7 @@ package com.ded.necronmod.init;
 
 import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.entity.CatCaterpillarEntity;
+import com.ded.necronmod.entity.CigarFlyEntity;
 import com.ded.necronmod.entity.TarakanEntity;
 import com.ded.necronmod.entity.WaterProjectileEntity;
 import net.minecraft.core.registries.Registries;
@@ -27,6 +28,13 @@ public class ModEntities {
                     () -> EntityType.Builder.of(TarakanEntity::new, MobCategory.MONSTER)
                             .sized(0.5F, 0.2F)
                             .build("tarakan")
+            );
+
+    public static final DeferredHolder<EntityType<?>, EntityType<CigarFlyEntity>> CIGARFLY =
+            ENTITY_TYPES.register("cigarfly",
+                    () -> EntityType.Builder.of(CigarFlyEntity::new, MobCategory.CREATURE)
+                            .sized(0.5F, 0.2F)
+                            .build("cigarfly")
             );
 
     public static final DeferredHolder<EntityType<?>, EntityType<WaterProjectileEntity>> WATER_PROJECTILE =

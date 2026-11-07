@@ -17,6 +17,12 @@ public class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> COUGHING_SOUND = SOUNDS.register("coughing_sound",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "coughing_sound")));
 
+    public static final DeferredHolder<SoundEvent, SoundEvent> LIGHTER = SOUNDS.register("lighter",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "lighter")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> BHOP_MUSIC = SOUNDS.register("bhop_music",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "bhop_music")));
+
     public static final DeferredHolder<SoundEvent, SoundEvent> USSR_CANNED_FISH_SOUND = SOUNDS.register("ussr_canned_fish_sound",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "ussr_canned_fish_sound")));
 
@@ -31,6 +37,30 @@ public class ModSounds {
 
     public static final DeferredHolder<SoundEvent, SoundEvent> BRAINROT_SOUND = SOUNDS.register("brainrot_sound",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "brainrot_sound")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> BRAINROT_SOUND_2 = SOUNDS.register("brainrot_sound_2",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "brainrot_sound_2")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> BRAINROT_SOUND_3 = SOUNDS.register("brainrot_sound_3",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "brainrot_sound_3")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> RADIO_NOISE = SOUNDS.register("radio_noise",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "radio_noise")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> RADIO_STREAM = SOUNDS.register("radio_stream",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "radio_stream")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> RADIO_NOISE_PORTABLE = SOUNDS.register("radio_noise_portable",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "radio_noise_portable")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> RADIO_STREAM_PORTABLE = SOUNDS.register("radio_stream_portable",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "radio_stream_portable")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> RADIO_MELODY = SOUNDS.register("radio_melody",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "radio_melody")));
+
+    public static final DeferredHolder<SoundEvent, SoundEvent> RADIO_MELODY_PORTABLE = SOUNDS.register("radio_melody_portable",
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(DedNecronMod.MODID, "radio_melody_portable")));
 
     public static void register(IEventBus bus) {
         SOUNDS.register(bus);

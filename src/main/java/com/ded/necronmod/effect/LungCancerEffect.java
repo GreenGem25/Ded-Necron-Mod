@@ -1,8 +1,11 @@
 package com.ded.necronmod.effect;
 
+import com.ded.necronmod.init.ModDamageTypes;
 import com.ded.necronmod.init.ModSounds;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -23,7 +26,7 @@ public class LungCancerEffect extends MobEffect {
         if (!entity.level().isClientSide()) {
             RandomSource random = entity.getRandom();
 
-            if (random.nextFloat() < 0.005F) {
+            if (random.nextFloat() < 0.005F * (amplifier + 1)) {
 
                 entity.level().playSound(
                         null,
@@ -33,6 +36,9 @@ public class LungCancerEffect extends MobEffect {
                         1.0F,
                         0.8F + random.nextFloat() * 0.4F
                 );
+
+                entity.hurt(new DamageSource(entity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE)
+                        .getHolderOrThrow(ModDamageTypes.LUNG_CANCER)), 2.0F);
             }
         }
         return true;

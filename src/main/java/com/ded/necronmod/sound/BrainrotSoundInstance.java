@@ -7,6 +7,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
 import net.minecraft.client.resources.sounds.SoundInstance;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -15,13 +16,17 @@ import net.minecraft.world.phys.Vec3;
 public class BrainrotSoundInstance extends AbstractTickableSoundInstance {
     private static final float HEARING_DISTANCE = 30F;
     private static final float UNLOAD_DISTANCE = 50F;
+    private static final int FADE_OUT_TICKS = 20;
 
     private final TowerTopBlockEntity antenna;
+    private final int maxTicks;
+    private int ticksPlayed = 0;
 
-    public BrainrotSoundInstance(TowerTopBlockEntity antenna) {
-        super(ModSounds.BRAINROT_SOUND.get(), SoundSource.BLOCKS, SoundInstance.createUnseededRandom());
+    public BrainrotSoundInstance(TowerTopBlockEntity antenna, SoundEvent soundEvent, int durationTicks) {
+        super(soundEvent, SoundSource.BLOCKS, SoundInstance.createUnseededRandom());
 
         this.antenna = antenna;
+        this.maxTicks = durationTicks;
 
         this.looping = true;
         this.delay = 0;
@@ -67,11 +72,20 @@ public class BrainrotSoundInstance extends AbstractTickableSoundInstance {
             return;
         }
 
-        float t = (float)(distance / HEARING_DISTANCE);
+        float t = Mth.clamp((float)(distance / HEARING_DISTANCE), 0F, 1F);
 
-        volume = Mth.clamp((1F - t) * (1F - t), 0F, 1F);
+        float baseVolume = 1F - (t * t);
+        int remaining = maxTicks - ticksPlayed;
+        float fade = remaining < FADE_OUT_TICKS ? (float) remaining / FADE_OUT_TICKS : 1.0F;
+
+        volume = baseVolume * fade;
 
         pitch = 1.0F;
+
+        ticksPlayed++;
+        if (ticksPlayed >= maxTicks) {
+            stop(); // менеджер увидит isStopped() и запустит следующий
+        }
     }
 
     private void updatePosition() {

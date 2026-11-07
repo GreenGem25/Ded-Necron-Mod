@@ -141,11 +141,6 @@ public class TarakanEntity extends Animal implements GeoEntity {
             return true;
         }
 
-        if (pos.getY() < 50
-                && !level.canSeeSky(pos))
-        {
-        }
-
         return pos.getY() < 50
                 && !level.canSeeSky(pos);
     }

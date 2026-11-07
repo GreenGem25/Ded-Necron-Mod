@@ -1,6 +1,8 @@
 package com.ded.necronmod.init;
 
 import com.ded.necronmod.DedNecronMod;
+import com.ded.necronmod.radio.RadioSettings;
+import com.ded.necronmod.radio.RadioSettingsCodecs;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
@@ -16,6 +18,13 @@ public class ModDataComponents {
             COMPONENT_TYPES.register("captured_mob",
                     () -> DataComponentType.<CompoundTag>builder()
                             .persistent(CompoundTag.CODEC)
+                            .build());
+
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<RadioSettings>> RADIO_SETTINGS =
+            COMPONENT_TYPES.register("radio_settings",
+                    () -> DataComponentType.<RadioSettings>builder()
+                            .persistent(RadioSettingsCodecs.CODEC)
+                            .networkSynchronized(RadioSettingsCodecs.STREAM_CODEC)
                             .build());
 
     public static void register(IEventBus eventBus) {

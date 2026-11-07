@@ -1,0 +1,3804 @@
+{
+  "version": 1,
+  "generated": "2026-10-21T23:12:22+00:00",
+  "slotsPerCountry": 16,
+  "countries": [
+    {
+      "code": "MX",
+      "name": "Мексика",
+      "timezone": "America/Mexico_City",
+      "slots": {
+        "0": {
+          "id": "mx-radio-anime-nexus",
+          "uuid": "71769df1-3225-47f9-901c-1e4f7c1f3334",
+          "name": "Radio Anime Nexus",
+          "region": "Coahuila",
+          "genre": "anime, jpop",
+          "tier": "major",
+          "urls": [
+            "https://cast.animenexusla.com/radio/8000/animenexus"
+          ],
+          "lat": 25.4254,
+          "lon": -100.9891
+        },
+        "4": {
+          "id": "mx-el-heraldo-radio-la-h-que-si-suena",
+          "uuid": "f99e24fe-03bf-41d6-851d-db41475d7dc5",
+          "name": "EL HERALDO RADIO: La \"H\" Que Sí Suena 🆕",
+          "region": "Ciudad de México",
+          "genre": "98.5 fm, américa",
+          "tier": "minor",
+          "urls": [
+            "https://stream.radiojar.com/ce31v3yah8nwv"
+          ],
+          "lat": 19.4332,
+          "lon": -99.1331
+        },
+        "6": {
+          "id": "mx-la-ke-buena-95-9-fm-puerto-vallarta",
+          "uuid": "0a20a1e3-c402-456b-a88b-0f95266cae1d",
+          "name": "La Ke Buena 95.9 FM Puerto Vallarta",
+          "region": "Jalisco",
+          "genre": "banda, banda norteña",
+          "tier": "minor",
+          "urls": [
+            "https://playradio.mx/proxy/kebuenav?mp=/stream"
+          ]
+        },
+        "8": {
+          "id": "mx-los-40-principales-mexico",
+          "uuid": "86fb3b9a-2b61-11e8-91bf-52543be04c81",
+          "name": "Los 40 Principales México",
+          "region": "Ciudad de México",
+          "genre": "hits, latin pop",
+          "tier": "major",
+          "urls": [
+            "http://26153.live.streamtheworld.com:3690/LOS40_MEXICO_SC",
+            "http://26383.live.streamtheworld.com:80/LOS40_MEXICO_SC"
+          ]
+        },
+        "10": {
+          "id": "mx-discos-guardados",
+          "uuid": "e0b797d0-9c35-4937-b7f9-055f4d002eea",
+          "name": "Discos Guardados",
+          "region": "Mexico City",
+          "genre": "exitos, oldies",
+          "tier": "minor",
+          "urls": [
+            "http://stream-151.zeno.fm/1nx2aume9zquv?zs=_wOIfEHbRUueCOW9I8aUNg"
+          ],
+          "lat": 19.4341,
+          "lon": -99.0953
+        },
+        "12": {
+          "id": "mx-los40",
+          "uuid": "83255f04-4467-4120-b951-65dc3bc942d7",
+          "name": "LOS40",
+          "region": "Ciudad de México",
+          "genre": "101.7, 101.7 fm",
+          "tier": "minor",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_MEXICO_SC"
+          ],
+          "lat": 19.4368,
+          "lon": -99.1315
+        },
+        "15": {
+          "id": "mx-beatles-radio",
+          "uuid": "21df351a-9eac-45e2-a83a-f6709da6d6e0",
+          "name": "BEATLES RADIO",
+          "region": "",
+          "genre": "classic rock, the beatles",
+          "tier": "major",
+          "urls": [
+            "http://stream.zeno.fm/e4auhdgm6cquv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "CU",
+      "name": "Куба",
+      "timezone": "America/Havana",
+      "slots": {
+        "0": {
+          "id": "cu-96-7-radio-rebelde-fm",
+          "uuid": "fe653321-02bc-47ed-9102-f50e1abc5479",
+          "name": "96.7 Radio Rebelde FM",
+          "region": "La Habana",
+          "genre": "107.9 fm, 96.7 fm",
+          "tier": "major",
+          "urls": [
+            "https://theonestopradio.com/stream?url=https://icecast.teveo.cu/zrXXWK9F"
+          ]
+        },
+        "2": {
+          "id": "cu-radio-rebelde-1180-am",
+          "uuid": "98920fee-500c-49c8-a973-ff4179967f50",
+          "name": "Radio Rebelde 1180 AM",
+          "region": "La Habana",
+          "genre": "1180 am, 5025 khz",
+          "tier": "minor",
+          "urls": [
+            "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/kHKL7tWd"
+          ],
+          "lat": 23.108,
+          "lon": -82.3806
+        },
+        "6": {
+          "id": "cu-la-salsa-cubana",
+          "uuid": "629c4148-251f-4de9-8f67-d6f255968eea",
+          "name": "La salsa cubana",
+          "region": "Florida",
+          "genre": "reggeton",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/uf2r0d5ny39uv"
+          ],
+          "lat": 26.5934,
+          "lon": -81.6321
+        },
+        "9": {
+          "id": "cu-neonradioxl",
+          "uuid": "46012a3d-b1da-4bf8-903b-1ee003353fc6",
+          "name": "Neonradioxl",
+          "region": "La Habana",
+          "genre": "latino",
+          "tier": "minor",
+          "urls": [
+            "http://s12.myradiostream.com:16754/listen.m4a"
+          ],
+          "lat": 23.0275,
+          "lon": -82.0846
+        },
+        "11": {
+          "id": "cu-radio-campesina-cubana",
+          "uuid": "aefb9ed3-da01-4a43-94f7-4ba2ae1b5dcf",
+          "name": "Radio Campesina Cubana",
+          "region": "La Habana",
+          "genre": "salsa, son",
+          "tier": "minor",
+          "urls": [
+            "https://radiocampesinacubana.stream.laut.fm/radiocampesinacubana?uuid=c73fd6a2-c078-f1e4-f953-fe9cc589bded&t302=2026-10-17_22-33-45",
+            "https://stream.laut.fm/radiocampesinacubana"
+          ]
+        },
+        "13": {
+          "id": "cu-radio-cadena-agramonte-105-3-mhz",
+          "uuid": "869f7609-c8bf-4785-9b7f-64ab09908999",
+          "name": "Radio Cadena Agramonte 105.3 MHz",
+          "region": "Camagüey",
+          "genre": "105.3 fm, cadena agramonte",
+          "tier": "minor",
+          "urls": [
+            "https://theonestopradio.com/stream?url=https://icecast.teveo.cu/j99xztkT"
+          ],
+          "lat": 21.3907,
+          "lon": -77.9395
+        },
+        "15": {
+          "id": "cu-cvcradio-online",
+          "uuid": "d6de5e49-71b0-4db7-9f33-f2fde8a0044b",
+          "name": "CVCradio-online",
+          "region": "Cienfuegos",
+          "genre": "alternative, radio online",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/2ajykhn6m8hvv"
+          ],
+          "lat": 22.3437,
+          "lon": -80.2721
+        }
+      }
+    },
+    {
+      "code": "US",
+      "name": "США",
+      "timezone": "America/New_York",
+      "slots": {
+        "0": {
+          "id": "us-classic-vinyl-hd",
+          "uuid": "d1a54d2e-623e-4970-ab11-35f7b56c5ec3",
+          "name": "Classic Vinyl HD",
+          "region": "New York NY",
+          "genre": "1930, 1940",
+          "tier": "major",
+          "urls": [
+            "https://icecast.walmradio.com:8443/classic"
+          ],
+          "lat": 40.7517,
+          "lon": -73.9754
+        },
+        "2": {
+          "id": "us-nyc-house-radio",
+          "uuid": "a626bc71-2d77-11e8-91bf-52543be04c81",
+          "name": "NYC House Radio",
+          "region": "New York",
+          "genre": "edm, electro",
+          "tier": "minor",
+          "urls": [
+            "http://www.ophanim.net:8400/;"
+          ]
+        },
+        "7": {
+          "id": "us-cnn",
+          "uuid": "33178054-56cd-449c-8cf7-412cc7be936a",
+          "name": "CNN",
+          "region": "",
+          "genre": "news",
+          "tier": "major",
+          "urls": [
+            "https://tunein.cdnstream1.com/2868_96.mp3"
+          ]
+        },
+        "9": {
+          "id": "us-8ca28b1f",
+          "uuid": "8ca28b1f-8f5d-4039-a322-52a13630159d",
+          "name": "美国中文电台-旧金山",
+          "region": "San Francisco",
+          "genre": "chinese, news",
+          "tier": "minor",
+          "urls": [
+            "http://radiokest.serverroom.us:6670/;?type=http&nocache=3295"
+          ]
+        },
+        "11": {
+          "id": "us-nonstop-oldies",
+          "uuid": "7feff0ea-6984-4a22-901b-8613ccedf512",
+          "name": "NonStop Oldies",
+          "region": "Los Angeles CA",
+          "genre": "motown, soul & great rock n' roll from the 60s & 70s",
+          "tier": "minor",
+          "urls": [
+            "https://ais-sa2.cdnstream1.com/2383_128.mp3"
+          ]
+        },
+        "13": {
+          "id": "us-gotradio-the-80-s",
+          "uuid": "bd63c427-e716-4272-aead-de709c42d736",
+          "name": "GotRadio The 80's",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://pureplay.cdnstream1.com/6009_128.mp3"
+          ]
+        },
+        "15": {
+          "id": "us-101-smooth-jazz",
+          "uuid": "d28420a4-eccf-47a2-ace1-088c7e7cb7e0",
+          "name": "101 SMOOTH JAZZ",
+          "region": "California",
+          "genre": "easy listening, jazz",
+          "tier": "major",
+          "urls": [
+            "http://jking.cdnstream1.com/b22139_128mp3"
+          ]
+        }
+      }
+    },
+    {
+      "code": "PE",
+      "name": "Перу",
+      "timezone": "America/Lima",
+      "slots": {
+        "0": {
+          "id": "pe-la-salsa-maestra",
+          "uuid": "d1a97206-70d8-477d-87de-fc728e898171",
+          "name": "La Salsa Maestra",
+          "region": "Lima",
+          "genre": "afro-latin music, salsa",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/c1skkw28pfeuv"
+          ]
+        },
+        "4": {
+          "id": "pe-radiomix-aqp-rock-pop-en-espanol-dj-ethamx",
+          "uuid": "0420a2c9-5ba9-4a95-8ebd-79b71e4aa3ab",
+          "name": "RadioMix AQP Rock-Pop en Español (Dj Ethamx)",
+          "region": "Arequipa",
+          "genre": "latin rock, rock en español",
+          "tier": "minor",
+          "urls": [
+            "https://stream-179.surfernetwork.com/mwxnk1y5btvvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJtd3huazF5NWJ0dnZ2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlNJYzJVLXFUUnpXQ1VtNVY4SURJNGciLCJpYXQiOjE3OTIyMzk0NTEsImV4cCI6MTc5MjIzOTUxMX0.KthSQBq7bJxcrb9C-46zCR8E1JloFvL-dDboqQOsiko",
+            "https://stream-150.zeno.fm/mwxnk1y5btvvv"
+          ]
+        },
+        "6": {
+          "id": "pe-radio-inkafuego-en-vivo",
+          "uuid": "d8e71f6d-3277-45d1-b9f2-840676282d77",
+          "name": "Radio inkafuego en vivo",
+          "region": "Lima",
+          "genre": "cumbia peruana",
+          "tier": "minor",
+          "urls": [
+            "https://mediastreamm.com/8362/stream"
+          ]
+        },
+        "8": {
+          "id": "pe-mundo-beatles-radio-mp3",
+          "uuid": "ab21a670-5d48-4369-976d-313df87cf791",
+          "name": "Mundo Beatles Radio (MP3)",
+          "region": "Lima",
+          "genre": "classic rock, indie",
+          "tier": "minor",
+          "urls": [
+            "http://stream.zeno.fm/y79be89qxrhvv"
+          ]
+        },
+        "10": {
+          "id": "pe-la-noventera",
+          "uuid": "fb96f767-c155-41f5-b25f-1b6628d772e1",
+          "name": "La Noventera",
+          "region": "",
+          "genre": "90s, classic rock",
+          "tier": "major",
+          "urls": [
+            "https://host.gometri.com/proxy/lanoventera/stream/"
+          ]
+        },
+        "12": {
+          "id": "pe-rock-pop",
+          "uuid": "637f70ac-1493-4801-8928-ff3c6343ebd9",
+          "name": "Rock&Pop",
+          "region": "",
+          "genre": "rock",
+          "tier": "minor",
+          "urls": [
+            "http://stream.zeno.fm/0k6va3rg8rhvv"
+          ]
+        },
+        "15": {
+          "id": "pe-peru-folk-radio",
+          "uuid": "c4d96664-6f34-4fd4-b6b0-0a5b46bede35",
+          "name": "Peru folk radio",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://raymistream.net/listen/perufolkradio/live"
+          ],
+          "lat": -10.4187,
+          "lon": -76.2519
+        }
+      }
+    },
+    {
+      "code": "JM",
+      "name": "Ямайка",
+      "timezone": "America/Jamaica",
+      "slots": {
+        "0": {
+          "id": "jm-fame-95fm",
+          "uuid": "c4c9b728-d679-4b04-b57a-672dfef78d56",
+          "name": "Fame 95FM",
+          "region": "",
+          "genre": "dancehall, pop music",
+          "tier": "major",
+          "urls": [
+            "https://stream.zenolive.com/d5mn12bchkeuv"
+          ]
+        },
+        "3": {
+          "id": "jm-gospel-fm-jamaica",
+          "uuid": "5283ecd5-d4b6-4487-82ce-9d64dd086089",
+          "name": "Gospel FM Jamaica",
+          "region": "",
+          "genre": "christian, christian music",
+          "tier": "minor",
+          "urls": [
+            "https://stream-37.zeno.fm/zpksre88rm0uv"
+          ]
+        },
+        "7": {
+          "id": "jm-radio-jamaica-94fm",
+          "uuid": "dd008ad3-f005-4c4c-a0c1-15d4fc62621c",
+          "name": "Radio Jamaica 94FM",
+          "region": "Kingston",
+          "genre": "news, talk",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/cub84trbgy5tv"
+          ]
+        },
+        "9": {
+          "id": "jm-reggae-vibe-radio",
+          "uuid": "c9b25c3b-f04f-491b-b29c-7c061850220c",
+          "name": "reggae vibe radio",
+          "region": "",
+          "genre": "reggae",
+          "tier": "minor",
+          "urls": [
+            "https://stream.radiojar.com/qtv562rrs1duv"
+          ],
+          "lat": 18.0412,
+          "lon": -76.8369
+        },
+        "11": {
+          "id": "jm-zip-fm-103-fm",
+          "uuid": "394409b6-bb5c-43b1-ad3f-1315d31532b2",
+          "name": "Zip FM 103 FM",
+          "region": "Surrey county, Kingston, 1B Courtney Walsh Drive",
+          "genre": "alternative, dance",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/c0ytcn43vxquv"
+          ],
+          "lat": 18.0139,
+          "lon": -76.7994
+        },
+        "13": {
+          "id": "jm-love-101-fm",
+          "uuid": "76c8b817-c100-4030-a6d8-2f1d5ebb6701",
+          "name": "Love 101 FM",
+          "region": "",
+          "genre": "christian, christian-gospel",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/webzstrtpy5tv"
+          ]
+        },
+        "15": {
+          "id": "jm-radio-jamaica-94-fm",
+          "uuid": "20164ed9-c400-4aa1-8e73-ebb8dd5d8401",
+          "name": "Radio Jamaica 94 FM",
+          "region": "Surrey county, Kingston, Lyndhurst drive",
+          "genre": "caribbean music, local music",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/ebqnzkvyv9duv"
+          ],
+          "lat": 18.002,
+          "lon": -76.8008
+        }
+      }
+    },
+    {
+      "code": "CA",
+      "name": "Канада",
+      "timezone": "America/Toronto",
+      "slots": {
+        "0": {
+          "id": "ca-airport-lounge-radio",
+          "uuid": "02569932-0b3c-4938-9d3e-b00b2158d40b",
+          "name": "AIRPORT LOUNGE RADIO",
+          "region": "Ontario",
+          "genre": "aereoporto, airport",
+          "tier": "major",
+          "urls": [
+            "https://az1.mediacp.eu/listen/airport-lounge-radio/radio.mp3"
+          ],
+          "lat": 43.9615,
+          "lon": -79.8519
+        },
+        "2": {
+          "id": "ca-calm-radio-cello",
+          "uuid": "96392018-0601-11e8-ae97-52543be04c81",
+          "name": "Calm Radio - Cello",
+          "region": "Ontario",
+          "genre": "cello, classical",
+          "tier": "minor",
+          "urls": [
+            "http://streams.calmradio.com:4628/stream"
+          ]
+        },
+        "5": {
+          "id": "ca-indie88",
+          "uuid": "80e56153-1af2-43eb-8352-424524f804ed",
+          "name": "Indie88",
+          "region": "Ontario",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://localradio.streamb.live/SB00348"
+          ]
+        },
+        "8": {
+          "id": "ca-calm-radio-solo-piano-guitar",
+          "uuid": "9c7fbb28-03f4-466c-92c5-6c26e1f9cf3d",
+          "name": "Calm Radio - Solo Piano & Guitar",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://streams.calmradio.com:30228/"
+          ]
+        },
+        "10": {
+          "id": "ca-100-best-ibiza-deep-house",
+          "uuid": "64d74c72-025e-4cea-8a32-906812691731",
+          "name": "#100 BEST IBIZA DEEP HOUSE",
+          "region": "Ontario",
+          "genre": "chill, chill house",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/lwv6zqgtv1dtv"
+          ],
+          "lat": 43.7508,
+          "lon": -79.3412
+        },
+        "13": {
+          "id": "ca-cjad-800",
+          "uuid": "d8275ce6-a7dd-4d91-9703-55eca0410744",
+          "name": "CJAD 800",
+          "region": "Quebec",
+          "genre": "local news, news talk",
+          "tier": "minor",
+          "urls": [
+            "https://26183.live.streamtheworld.com/CJADAM_SC",
+            "https://29321.live.streamtheworld.com:443/CJADAM_SC"
+          ],
+          "lat": 45.5213,
+          "lon": -73.5503
+        },
+        "15": {
+          "id": "ca-100-covers-lounge",
+          "uuid": "77871905-48cd-465c-8d25-dd14ae536656",
+          "name": "100 % COVERS LOUNGE",
+          "region": "",
+          "genre": "ambient, ambient and relaxation music",
+          "tier": "major",
+          "urls": [
+            "https://az1.mediacp.eu/listen/100coverslounge/radio.mp3"
+          ],
+          "lat": 43.6721,
+          "lon": -79.3982
+        }
+      }
+    },
+    {
+      "code": "CO",
+      "name": "Колумбия",
+      "timezone": "America/Bogota",
+      "slots": {
+        "0": {
+          "id": "co-40-principales-colombia",
+          "uuid": "2793611b-6fbd-4c1b-aaec-fed7b85b6b6c",
+          "name": "40 Principales Colombia",
+          "region": "",
+          "genre": "pop, reggaeton",
+          "tier": "major",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/%20LOS40_COLOMBIA.mp3"
+          ],
+          "lat": 4.1448,
+          "lon": -74.8828
+        },
+        "2": {
+          "id": "co-candela-estereo-bogota-hjpu-101-9",
+          "uuid": "9618c1b9-0601-11e8-ae97-52543be04c81",
+          "name": "Candela Estéreo Bogotá (HJPU 101.9)",
+          "region": "Bogotá",
+          "genre": "bogota, latin",
+          "tier": "minor",
+          "urls": [
+            "http://27583.live.streamtheworld.com/CANDELAESTEREO_SC",
+            "http://26583.live.streamtheworld.com:80/CANDELAESTEREO_SC"
+          ]
+        },
+        "4": {
+          "id": "co-clasicos-reggaeton-24-7",
+          "uuid": "bd91f733-4c9d-4de1-bd6b-070fd40a6cbc",
+          "name": "CLÁSICOS REGGAETON 24_7",
+          "region": "",
+          "genre": "hits, music",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/2g1qkn4cbpeuv"
+          ]
+        },
+        "6": {
+          "id": "co-olimpica-stereo-104-5-cali",
+          "uuid": "e206db3d-b032-4c47-b31b-ad74fd606a73",
+          "name": "Olímpica Stéreo 104.5 Cali",
+          "region": "Cali, Valle del Cauca",
+          "genre": "crossover, entretenimiento",
+          "tier": "major",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/OLP_CALI.mp3"
+          ]
+        },
+        "8": {
+          "id": "co-tropicana-bogota-hjrx-102-9-caracol-radio",
+          "uuid": "96330fff-0601-11e8-ae97-52543be04c81",
+          "name": "Tropicana Bogotá (HJRX 102.9) Caracol Radio",
+          "region": "Bogotá",
+          "genre": "salsa, tropical",
+          "tier": "minor",
+          "urls": [
+            "http://27393.live.streamtheworld.com/TROPICANA_SC",
+            "http://24383.live.streamtheworld.com:80/TROPICANA_SC"
+          ]
+        },
+        "10": {
+          "id": "co-baladas-rs",
+          "uuid": "668ec074-59fd-46fc-a878-01040799298f",
+          "name": "Baladas Rs",
+          "region": "",
+          "genre": "amor, baladas",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/fxzt1r5rp2zuv"
+          ]
+        },
+        "12": {
+          "id": "co-blu-radio-bogota-89-9",
+          "uuid": "d205e92e-1bd5-4465-8994-8fe527756973",
+          "name": "Blu Radio Bogotá 89.9",
+          "region": "Bogotá",
+          "genre": "deportes, entretenimiento",
+          "tier": "major",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/BLURADIO.mp3"
+          ]
+        }
+      }
+    },
+    {
+      "code": "CL",
+      "name": "Чили",
+      "timezone": "America/Santiago",
+      "slots": {
+        "0": {
+          "id": "cl-radio-bio-bio",
+          "uuid": "76d84052-7a7f-4bdb-ac49-cb9dfc5663bd",
+          "name": "Radio Bio Bio",
+          "region": "Santiago",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://unlimited3-cl.dps.live/biobiosantiago/mp3/icecast.audio"
+          ]
+        },
+        "3": {
+          "id": "cl-radio-futuro",
+          "uuid": "a522b074-87e0-4808-ab15-2e609000537a",
+          "name": "Radio Futuro",
+          "region": "",
+          "genre": "classic rock, pop rock",
+          "tier": "minor",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/FUTURO_SC.mp3"
+          ]
+        },
+        "5": {
+          "id": "cl-pudahuel",
+          "uuid": "960c10e1-0601-11e8-ae97-52543be04c81",
+          "name": "Pudahuel",
+          "region": "Santiago",
+          "genre": "contemporary, music",
+          "tier": "minor",
+          "urls": [
+            "http://26673.live.streamtheworld.com:3690/PUDAHUEL_SC",
+            "http://26503.live.streamtheworld.com:80/PUDAHUEL_SC"
+          ]
+        },
+        "8": {
+          "id": "cl-la-retro-80s-chile",
+          "uuid": "b669063c-05f3-4386-91f4-cb9ffc722be9",
+          "name": "La Retro 80s Chile",
+          "region": "",
+          "genre": "1980s, 80s",
+          "tier": "major",
+          "urls": [
+            "https://s2.radio.co:80/s9ecef4f68/listen"
+          ]
+        },
+        "10": {
+          "id": "cl-corazon",
+          "uuid": "84b43fb8-1be0-11e8-a334-52543be04c81",
+          "name": "Corazon",
+          "region": "santiago",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://24493.live.streamtheworld.com/CORAZON_SC",
+            "http://27603.live.streamtheworld.com:80/CORAZON_SC"
+          ]
+        },
+        "12": {
+          "id": "cl-imagina",
+          "uuid": "960c1328-0601-11e8-ae97-52543be04c81",
+          "name": "Imagina",
+          "region": "Santiago",
+          "genre": "hits",
+          "tier": "minor",
+          "urls": [
+            "http://26673.live.streamtheworld.com/IMAGINA_SC",
+            "http://26513.live.streamtheworld.com:80/IMAGINA_SC"
+          ]
+        },
+        "15": {
+          "id": "cl-radio-cooperativa",
+          "uuid": "8bc8f710-0d16-4df5-8878-cfaedee7d4c5",
+          "name": "RADIO COOPERATIVA",
+          "region": "",
+          "genre": "classical",
+          "tier": "major",
+          "urls": [
+            "https://unlimited3-cl.dps.live/cooperativafm/mp3/icecast.audio"
+          ]
+        }
+      }
+    },
+    {
+      "code": "AR",
+      "name": "Аргентина",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "slots": {
+        "0": {
+          "id": "ar-aspen-102-3",
+          "uuid": "4285a122-9c78-417e-879e-5440c0482c56",
+          "name": "Aspen 102.3",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/ASPEN.mp3"
+          ]
+        },
+        "3": {
+          "id": "ar-la-retro-fest",
+          "uuid": "f931d316-f814-4257-9b39-bdd7cd1036af",
+          "name": "La Retro Fest",
+          "region": "Provincia de Buenos Aires",
+          "genre": "old hits, retro music",
+          "tier": "minor",
+          "urls": [
+            "https://streaming01.shockmedia.com.ar/9716/stream"
+          ],
+          "lat": -34.543,
+          "lon": -58.7013
+        },
+        "6": {
+          "id": "ar-la-popu",
+          "uuid": "47d1e0f9-ce15-4557-a73c-a703b3762d06",
+          "name": "La Popu",
+          "region": "Córdoba",
+          "genre": "cuarteto, local news",
+          "tier": "major",
+          "urls": [
+            "https://liveradio.mediainbox.net/popular.mp3"
+          ],
+          "lat": -31.4149,
+          "lon": -64.1808
+        },
+        "8": {
+          "id": "ar-planet-music-mar-del-plata-101-1",
+          "uuid": "c3484fcd-50fd-47a0-8bf6-406ac4c2f669",
+          "name": "Planet Music Mar del PLata 101.1",
+          "region": "",
+          "genre": "music, talk",
+          "tier": "minor",
+          "urls": [
+            "https://strcdn.klm99.com:10991/planetmdp"
+          ],
+          "lat": -38.0126,
+          "lon": -57.5533
+        },
+        "10": {
+          "id": "ar-emanuel-jireh",
+          "uuid": "5edfff4a-a65b-4eaf-82f9-3695a123f027",
+          "name": "Emanuel Jireh",
+          "region": "",
+          "genre": "balada en español, baladas",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/x5stvr70338uv"
+          ],
+          "lat": -43.3119,
+          "lon": -65.2231
+        },
+        "12": {
+          "id": "ar-la-100-99-9-fm-grupo-clarin-buenos-aires-argentina",
+          "uuid": "7b03996e-6ea0-4db5-8168-ddd1463faec2",
+          "name": "La 100 - 99.9 FM - Grupo Clarín - Buenos Aires, Argentina",
+          "region": "Buenos Aires",
+          "genre": "99.9 fm, argentina",
+          "tier": "major",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/FM999_56.mp3"
+          ],
+          "lat": -34.6017,
+          "lon": -58.4373
+        },
+        "15": {
+          "id": "ar-rock-and-blues",
+          "uuid": "c9782691-c50c-4c85-916e-1f64c055fec5",
+          "name": "Rock And Blues",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://radio.wiz.com.ar/listen/rock_and_blues/radio.mp3"
+          ]
+        }
+      }
+    },
+    {
+      "code": "BR",
+      "name": "Бразилия",
+      "timezone": "America/Sao_Paulo",
+      "slots": {
+        "0": {
+          "id": "br-agenda-chill",
+          "uuid": "eec23a68-22ff-4af0-8f00-b38753bf9b80",
+          "name": "Agenda Chill",
+          "region": "Federative Republic of Brazil",
+          "genre": "chill, relaxing",
+          "tier": "minor",
+          "urls": [
+            "https://stream-159.zeno.fm/zanz4xbdtg8uv"
+          ]
+        },
+        "2": {
+          "id": "br-radio-mania-fm",
+          "uuid": "08b78eeb-35f1-415c-9422-41b62c8da07f",
+          "name": "Rádio Mania FM",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://webradio.amsolution.com.br/radio/8050/mania"
+          ]
+        },
+        "5": {
+          "id": "br-sertaneja-106-7",
+          "uuid": "00bc4f1d-050c-49ae-bc42-a8aaa5d0ff5b",
+          "name": "Sertaneja 106.7",
+          "region": "São Paulo",
+          "genre": "country, sertanejo",
+          "tier": "major",
+          "urls": [
+            "https://sc4s.cdn.upx.com:8067/stream"
+          ],
+          "lat": -21.1813,
+          "lon": -47.8087
+        },
+        "7": {
+          "id": "br-radio-skol-sertanejo",
+          "uuid": "aab4fd5c-a306-4bbd-974b-de8910f192f4",
+          "name": "Radio Skol Sertanejo",
+          "region": "São Paulo",
+          "genre": "sertanejo",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/sczeexhc1eruv"
+          ],
+          "lat": -22.7146,
+          "lon": -47.0127
+        },
+        "10": {
+          "id": "br-radio-liga-samba",
+          "uuid": "b746312d-1fd9-44c5-9db2-de69a8db009f",
+          "name": "RÁDIO LIGA SAMBA",
+          "region": "São Paulo",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "http://srv1.braudio.com.br:7308/;stream.nsv"
+          ]
+        },
+        "12": {
+          "id": "br-webradiobr",
+          "uuid": "cdaa0235-dd3e-475b-9e9c-c7c9b13b312b",
+          "name": "WebRadioBR",
+          "region": "",
+          "genre": "alternative, dance",
+          "tier": "minor",
+          "urls": [
+            "https://stream.webradiobr.insidesign.com.br/listen/webradiobr/radio.mp3"
+          ]
+        },
+        "15": {
+          "id": "br-br-the-classic-rock",
+          "uuid": "195f2990-e0d3-4b34-8aab-5b173ddb6c6e",
+          "name": "BR - The Classic Rock",
+          "region": "Minas Gerais",
+          "genre": "classic rock, hard rock",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/nbq1aq62gd0uv"
+          ],
+          "lat": -16.3719,
+          "lon": -46.9025
+        }
+      }
+    },
+    {
+      "code": "IS",
+      "name": "Исландия",
+      "timezone": "Atlantic/Reykjavik",
+      "slots": {
+        "0": {
+          "id": "is-retro",
+          "uuid": "4e570d5e-8501-4b55-9030-085e7ee904dc",
+          "name": "Retro",
+          "region": "",
+          "genre": "80s, 90s",
+          "tier": "major",
+          "urls": [
+            "https://ice-11.spilarinn.is/retromobile"
+          ]
+        },
+        "3": {
+          "id": "is-k-100",
+          "uuid": "8d472d16-8ce9-49ed-9b60-df7cd7041566",
+          "name": "K 100",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://ice-11.spilarinn.is/kaninnmobile"
+          ]
+        },
+        "6": {
+          "id": "is-radio-aki-asgeirsson-tonlist-music-by-aki-asgeirsson",
+          "uuid": "86590d5f-5e43-49a7-a774-d9f34d47e49f",
+          "name": "RADIO AKI ASGEIRSSON : Tonlist / Music by Aki Asgeirsson",
+          "region": "Suðurnesjabær",
+          "genre": "composer, contemporary",
+          "tier": "major",
+          "urls": [
+            "https://kast.aki.is/radio"
+          ],
+          "lat": 64.0686,
+          "lon": -22.6478
+        },
+        "8": {
+          "id": "is-seyisfjorur-community-radio",
+          "uuid": "26312cb9-40de-4fa8-bb23-20a742e94d7b",
+          "name": "Seyðisfjörður Community Radio",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://seyisfjorur-community-radio.radiocult.fm/stream"
+          ]
+        },
+        "10": {
+          "id": "is-ruv-ras-2",
+          "uuid": "6c775ddd-84cb-40ae-bee2-18547849f200",
+          "name": "RÚV Rás 2",
+          "region": "",
+          "genre": "culture, news",
+          "tier": "minor",
+          "urls": [
+            "http://netradio.ruv.is/ras2.mp3"
+          ]
+        },
+        "12": {
+          "id": "is-utvarp-saga",
+          "uuid": "4123d652-36c9-41fd-b780-238cd3717f43",
+          "name": "Útvarp Saga",
+          "region": "",
+          "genre": "news talk, talk & speech",
+          "tier": "major",
+          "urls": [
+            "https://stream.utvarpsaga.is/Hljodver"
+          ],
+          "lat": 64.14,
+          "lon": -21.9026
+        },
+        "15": {
+          "id": "is-flashback-60s",
+          "uuid": "365a410b-cd82-4410-b351-6f443c3e8c1e",
+          "name": "Flashback 60s",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://ice-11.spilarinn.is/60flashback"
+          ]
+        }
+      }
+    },
+    {
+      "code": "SN",
+      "name": "Сенегал",
+      "timezone": "Africa/Dakar",
+      "slots": {
+        "1": {
+          "id": "sn-radio-fulbe-fm-102-6-dakar",
+          "uuid": "118a5501-b15d-4fb3-b010-fd0e4ffda525",
+          "name": "Radio Fulbe FM 102.6 Dakar",
+          "region": "",
+          "genre": "african music, talk",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/e0grbn8e3rquv"
+          ]
+        },
+        "3": {
+          "id": "sn-rewmi-fm-97-5-dakar",
+          "uuid": "86f7ed41-909a-4cf6-b147-e6fe3102328e",
+          "name": "Rewmi FM 97.5 Dakar",
+          "region": "",
+          "genre": "general",
+          "tier": "minor",
+          "urls": [
+            "https://stream-61.zeno.fm/nkzsqg16t8quv"
+          ]
+        },
+        "6": {
+          "id": "sn-or-fm-89-6-orkadiere",
+          "uuid": "fb565b3b-2bd4-4b23-b9b5-6d705b3e29ff",
+          "name": "Or FM 89.6 Orkadiéré",
+          "region": "",
+          "genre": "community radio",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/gy7fpc2am1duv"
+          ]
+        },
+        "8": {
+          "id": "sn-timtimol-fm-91-9-ourossogui",
+          "uuid": "33fc6dec-5199-4d1b-b276-d070f01ddd20",
+          "name": "Timtimol FM 91.9 Ourossogui",
+          "region": "",
+          "genre": "community radio",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/4yx608hnu1duv"
+          ]
+        },
+        "10": {
+          "id": "sn-zig-fm-100-3-kolda",
+          "uuid": "43355f15-832d-4db7-a948-25160f533f79",
+          "name": "Zig FM 100.3 Kolda",
+          "region": "",
+          "genre": "african music",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/akh0t25nc18uv"
+          ]
+        },
+        "12": {
+          "id": "sn-rts-matam-89-1",
+          "uuid": "ccacc8a2-42b6-4c37-8aff-949c05ea12c8",
+          "name": "RTS Matam 89.1",
+          "region": "",
+          "genre": "regional",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/kxud8vhqt1duv"
+          ]
+        },
+        "15": {
+          "id": "sn-sud-fm-sen-radio",
+          "uuid": "2a1973ea-2e51-40c4-b379-36cac2464ad7",
+          "name": "Sud FM Sen Radio",
+          "region": "",
+          "genre": "african music",
+          "tier": "major",
+          "urls": [
+            "http://stream.zenolive.com/rq40edfn3reuv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "PT",
+      "name": "Португалия",
+      "timezone": "Europe/Lisbon",
+      "slots": {
+        "0": {
+          "id": "pt-radio-observador",
+          "uuid": "e822ed30-1b14-4a90-906f-a1267e3d761d",
+          "name": "Rádio Observador",
+          "region": "Lisbon",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "http://195.23.85.126:8455/stream"
+          ]
+        },
+        "2": {
+          "id": "pt-radio-universitaria-do-minho",
+          "uuid": "9619379b-0601-11e8-ae97-52543be04c81",
+          "name": "Rádio Universitária do Minho",
+          "region": "Braga",
+          "genre": "local music, world music",
+          "tier": "minor",
+          "urls": [
+            "http://centova.radio.com.pt:9558/;"
+          ]
+        },
+        "4": {
+          "id": "pt-ultra-fm",
+          "uuid": "961911ef-0601-11e8-ae97-52543be04c81",
+          "name": "Ultra FM",
+          "region": "Lisbon",
+          "genre": "gospel, mix",
+          "tier": "minor",
+          "urls": [
+            "http://centova.radio.com.pt:9506/;"
+          ]
+        },
+        "7": {
+          "id": "pt-radio-renascenca",
+          "uuid": "9618e7a0-0601-11e8-ae97-52543be04c81",
+          "name": "Rádio Renascença",
+          "region": "Lisbon",
+          "genre": "national news",
+          "tier": "major",
+          "urls": [
+            "http://29345.live.streamtheworld.com/RADIO_RENASCENCA_SC",
+            "http://29339.live.streamtheworld.com:80/RADIO_RENASCENCA_SC"
+          ]
+        },
+        "9": {
+          "id": "pt-orbital-fm",
+          "uuid": "645c7030-4baa-4497-8f98-aeccc4c34160",
+          "name": "Orbital FM",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://ec2.yesstreaming.net:3025/stream"
+          ]
+        },
+        "11": {
+          "id": "pt-metalon-the-heavy",
+          "uuid": "b05bc526-0822-4a8d-9e86-e0b19f119f30",
+          "name": "MetalON - The Heavy",
+          "region": "Marco de Canaveses",
+          "genre": "heavy metal, metal",
+          "tier": "minor",
+          "urls": [
+            "https://radiometalon.com/radio/8000/radio.mp3"
+          ],
+          "lat": 41.1831,
+          "lon": -8.1489
+        },
+        "14": {
+          "id": "pt-tsf-radio-noticias",
+          "uuid": "cc461784-3150-4a34-81c5-2116fe024740",
+          "name": "TSF Rádio Notícias",
+          "region": "Lisboa",
+          "genre": "desporto, futebol",
+          "tier": "major",
+          "urls": [
+            "https://directo.tsf.pt/tsfdirecto.mp3"
+          ],
+          "lat": 38.7394,
+          "lon": -9.0651
+        }
+      }
+    },
+    {
+      "code": "MA",
+      "name": "Марокко",
+      "timezone": "Africa/Casablanca",
+      "slots": {
+        "0": {
+          "id": "ma-radio-manarat",
+          "uuid": "2c260d07-110c-473c-8a7f-df4b937b31a8",
+          "name": "Radio Manarat",
+          "region": "",
+          "genre": "culture, education",
+          "tier": "major",
+          "urls": [
+            "https://listen.radioking.com/radio/252934/stream/297385"
+          ],
+          "lat": 33.9794,
+          "lon": -6.8594
+        },
+        "2": {
+          "id": "ma-9b00b169",
+          "uuid": "9b00b169-b8fc-44e0-bd58-26df8585516f",
+          "name": "تفسير بن عثيمين",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "https://qurango.net/radio/tafseer"
+          ]
+        },
+        "5": {
+          "id": "ma-ma-hit-radio-maroc",
+          "uuid": "b019fb4e-adfd-43a9-a00d-68e086e0b06f",
+          "name": "MA:-Hit Radio Maroc",
+          "region": "",
+          "genre": "classical",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/une3a02mb"
+          ]
+        },
+        "8": {
+          "id": "ma-5239ee66",
+          "uuid": "5239ee66-a75a-43b2-97d4-ae5b240ebc34",
+          "name": ".. مختصر التفسير",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "https://qurango.net/radio/mukhtasartafsir"
+          ]
+        },
+        "11": {
+          "id": "ma-radio-plus-agadir-fm-92-4",
+          "uuid": "701b70e7-2126-4b4b-b1db-ea5295b43bfe",
+          "name": "Radio Plus Agadir FM 92.4",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://stream-158.zeno.fm/bqdbb6hd0neuv"
+          ],
+          "lat": 30.4231,
+          "lon": -9.5845
+        },
+        "13": {
+          "id": "ma-medina-fm-nachat-128-kbps",
+          "uuid": "8ada979f-dc6b-49ca-9dc9-bd3377c99aac",
+          "name": "Medina FM Nachat (128 kbps)",
+          "region": "",
+          "genre": "chaabi, moroccan",
+          "tier": "minor",
+          "urls": [
+            "https://medinanachat.ice.infomaniak.ch/medinanachat-128.mp3"
+          ]
+        },
+        "15": {
+          "id": "ma-mrc-hip-hop-soul-radio-radio-music",
+          "uuid": "e0cb2d0e-e6c1-4aa4-8748-37a087e343c2",
+          "name": "MRC:-Hip Hop Soul Radio \tRadio Music",
+          "region": "",
+          "genre": "country",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/k7cdrm450s8uv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "IE",
+      "name": "Ирландия",
+      "timezone": "Europe/Dublin",
+      "slots": {
+        "0": {
+          "id": "ie-newstalk",
+          "uuid": "d037031b-f31e-4298-b36e-654eaad6416e",
+          "name": "Newstalk",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://edge.audioxi.com/NT"
+          ],
+          "lat": 53.3486,
+          "lon": -6.2512
+        },
+        "2": {
+          "id": "ie-today-fm",
+          "uuid": "d0a1da9f-46b3-11e9-aa55-52543be04c81",
+          "name": "Today FM",
+          "region": "Dublin",
+          "genre": "alternative, pop",
+          "tier": "minor",
+          "urls": [
+            "https://stream.audioxi.com/TD"
+          ]
+        },
+        "4": {
+          "id": "ie-zenith-classic-rock",
+          "uuid": "609877aa-a68d-44d9-b2d2-65986c55ae1f",
+          "name": "Zenith Classic Rock",
+          "region": "",
+          "genre": "album tracks, classic rock",
+          "tier": "minor",
+          "urls": [
+            "http://91.189.64.188:3644/zenith128mp3"
+          ]
+        },
+        "6": {
+          "id": "ie-gem-radio-new-wave",
+          "uuid": "2e2e3729-2304-474c-a4d1-eeb91609f9bd",
+          "name": "Gem Radio New Wave",
+          "region": "Dublin",
+          "genre": "70's, 80's",
+          "tier": "minor",
+          "urls": [
+            "https://gemradionw.radioca.st/;stream.nsv"
+          ],
+          "lat": 53.3492,
+          "lon": -6.2592
+        },
+        "8": {
+          "id": "ie-irish-pub-radio",
+          "uuid": "db747080-d906-484c-9132-4b289dbb9c26",
+          "name": "Irish Pub Radio",
+          "region": "",
+          "genre": "ballads, celtic",
+          "tier": "major",
+          "urls": [
+            "http://solid24.streamupsolutions.com:8026/stream"
+          ],
+          "lat": 53.1204,
+          "lon": -8.6133
+        },
+        "11": {
+          "id": "ie-psybient-sunset-on-mixlive-net",
+          "uuid": "5dd7afc6-40a9-4ce1-8757-552ada188346",
+          "name": "Psybient Sunset on MixLive.net",
+          "region": "",
+          "genre": "darkpsy, psybient",
+          "tier": "minor",
+          "urls": [
+            "https://free.rcast.net/64142"
+          ]
+        },
+        "15": {
+          "id": "ie-newstalk-ireland",
+          "uuid": "395c7b09-6311-44d2-9593-61185e2c6b7a",
+          "name": "Newstalk Ireland",
+          "region": "",
+          "genre": "news",
+          "tier": "major",
+          "urls": [
+            "https://edge.audioxi.com/NT"
+          ],
+          "lat": 52.9821,
+          "lon": -7.4927
+        }
+      }
+    },
+    {
+      "code": "ES",
+      "name": "Испания",
+      "timezone": "Europe/Madrid",
+      "slots": {
+        "0": {
+          "id": "es-esradio",
+          "uuid": "9611ecb1-0601-11e8-ae97-52543be04c81",
+          "name": "esRadio",
+          "region": "Madrid",
+          "genre": "news, talk",
+          "tier": "major",
+          "urls": [
+            "http://livestreaming.esradio.fm/stream64.mp3"
+          ]
+        },
+        "3": {
+          "id": "es-cope-tenerife",
+          "uuid": "4775fa37-8172-4e90-af72-9fcccac4d38b",
+          "name": "COPE Tenerife",
+          "region": "Islas Canarias",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://wecast07-o-cloud.flumotion.com/copesedes/tenerife-mas.mp3"
+          ]
+        },
+        "5": {
+          "id": "es-1-splash-coffee",
+          "uuid": "9592171c-b5a5-45ad-9241-a5d354b249b1",
+          "name": "#1 Splash Coffee",
+          "region": "",
+          "genre": "ambient, ambient and relaxation music",
+          "tier": "minor",
+          "urls": [
+            "https://ais-sa2.cdnstream1.com/2345_128.mp3"
+          ]
+        },
+        "8": {
+          "id": "es-cadena-ser-espana",
+          "uuid": "692a3b69-0f68-11ea-a87e-52543be04c81",
+          "name": "Cadena SER España",
+          "region": "Spain",
+          "genre": "cultural news, live",
+          "tier": "major",
+          "urls": [
+            "http://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3"
+          ]
+        },
+        "10": {
+          "id": "es-rne-andalucia",
+          "uuid": "ff85018d-5ecf-4a37-ae86-5925d2af9611",
+          "name": "RNE Andalucía",
+          "region": "Andalucía",
+          "genre": "culture, news",
+          "tier": "minor",
+          "urls": [
+            "https://f141.rndfnk.com/star/crtve/rne5/gra/mp3/128/stream.mp3?cid=01GEPXW032X3Y2SXM6M4X4F1X4&sid=2ar1MBXpFkcnL6WuaxAXO1hEITa&token=L_nTm1RjUems0IjZMMQ_ZzFu3XQ_1_faFzfSM3OR5t8&tvf=06JeYFmsqRdmMTQxLnJuZGZuay5jb20"
+          ],
+          "lat": 37.3884,
+          "lon": -5.9952
+        },
+        "13": {
+          "id": "es-energia-flamenca",
+          "uuid": "91986b06-796d-4f01-99f0-ef47f3b9917a",
+          "name": "Energía Flamenca",
+          "region": "",
+          "genre": "50s, 60s",
+          "tier": "minor",
+          "urls": [
+            "https://axarquia.emisiononline.es/radio/8020/radio.mp3"
+          ]
+        },
+        "15": {
+          "id": "es-cadena-100",
+          "uuid": "960c37c6-0601-11e8-ae97-52543be04c81",
+          "name": "Cadena 100",
+          "region": "",
+          "genre": "music",
+          "tier": "major",
+          "urls": [
+            "http://cadena100-streamers-mp3.flumotion.com/cope/cadena100.mp3"
+          ]
+        }
+      }
+    },
+    {
+      "code": "GB",
+      "name": "Великобритания",
+      "timezone": "Europe/London",
+      "slots": {
+        "0": {
+          "id": "gb-chillout-ibiza-fm",
+          "uuid": "d69fbc2c-530a-4d40-ac9f-56532356b248",
+          "name": "Chillout Ibiza FM",
+          "region": "",
+          "genre": "chillout, relaxing",
+          "tier": "major",
+          "urls": [
+            "https://edge3.peta.live365.net/b05055_128mp3"
+          ]
+        },
+        "2": {
+          "id": "gb-noisebox-radio",
+          "uuid": "375f1734-1308-4aca-9e25-a641097ce89f",
+          "name": "NoiseBox Radio",
+          "region": "",
+          "genre": "adult contemporary, eclectic",
+          "tier": "minor",
+          "urls": [
+            "http://n11.radiojar.com/n1bs4ekbvuhvv?rj-ttl=5&rj-tok=AAABjE1UCSYASTnnnPAqWHT0-w"
+          ]
+        },
+        "4": {
+          "id": "gb-dubterrain",
+          "uuid": "9626fd02-0601-11e8-ae97-52543be04c81",
+          "name": "DubTerrain",
+          "region": "",
+          "genre": "dub, dubstep",
+          "tier": "minor",
+          "urls": [
+            "http://ic2255.c471.fast-serv.com/listen"
+          ]
+        },
+        "7": {
+          "id": "gb-gb-news",
+          "uuid": "fec7847c-b936-4bb3-a4c0-610db9b66c93",
+          "name": "GB News",
+          "region": "",
+          "genre": "news, speech",
+          "tier": "major",
+          "urls": [
+            "http://listen-gbnews.sharp-stream.com/gbnews.mp3"
+          ]
+        },
+        "11": {
+          "id": "gb-psychedelic-secret-radio",
+          "uuid": "d288325b-a5ed-42c4-820b-f7b99ab39bd1",
+          "name": "Psychedelic Secret radio",
+          "region": "Manchester",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://solid48.streamupsolutions.com/proxy/bglsokon?mp=/=stream"
+          ]
+        },
+        "13": {
+          "id": "gb-tmm-2-hq",
+          "uuid": "2c788192-ca75-42c9-ace6-866087380796",
+          "name": "TMM 2 (HQ)",
+          "region": "Camden",
+          "genre": "alternative, hiphop",
+          "tier": "minor",
+          "urls": [
+            "https://listen-msmn.sharp-stream.com/nme2high.mp3"
+          ]
+        },
+        "15": {
+          "id": "gb-bbc-world-service",
+          "uuid": "98adecf7-2683-4408-9be7-02d3f9098eb8",
+          "name": "BBC World Service",
+          "region": "",
+          "genre": "news, talk",
+          "tier": "major",
+          "urls": [
+            "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+          ]
+        }
+      }
+    },
+    {
+      "code": "FR",
+      "name": "Франция",
+      "timezone": "Europe/Paris",
+      "slots": {
+        "0": {
+          "id": "fr-fun-radio",
+          "uuid": "9f756e2d-8e9b-45f5-8fc1-61573e23036b",
+          "name": "FUN Radio",
+          "region": "",
+          "genre": "dance, electro",
+          "tier": "major",
+          "urls": [
+            "http://icecast.funradio.fr/fun-1-44-128"
+          ]
+        },
+        "4": {
+          "id": "fr-hotmix-classic-rap",
+          "uuid": "8825f3fd-8023-48b1-b39c-eac504202052",
+          "name": "Hotmix Classic Rap",
+          "region": "",
+          "genre": "hip-hop and rap oldies, rap",
+          "tier": "minor",
+          "urls": [
+            "https://streaming.hotmixradio.com/hotmix-classic-rap-en-mp3?provider=radiobrowser"
+          ]
+        },
+        "7": {
+          "id": "fr-france-info",
+          "uuid": "1cfb151d-a341-11e9-a787-52543be04c81",
+          "name": "France Info",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "http://direct.franceinfo.fr/live/franceinfo-midfi.mp3"
+          ]
+        },
+        "9": {
+          "id": "fr-nrj-nouveaux-hits-2026",
+          "uuid": "7adfdb67-d97b-42f2-9af3-be2ef8723dfd",
+          "name": "NRJ Nouveaux Hits 2026",
+          "region": "",
+          "genre": "hits, nrj",
+          "tier": "minor",
+          "urls": [
+            "https://streaming.nrjaudio.fm/ouucqs5n3nje"
+          ]
+        },
+        "11": {
+          "id": "fr-rock-folk-rock-n-folk",
+          "uuid": "3a6c5ce7-0c5c-11ea-a87e-52543be04c81",
+          "name": "Rock & Folk (rock n folk)",
+          "region": "",
+          "genre": "blues, classic rock",
+          "tier": "minor",
+          "urls": [
+            "https://rockfolk.ice.infomaniak.ch/rockfolk.mp3"
+          ]
+        },
+        "13": {
+          "id": "fr-generation-soul-disco-funk-radio",
+          "uuid": "6512fd8f-a693-4b42-9c69-a3300d4db38f",
+          "name": "GENERATION SOUL DISCO FUNK RADIO",
+          "region": "",
+          "genre": "acid jazz, disco",
+          "tier": "minor",
+          "urls": [
+            "https://gestream.fr/g-radio-hd.mp3"
+          ],
+          "lat": 48.8532,
+          "lon": 2.348
+        },
+        "15": {
+          "id": "fr-rmc-fr",
+          "uuid": "7a3a3989-8f26-44f7-9ae5-fa91e5cf4f9d",
+          "name": "RMC FR",
+          "region": "",
+          "genre": "france, info",
+          "tier": "major",
+          "urls": [
+            "https://audio.bfmtv.com/rmcradio_128.mp3"
+          ],
+          "lat": 43.5772,
+          "lon": 5.7458
+        }
+      }
+    },
+    {
+      "code": "BE",
+      "name": "Бельгия",
+      "timezone": "Europe/Brussels",
+      "slots": {
+        "0": {
+          "id": "be-studio-brussel",
+          "uuid": "091f7820-4b25-4fb6-9739-7c112ef4ed48",
+          "name": "Studio Brussel",
+          "region": "Brussels",
+          "genre": "alternative, pop",
+          "tier": "major",
+          "urls": [
+            "http://icecast.vrtcdn.be/stubru-mid.mp3"
+          ],
+          "lat": 50.8533,
+          "lon": 4.4026
+        },
+        "2": {
+          "id": "be-classic-21-blues",
+          "uuid": "92724201-4843-4671-9e8f-0c354689766a",
+          "name": "Classic 21 Blues",
+          "region": "",
+          "genre": "blues, blues rock",
+          "tier": "minor",
+          "urls": [
+            "http://radios.rtbf.be/wr-c21-blues-128.mp3"
+          ]
+        },
+        "4": {
+          "id": "be-vrt-radio-1-low",
+          "uuid": "f27427e9-4534-466a-80a9-80eb26b53f0c",
+          "name": "VRT Radio 1 (low)",
+          "region": "",
+          "genre": "news, vrt",
+          "tier": "minor",
+          "urls": [
+            "http://icecast.vrtcdn.be/radio1-mid.mp3"
+          ]
+        },
+        "6": {
+          "id": "be-vrt-radio-1",
+          "uuid": "960ef35c-0601-11e8-ae97-52543be04c81",
+          "name": "VRT Radio 1",
+          "region": "Brussels",
+          "genre": "news, pop",
+          "tier": "major",
+          "urls": [
+            "http://icecast.vrtcdn.be/radio1-high.mp3"
+          ],
+          "lat": 50.8533,
+          "lon": 4.4026
+        },
+        "9": {
+          "id": "be-vrt-mnm",
+          "uuid": "309f2ec8-5c52-4fb2-bc49-28020ce4242b",
+          "name": "VRT - MNM",
+          "region": "Brussels",
+          "genre": "pop, vrt",
+          "tier": "minor",
+          "urls": [
+            "http://icecast.vrtcdn.be/mnm-high.mp3"
+          ]
+        },
+        "12": {
+          "id": "be-rtbf-tarmac",
+          "uuid": "f8997dcf-168b-11e8-ae97-52543be04c81",
+          "name": "RTBF Tarmac",
+          "region": "",
+          "genre": "hiphop, rap",
+          "tier": "minor",
+          "urls": [
+            "https://radios.rtbf.be/tarmac-128.mp3"
+          ]
+        },
+        "15": {
+          "id": "be-joe",
+          "uuid": "529b71b3-ac05-426c-bd8c-6ae981713900",
+          "name": "JOE",
+          "region": "",
+          "genre": "oldies",
+          "tier": "major",
+          "urls": [
+            "https://icecast-qmusicbe-cdp.triple-it.nl/joe.mp3"
+          ],
+          "lat": 50.8333,
+          "lon": 4.33
+        }
+      }
+    },
+    {
+      "code": "NL",
+      "name": "Нидерланды",
+      "timezone": "Europe/Amsterdam",
+      "slots": {
+        "0": {
+          "id": "nl-intense-radio-we-love-dance-256k",
+          "uuid": "af6f51b1-0ca9-11ea-a87e-52543be04c81",
+          "name": "Intense Radio - We love Dance 256K",
+          "region": "Burgenland",
+          "genre": "clubhouse, dance",
+          "tier": "major",
+          "urls": [
+            "https://secure.live-streams.nl/main"
+          ],
+          "lat": 52.0035,
+          "lon": 4.1607
+        },
+        "2": {
+          "id": "nl-alternative-rock-radio",
+          "uuid": "69e80c6d-8a40-4138-8946-20a7b0a0460c",
+          "name": "Alternative Rock Radio",
+          "region": "",
+          "genre": "alternative rock, rock",
+          "tier": "minor",
+          "urls": [
+            "https://25243.live.streamtheworld.com/KINK_SC"
+          ]
+        },
+        "6": {
+          "id": "nl-qmusic",
+          "uuid": "003d3c6f-e183-11e9-a8ba-52543be04c81",
+          "name": "Qmusic",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_live_96.mp3"
+          ]
+        },
+        "8": {
+          "id": "nl-radio-texel",
+          "uuid": "7175751f-ec79-41c4-a05f-f1cefcb8325a",
+          "name": "Radio Texel",
+          "region": "Noord-Holland, Texel",
+          "genre": "local music, local news",
+          "tier": "minor",
+          "urls": [
+            "https://cast6.asurahosting.com/proxy/radiotex/stream"
+          ],
+          "lat": 53.0534,
+          "lon": 4.7983
+        },
+        "10": {
+          "id": "nl-all-oldies-channel",
+          "uuid": "917a377d-7866-11e9-aa30-52543be04c81",
+          "name": "All Oldies Channel",
+          "region": "Noord Brabant",
+          "genre": "folk, oldies",
+          "tier": "minor",
+          "urls": [
+            "http://radio.alloldieschannel.com:8000/stream"
+          ]
+        },
+        "12": {
+          "id": "nl-radio-538",
+          "uuid": "fd059cc5-b538-41c1-ae76-b8778a84c3db",
+          "name": "Radio 538",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3"
+          ],
+          "lat": 52.3875,
+          "lon": 4.8532
+        },
+        "14": {
+          "id": "nl-radio-veronica-live",
+          "uuid": "dfbad1f3-3534-44fd-90dd-2da4837344a2",
+          "name": "Radio Veronica Live",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3"
+          ]
+        }
+      }
+    },
+    {
+      "code": "CH",
+      "name": "Швейцария",
+      "timezone": "Europe/Zurich",
+      "slots": {
+        "0": {
+          "id": "ch-1-fm-ibiza-chill-tropical",
+          "uuid": "d5ef3de2-cdc3-478b-8582-e42bc1773864",
+          "name": "1.FM - Ibiza Chill Tropical",
+          "region": "St. Gallen",
+          "genre": "1.fm, chillout",
+          "tier": "minor",
+          "urls": [
+            "http://strm112.1.fm/ibizachill_mobile_mp3?aw_0_req.gdpr=true"
+          ]
+        },
+        "2": {
+          "id": "ch-1-fm-deep-house-radio",
+          "uuid": "962a748b-0601-11e8-ae97-52543be04c81",
+          "name": "1.FM - Deep House Radio",
+          "region": "",
+          "genre": "deep house, techno",
+          "tier": "major",
+          "urls": [
+            "http://strm112.1.fm/deephouse_mobile_mp3"
+          ]
+        },
+        "4": {
+          "id": "ch-electro-radio",
+          "uuid": "960babf9-0601-11e8-ae97-52543be04c81",
+          "name": "Electro Radio",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://stream.radiojar.com/fkyxx4q35k0uv"
+          ]
+        },
+        "6": {
+          "id": "ch-srf-virus",
+          "uuid": "960b6cd6-0601-11e8-ae97-52543be04c81",
+          "name": "SRF Virus",
+          "region": "",
+          "genre": "alternative, alternative rock",
+          "tier": "minor",
+          "urls": [
+            "http://stream.srg-ssr.ch/srgssr/srfvirus/mp3/128"
+          ]
+        },
+        "8": {
+          "id": "ch-1-fm-amsterdam-trance-radio",
+          "uuid": "962a61bf-0601-11e8-ae97-52543be04c81",
+          "name": "1.FM - Amsterdam Trance Radio",
+          "region": "",
+          "genre": "trance",
+          "tier": "major",
+          "urls": [
+            "http://strm112.1.fm/atr_mobile_mp3"
+          ]
+        },
+        "12": {
+          "id": "ch-1-fm-cafe-radio",
+          "uuid": "96154673-0601-11e8-ae97-52543be04c81",
+          "name": "1.FM - Cafe Radio",
+          "region": "",
+          "genre": "latin, pop",
+          "tier": "minor",
+          "urls": [
+            "http://strm112.1.fm/caferadio_mobile_mp3"
+          ]
+        },
+        "15": {
+          "id": "ch-radio-swiss-jazz",
+          "uuid": "961ac56b-0601-11e8-ae97-52543be04c81",
+          "name": "Radio Swiss Jazz",
+          "region": "Bern",
+          "genre": "jazz, public radio",
+          "tier": "major",
+          "urls": [
+            "http://stream.srg-ssr.ch/m/rsj/mp3_128"
+          ]
+        }
+      }
+    },
+    {
+      "code": "NG",
+      "name": "Нигерия",
+      "timezone": "Africa/Lagos",
+      "slots": {
+        "0": {
+          "id": "ng-the-ark-of-nigeria-radio",
+          "uuid": "80ca6a0f-7f8b-4308-8ffb-054a20f16e5f",
+          "name": "The Ark of Nigeria Radio",
+          "region": "Rivers",
+          "genre": "community / talk / culture",
+          "tier": "minor",
+          "urls": [
+            "https://fm.imediaport.com/theark"
+          ]
+        },
+        "2": {
+          "id": "ng-hope-radio",
+          "uuid": "955ca3bd-f1a4-413f-94e0-4368d8c9ab18",
+          "name": "Hope  Radio",
+          "region": "Rivers",
+          "genre": "community / talk / culture",
+          "tier": "minor",
+          "urls": [
+            "https://fm.imediaport.com/theark"
+          ]
+        },
+        "4": {
+          "id": "ng-majorfm",
+          "uuid": "1da93dc5-365a-49b9-8fa8-67a8ce5668f8",
+          "name": "MajorFM",
+          "region": "Lagos",
+          "genre": "80s, dj mixes",
+          "tier": "major",
+          "urls": [
+            "http://stream.zeno.fm/pkza99xshkhvv"
+          ],
+          "lat": 6.5001,
+          "lon": 3.3769
+        },
+        "7": {
+          "id": "ng-green-radio-uganda",
+          "uuid": "2c30d91f-29a2-4a24-99bb-e56fd02e84c5",
+          "name": "Green Radio Uganda",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://servidor17-1.brlogic.com:7940/live?source=12124"
+          ]
+        },
+        "10": {
+          "id": "ng-lagosjump-radio",
+          "uuid": "3c8dd994-143a-444d-95da-1a8ba41fce16",
+          "name": "LagosJump Radio",
+          "region": "Abuja",
+          "genre": "afrobeats",
+          "tier": "major",
+          "urls": [
+            "https://radio.lagosjumpradio.com/listen/lagosjump_radio/radio.mp3"
+          ]
+        },
+        "13": {
+          "id": "ng-inform-me-radio",
+          "uuid": "cdd20cd2-2871-4bd7-9e0f-cd0720064865",
+          "name": "Inform Me Radio",
+          "region": "Edo",
+          "genre": "business programs, family",
+          "tier": "minor",
+          "urls": [
+            "http://stream.zeno.fm/ta1fke6sz1zuv"
+          ]
+        },
+        "15": {
+          "id": "ng-bond-92-9-fm",
+          "uuid": "fdfd32c3-7612-4d83-acf1-5f7f0bc887db",
+          "name": "Bond 92.9 FM",
+          "region": "Lagos",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://go.webgateready.com/bondfm"
+          ]
+        }
+      }
+    },
+    {
+      "code": "NO",
+      "name": "Норвегия",
+      "timezone": "Europe/Oslo",
+      "slots": {
+        "1": {
+          "id": "no-radio-ai-norge",
+          "uuid": "2336ae38-ec05-439c-86a4-f3670629ae94",
+          "name": "Radio AI Norge",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://a13.asurahosting.com/listen/radio_ai/radio.mp3"
+          ]
+        },
+        "3": {
+          "id": "no-1-nrk-jazz",
+          "uuid": "be930f76-8b01-4d51-9863-4b5a8c64897a",
+          "name": "1-NRK Jazz",
+          "region": "",
+          "genre": "jazz, smooth jazz",
+          "tier": "major",
+          "urls": [
+            "http://cdn0-47115-liveicecast0.dna.contentdelivery.net/jazz_mp3_h"
+          ]
+        },
+        "5": {
+          "id": "no-scansat-radio-scandinavian-satellite-radio",
+          "uuid": "84554245-69c3-4e7d-a1ef-681b7bb79120",
+          "name": "Scansat Radio (Scandinavian Satellite Radio)",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream.rcast.net/67165"
+          ],
+          "lat": 58.9498,
+          "lon": 5.6962
+        },
+        "7": {
+          "id": "no-nrk-p1-stfold",
+          "uuid": "8ecc85cf-de72-4c33-aae6-8005cdfceabd",
+          "name": "NRK P1 Østfold",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk15_mp3_h"
+          ],
+          "lat": 59.3136,
+          "lon": 10.8984
+        },
+        "9": {
+          "id": "no-nrk-p1-stor-oslo",
+          "uuid": "ebc6ab9f-57be-4ee8-9209-327ee71c7a86",
+          "name": "Nrk P1 Stor-Oslo",
+          "region": "OSLO",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_mp3_h"
+          ],
+          "lat": 59.9074,
+          "lon": 10.8105
+        },
+        "13": {
+          "id": "no-nrk-p1-mre-og-romsdal",
+          "uuid": "2925b7a2-c425-4d87-b256-6d7f5caf5198",
+          "name": "NRK P1 Møre og Romsdal",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk6_mp3_l"
+          ]
+        },
+        "15": {
+          "id": "no-nrk-p3",
+          "uuid": "17be0284-0ab4-453f-9e98-f674df46a919",
+          "name": "NRK P3",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p3_mp3_h"
+          ],
+          "lat": 59.9133,
+          "lon": 10.7401
+        }
+      }
+    },
+    {
+      "code": "IT",
+      "name": "Италия",
+      "timezone": "Europe/Rome",
+      "slots": {
+        "0": {
+          "id": "it-radio-24-il-sole-24-ore",
+          "uuid": "986c5985-41d7-11ea-a95e-52543be04c81",
+          "name": "Radio 24 il sole 24 ore",
+          "region": "",
+          "genre": "news talk",
+          "tier": "major",
+          "urls": [
+            "http://shoutcast2.radio24.it:8000/;"
+          ]
+        },
+        "2": {
+          "id": "it-radio-70-80-90-marche",
+          "uuid": "a27fc1f0-bcdc-4079-9f73-ae444c045ddc",
+          "name": "Radio 70 80 90 Marche",
+          "region": "Marche",
+          "genre": "70s, 80s",
+          "tier": "minor",
+          "urls": [
+            "https://rblive.it:8020/radio.mp3"
+          ]
+        },
+        "5": {
+          "id": "it-italia-news-24",
+          "uuid": "5a56c267-a891-49b9-b54a-ca4890585f84",
+          "name": "Italia News 24",
+          "region": "Lombardia",
+          "genre": "music, news",
+          "tier": "minor",
+          "urls": [
+            "https://stream6.xdevel.com/audio6s975889-649/stream/icecast.audio"
+          ]
+        },
+        "8": {
+          "id": "it-50s-60s-retro-hits",
+          "uuid": "5532c4d9-616e-4d62-a49f-984a13e3189c",
+          "name": "50s 60s RETRO HITS",
+          "region": "Lazio",
+          "genre": "50s, 60s",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/pxzwykxbluitv"
+          ],
+          "lat": 41.3583,
+          "lon": 13.347
+        },
+        "11": {
+          "id": "it-one-dance",
+          "uuid": "cc40c5c2-d8a3-11e9-a861-52543be04c81",
+          "name": "One Dance",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://ice10.fluidstream.net/rn1_2.mp3"
+          ]
+        },
+        "13": {
+          "id": "it-rete-toscana-classica",
+          "uuid": "fc05569b-0b17-4586-87be-f9248bb36300",
+          "name": "Rete Toscana Classica",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://nr12.newradio.it/stream/8744"
+          ]
+        },
+        "15": {
+          "id": "it-radio-kiss-kiss",
+          "uuid": "961756e4-0601-11e8-ae97-52543be04c81",
+          "name": "Radio Kiss Kiss",
+          "region": "Campania",
+          "genre": "adult contemporary, pop",
+          "tier": "major",
+          "urls": [
+            "http://wma08.fluidstream.net:4610/"
+          ]
+        }
+      }
+    },
+    {
+      "code": "DE",
+      "name": "Германия",
+      "timezone": "Europe/Berlin",
+      "slots": {
+        "0": {
+          "id": "de-swr3",
+          "uuid": "240d28b9-7858-48d2-a816-9cf8e1875fe8",
+          "name": "SWR3",
+          "region": "Baden-Württemberg",
+          "genre": "news, pop",
+          "tier": "major",
+          "urls": [
+            "https://liveradio.swr.de/sw282p3/swr3/play.mp3"
+          ]
+        },
+        "3": {
+          "id": "de-harmony-fm",
+          "uuid": "961449d4-0601-11e8-ae97-52543be04c81",
+          "name": "harmony.fm",
+          "region": "",
+          "genre": "classic hits",
+          "tier": "minor",
+          "urls": [
+            "http://mp3.harmonyfm.de/harmonyfm/hqlivestream.mp3?aw_0_req.gdpr=true"
+          ]
+        },
+        "5": {
+          "id": "de-mangoradio",
+          "uuid": "78012206-1aa1-11e9-a80b-52543be04c81",
+          "name": "MANGORADIO",
+          "region": "Rheinland-Pfalz",
+          "genre": "music, variety",
+          "tier": "major",
+          "urls": [
+            "https://mangoradio.stream.laut.fm/mangoradio"
+          ]
+        },
+        "8": {
+          "id": "de-ndr-1-radio-mv",
+          "uuid": "4968933d-8c8f-4f1f-8625-219a100c2c6f",
+          "name": "NDR 1 Radio MV",
+          "region": "",
+          "genre": "music, oldies",
+          "tier": "minor",
+          "urls": [
+            "https://icecast.ndr.de/ndr/ndr1radiomv/schwerin/mp3/128/stream.mp3?1728424914112&aggregator=web"
+          ]
+        },
+        "10": {
+          "id": "de-nightride-fm-chillsynth",
+          "uuid": "9067dc39-4bf4-4364-bd6b-8020cff3e15d",
+          "name": "Nightride FM - Chillsynth",
+          "region": "",
+          "genre": "chillsynth, chillwave",
+          "tier": "minor",
+          "urls": [
+            "https://stream.nightride.fm/chillsynth.mp3"
+          ]
+        },
+        "12": {
+          "id": "de-r-sa-ostrock",
+          "uuid": "9623357e-0601-11e8-ae97-52543be04c81",
+          "name": "R.SA Ostrock",
+          "region": "Saxony",
+          "genre": "70s, 80s",
+          "tier": "minor",
+          "urls": [
+            "http://streams.rsa-sachsen.de/rsa-ostrock/mp3-192/"
+          ]
+        },
+        "15": {
+          "id": "de-deutschlandfunk-dlf-mp3-128k",
+          "uuid": "1c3e8be2-5b14-4933-bad3-87cbc227cba4",
+          "name": "Deutschlandfunk | DLF | MP3 128k",
+          "region": "Berlin",
+          "genre": "culture, news",
+          "tier": "major",
+          "urls": [
+            "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3?aggregator=web"
+          ],
+          "lat": 52.4803,
+          "lon": 13.3348
+        }
+      }
+    },
+    {
+      "code": "SE",
+      "name": "Швеция",
+      "timezone": "Europe/Stockholm",
+      "slots": {
+        "0": {
+          "id": "se-mix-megapol-104-3",
+          "uuid": "0772676d-9fe4-4945-b63f-3e88e5aeb374",
+          "name": "Mix Megapol 104,3",
+          "region": "Stockholm",
+          "genre": "pop",
+          "tier": "major",
+          "urls": [
+            "https://live-bauerse-fm.sharp-stream.com/mixmegapol_instream_se_mp3"
+          ],
+          "lat": 59.3272,
+          "lon": 18.0154
+        },
+        "3": {
+          "id": "se-sveiges-radio-p4-malmohus",
+          "uuid": "33aa931b-0e2f-49b9-b8df-8d98c04a286b",
+          "name": "Sveiges Radio - P4 Malmöhus",
+          "region": "Skåne",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://sverigesradio.se/topsy/direkt/207-hi.mp3"
+          ],
+          "lat": 55.5921,
+          "lon": 13.014
+        },
+        "6": {
+          "id": "se-sveriges-kristna-radio",
+          "uuid": "9a58e0e1-7718-4d9a-8179-c9c95a255fd6",
+          "name": "Sveriges Kristna Radio",
+          "region": "",
+          "genre": "gospel, talk",
+          "tier": "minor",
+          "urls": [
+            "https://s2.radio.co/sfbf5f5b85/listen"
+          ],
+          "lat": 59.3331,
+          "lon": 18.0725
+        },
+        "8": {
+          "id": "se-sveriges-radio-p1",
+          "uuid": "95019533-f24b-4eb2-ba07-2ccdf1ea683e",
+          "name": "Sveriges Radio P1",
+          "region": "National, Sweden",
+          "genre": "culture, news",
+          "tier": "major",
+          "urls": [
+            "https://live1.sr.se/p1-mp3-96"
+          ],
+          "lat": 59.3348,
+          "lon": 18.1019
+        },
+        "11": {
+          "id": "se-northern-metal-radio",
+          "uuid": "139eec8c-d0b7-4ace-9443-2a6ec74c789f",
+          "name": "Northern Metal Radio",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://dc5.serverse.com/proxy/lvzgnvcj/stream"
+          ]
+        },
+        "13": {
+          "id": "se-radio-sotenas",
+          "uuid": "962afe61-0601-11e8-ae97-52543be04c81",
+          "name": "Radio Sotenäs",
+          "region": "",
+          "genre": "00s, 70s",
+          "tier": "minor",
+          "urls": [
+            "http://sc3.radiosotenas.se:8500/",
+            "http://sc1.radiosotenas.se:80"
+          ]
+        },
+        "15": {
+          "id": "se-sveriges-radio-p3",
+          "uuid": "e4f6d392-f704-4cf0-8d26-9c931cebeaf6",
+          "name": "Sveriges Radio - P3",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://live1.sr.se/p3-mp3-96"
+          ],
+          "lat": 59.324,
+          "lon": 18.0711
+        }
+      }
+    },
+    {
+      "code": "PL",
+      "name": "Польша",
+      "timezone": "Europe/Warsaw",
+      "slots": {
+        "0": {
+          "id": "pl-radio-zet",
+          "uuid": "59e30dda-64bf-11ea-be63-52543be04c81",
+          "name": "Radio Zet",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "http://zet-net-01.cdn.eurozet.pl:8400/"
+          ]
+        },
+        "2": {
+          "id": "pl-radio-eska-wrocaw",
+          "uuid": "9cfac613-657d-4937-90e9-9cad978de3ed",
+          "name": "Radio Eska - Wrocław",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://ic2.smcdn.pl/2180-1.mp3"
+          ]
+        },
+        "4": {
+          "id": "pl-eska-impreska",
+          "uuid": "18a21e61-6c4f-4b28-b271-7202169238b0",
+          "name": "ESKA IMPRESKA",
+          "region": "",
+          "genre": "pop",
+          "tier": "minor",
+          "urls": [
+            "http://ic1.smcdn.pl/6030-1.mp3"
+          ]
+        },
+        "6": {
+          "id": "pl-radio-rmf-fm",
+          "uuid": "97b1aec1-dad3-4551-8cc5-07965bbcb93f",
+          "name": "Radio RMF FM",
+          "region": "",
+          "genre": "classical",
+          "tier": "major",
+          "urls": [
+            "https://rs102-krk.rmfstream.pl/rmf_fm",
+            "http://217.74.72.10/rmf_fm"
+          ]
+        },
+        "9": {
+          "id": "pl-rmf-dance",
+          "uuid": "21ba9188-59a9-11ea-be63-52543be04c81",
+          "name": "RMF Dance",
+          "region": "Krakow",
+          "genre": "128 kbit/s, dance",
+          "tier": "minor",
+          "urls": [
+            "http://rmfstream1.interia.pl:8000/rmf_dance"
+          ]
+        },
+        "11": {
+          "id": "pl-rmf-fm",
+          "uuid": "399b7c2a-6680-11e8-b15b-52543be04c81",
+          "name": "RMF FM",
+          "region": "",
+          "genre": "fm, rmf",
+          "tier": "major",
+          "urls": [
+            "http://195.150.20.242:8000/rmf_fm"
+          ]
+        },
+        "14": {
+          "id": "pl-zet-po-polsku",
+          "uuid": "f11d134a-f198-415a-86a4-cb518c57127d",
+          "name": "ZET Po Polsku",
+          "region": "Warszawa",
+          "genre": "zet po polsku",
+          "tier": "minor",
+          "urls": [
+            "https://zt.cdn.eurozet.pl/ZETPL1.mp3"
+          ],
+          "lat": 52.2352,
+          "lon": 21.0059
+        }
+      }
+    },
+    {
+      "code": "GR",
+      "name": "Греция",
+      "timezone": "Europe/Athens",
+      "slots": {
+        "1": {
+          "id": "gr-c0016664",
+          "uuid": "c0016664-207c-4326-805e-8a17461668cd",
+          "name": "Ράδιο Αγιάσος",
+          "region": "Lesvos",
+          "genre": "greek folk music",
+          "tier": "minor",
+          "urls": [
+            "https://centova.streams.gr:8088/stream"
+          ]
+        },
+        "4": {
+          "id": "gr-zeppelin-106-7",
+          "uuid": "605b2521-e764-42ba-8be0-473fc096a3b3",
+          "name": "Zeppelin 106.7",
+          "region": "Athens",
+          "genre": "alternative rock, classic rock",
+          "tier": "major",
+          "urls": [
+            "https://radiostreaming.ert.gr/ert-zeppelin"
+          ],
+          "lat": 38.013,
+          "lon": 23.8255
+        },
+        "6": {
+          "id": "gr-zeno-fm-pame-rebetiko-kai-laiko",
+          "uuid": "851b010a-bf42-4a78-a59b-9af0da444da7",
+          "name": "zeno fm - Pame Rebetiko kai laiko",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream-174.zeno.fm/wqcp8gq67vzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ3cWNwOGdxNjd2enV2IiwiaG9zdCI6InN0cmVhbS0xNzQuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Im5nLXVzMFhrVGVTWTFQVkplaGhrcVEiLCJpYXQiOjE3MzEzMTc2MjIsImV4cCI6MTczMTMxNzY4Mn0.wy5ztQfuz1ks3t1FzSxlAiZfQvMeAsPuiz07qc0JeGs"
+          ]
+        },
+        "8": {
+          "id": "gr-7000fm",
+          "uuid": "4ed5e97c-7540-40d9-8ce1-7cea18080f08",
+          "name": "7000FM",
+          "region": "",
+          "genre": "techno",
+          "tier": "minor",
+          "urls": [
+            "https://stream.7000fm.gr/radio/8000/radio.mp3"
+          ]
+        },
+        "10": {
+          "id": "gr-pepper-96-6",
+          "uuid": "f28d16cd-4515-43ed-9cc8-c25e56190e23",
+          "name": "Pepper 96.6",
+          "region": "Attica",
+          "genre": "easy listening, smooth",
+          "tier": "major",
+          "urls": [
+            "https://stream.radiojar.com/pepper"
+          ],
+          "lat": 37.9771,
+          "lon": 23.7332
+        },
+        "12": {
+          "id": "gr-radio-art-lullaby",
+          "uuid": "162e7cea-53cc-4566-bb92-2de88dd98ac4",
+          "name": "Radio Art - Lullaby",
+          "region": "",
+          "genre": "absolute music, relax",
+          "tier": "minor",
+          "urls": [
+            "http://air.radioart.com/fLullaby.mp3"
+          ]
+        },
+        "15": {
+          "id": "gr-real-fm-97-8",
+          "uuid": "961f9a79-0601-11e8-ae97-52543be04c81",
+          "name": "Real FM 97.8",
+          "region": "Athens",
+          "genre": "greek, news",
+          "tier": "major",
+          "urls": [
+            "http://netradio.live24.gr/realfm"
+          ]
+        }
+      }
+    },
+    {
+      "code": "FI",
+      "name": "Финляндия",
+      "timezone": "Europe/Helsinki",
+      "slots": {
+        "0": {
+          "id": "fi-radio-sun",
+          "uuid": "961bb5c3-0601-11e8-ae97-52543be04c81",
+          "name": "Radio SUN",
+          "region": "",
+          "genre": "pop",
+          "tier": "major",
+          "urls": [
+            "http://st.downtime.fi/sun.mp3"
+          ]
+        },
+        "2": {
+          "id": "fi-karjalainen-syke",
+          "uuid": "0559438c-2c99-44b5-b0c9-f1ae8a631bba",
+          "name": "Karjalainen Syke",
+          "region": "Pohjois-Karjala",
+          "genre": "local, news",
+          "tier": "minor",
+          "urls": [
+            "https://radio.diks.fi/karjalainensyke"
+          ]
+        },
+        "4": {
+          "id": "fi-finest-fm",
+          "uuid": "962c3bf0-0601-11e8-ae97-52543be04c81",
+          "name": "Finest Fm",
+          "region": "",
+          "genre": "hits",
+          "tier": "minor",
+          "urls": [
+            "http://212.47.220.188:8000/listen.mp3"
+          ]
+        },
+        "7": {
+          "id": "fi-fugefm",
+          "uuid": "f7001430-7f36-4562-93b8-31b7f070a327",
+          "name": "FugeFM",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://streaming.broadcast.radio/fugefm"
+          ]
+        },
+        "9": {
+          "id": "fi-radio-keskisuomalainen",
+          "uuid": "bfe4ba5c-8049-4095-9242-c55715f454a3",
+          "name": "Radio Keskisuomalainen",
+          "region": "Keski-Suomi",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://cast.radiokeskisuomalainen.fi/radiokeskisuomalainen"
+          ],
+          "lat": 62.2486,
+          "lon": 25.7747
+        },
+        "12": {
+          "id": "fi-radio-city",
+          "uuid": "675970e4-ead1-4129-a680-1e7b64c96ecb",
+          "name": "Radio City",
+          "region": "Uusimaa",
+          "genre": "hits, local",
+          "tier": "minor",
+          "urls": [
+            "https://streaming.radioplay.fi/fi_radiocity_128.mp3"
+          ]
+        },
+        "14": {
+          "id": "fi-jarviradio",
+          "uuid": "35351baf-4094-429f-860c-875f2c567384",
+          "name": "Järviradio",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://jarviradio.radiotaajuus.fi:9000/jr"
+          ]
+        }
+      }
+    },
+    {
+      "code": "ZA",
+      "name": "ЮАР",
+      "timezone": "Africa/Johannesburg",
+      "slots": {
+        "0": {
+          "id": "za-link-fm-rsa-ec",
+          "uuid": "003efaa4-e791-4095-84aa-81bedd09a986",
+          "name": "Link FM (RSA-EC)",
+          "region": "Eastern Cape",
+          "genre": "christianity, gospel music",
+          "tier": "major",
+          "urls": [
+            "https://de2.streamingpulse.com/ssl/LinkFM"
+          ],
+          "lat": -32.9832,
+          "lon": 27.9657
+        },
+        "2": {
+          "id": "za-bokradio",
+          "uuid": "fd4982b0-41c2-11e8-b74d-52543be04c81",
+          "name": "Bokradio",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://bokradio.highquality.radiostream.co.za/"
+          ]
+        },
+        "5": {
+          "id": "za-kfm-94-5",
+          "uuid": "cd6d66e4-adc0-4284-9392-f1a1f87091d9",
+          "name": "KFM 94.5",
+          "region": "",
+          "genre": "pop, rock",
+          "tier": "major",
+          "urls": [
+            "https://playerservices.streamtheworld.com/api/livestream-redirect/KFM.mp3"
+          ],
+          "lat": -33.9273,
+          "lon": 18.4252
+        },
+        "8": {
+          "id": "za-702-johannesburg",
+          "uuid": "96192d12-0601-11e8-ae97-52543be04c81",
+          "name": "702 Johannesburg",
+          "region": "Gauteng",
+          "genre": "johannesburg, news talk",
+          "tier": "minor",
+          "urls": [
+            "http://22333.live.streamtheworld.com/FM702_SC",
+            "http://21633.live.streamtheworld.com:80/FM702_SC"
+          ]
+        },
+        "10": {
+          "id": "za-east-coast-radio",
+          "uuid": "7881d719-bae9-407d-912c-f75174c43403",
+          "name": "East Coast Radio",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://live.ecr.co.za/ecrhigh.mp3?aw_0_pinpoll=1,2,9&listenerid=94d1ac3bf877b65e4e17cd7e9bfec132&awparams=companionAds%3Atrue&aw_0_1st.ri=iono"
+          ]
+        },
+        "13": {
+          "id": "za-947",
+          "uuid": "9610b7f6-0601-11e8-ae97-52543be04c81",
+          "name": "947",
+          "region": "",
+          "genre": "adult contemporary, pop",
+          "tier": "minor",
+          "urls": [
+            "http://14203.live.streamtheworld.com/FM947_SC",
+            "http://25443.live.streamtheworld.com:80/FM947_SC"
+          ]
+        },
+        "15": {
+          "id": "za-amapiano-fm",
+          "uuid": "bed37ad7-1542-4455-96ea-6b7608c7bc8f",
+          "name": "Amapiano FM",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/xs6zeac1ts8uv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "UA",
+      "name": "Украина",
+      "timezone": "Europe/Kyiv",
+      "slots": {
+        "0": {
+          "id": "ua-blues-rock-radio",
+          "uuid": "2b739ef4-593e-4190-be36-5c93f0d6ad7b",
+          "name": "Blues & Rock Radio",
+          "region": "Chernivtsi",
+          "genre": "blues, blues rock",
+          "tier": "major",
+          "urls": [
+            "http://stream.laut.fm/bluesrock"
+          ],
+          "lat": 48.2868,
+          "lon": 25.9298
+        },
+        "3": {
+          "id": "ua-0988bac7",
+          "uuid": "0988bac7-46ac-4a26-b674-f0f15d53715f",
+          "name": "Українське радіо",
+          "region": "",
+          "genre": "news",
+          "tier": "minor",
+          "urls": [
+            "http://91.218.213.49:8000/ur1-mp3"
+          ]
+        },
+        "6": {
+          "id": "ua-hit-fm-ukraine-128kb-s",
+          "uuid": "961949f3-0601-11e8-ae97-52543be04c81",
+          "name": "Hit FM (UKraine) - 128kb/s",
+          "region": "Kiev",
+          "genre": "dance, pop",
+          "tier": "major",
+          "urls": [
+            "http://195.95.206.17/HitFM"
+          ]
+        },
+        "8": {
+          "id": "ua-nrj-ukraine",
+          "uuid": "960a0bed-9524-4ea1-b6e8-b6d2431d5c26",
+          "name": "NRJ Ukraine",
+          "region": "Kyiv",
+          "genre": "dance, electronic",
+          "tier": "minor",
+          "urls": [
+            "https://cast.mediaonline.net.ua/nrj320"
+          ],
+          "lat": 50.4809,
+          "lon": 30.4797
+        },
+        "10": {
+          "id": "ua-109fm",
+          "uuid": "95a8fd5a-11a7-4237-90d2-4c10d0c5c175",
+          "name": "109FM",
+          "region": "",
+          "genre": "house, progressive",
+          "tier": "minor",
+          "urls": [
+            "https://solid48.streamupsolutions.com/proxy/cfujtbgw/109fm"
+          ]
+        },
+        "13": {
+          "id": "ua-play-fm-105-5",
+          "uuid": "2229d2b2-1306-4eba-8c6c-5413a722c8d0",
+          "name": "Play FM Луганск 105.5ФМ",
+          "region": "",
+          "genre": "dance",
+          "tier": "minor",
+          "urls": [
+            "https://radio.play-fm.ru:8001/playfm"
+          ]
+        },
+        "15": {
+          "id": "ua-kiss-fm-106-5",
+          "uuid": "bd9c1301-562d-451f-94bf-6a76e3bb898e",
+          "name": "Kiss FM 106.5",
+          "region": "Kyiv",
+          "genre": "music",
+          "tier": "major",
+          "urls": [
+            "http://online.kissfm.ua/KissFM"
+          ]
+        }
+      }
+    },
+    {
+      "code": "EG",
+      "name": "Египет",
+      "timezone": "Africa/Cairo",
+      "slots": {
+        "0": {
+          "id": "eg-3f5d8a52",
+          "uuid": "3f5d8a52-dea9-4201-9575-a58adc8e9263",
+          "name": "إذاعة محمود خليل الحصري",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://qurango.net/radio/mahmoud_khalil_alhussary_warsh"
+          ]
+        },
+        "2": {
+          "id": "eg-radiowayak",
+          "uuid": "feddd190-e5ff-4a0a-93c2-90068dd04608",
+          "name": "راديو وياك | Radiowayak",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://work.radiowayak.org/listen/live/live.mp3"
+          ]
+        },
+        "6": {
+          "id": "eg-0b14ae20",
+          "uuid": "0b14ae20-92b3-4db7-834f-ee6ba39ad080",
+          "name": "إذاعة مشاري العفاسي",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://qurango.net/radio/mishary_alafasi"
+          ]
+        },
+        "8": {
+          "id": "eg-rebel-radio-online",
+          "uuid": "a97ce248-ff56-4173-bf54-fcecf2ec4be3",
+          "name": "Rebel Radio Online",
+          "region": "Cairo",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://azuracast-nuremberg.myautodj.com/listen/station_660_1777579648/radio.mp3"
+          ]
+        },
+        "10": {
+          "id": "eg-omniradio-quran-islamic-radio",
+          "uuid": "6617f9be-e393-4f53-9611-ac7cb7728600",
+          "name": "OmniRadio - Quran & Islamic Radio (إذاعة القرآن الكريم)",
+          "region": "",
+          "genre": "arabic, islam",
+          "tier": "minor",
+          "urls": [
+            "https://radio.xecod.com/station/quran-cairo"
+          ]
+        },
+        "13": {
+          "id": "eg-8e63e8b6",
+          "uuid": "8e63e8b6-4e70-4bc0-9f5d-07e8477a4480",
+          "name": "إذاعة القرآن الكريم من القاهرة",
+          "region": "Cairo",
+          "genre": "اسلامي, دين",
+          "tier": "major",
+          "urls": [
+            "http://n12.radiojar.com/8s5u5tpdtwzuv?listening-from-radio-garden=1620219571863&rj-tok=AAABeTyl2zYARSWbLVnrEOlqGw&rj-ttl=5"
+          ],
+          "lat": 30.0253,
+          "lon": 31.2312
+        },
+        "15": {
+          "id": "eg-x-x",
+          "uuid": "7207fe34-936c-4206-9a68-7e78230e6f4b",
+          "name": "X_X",
+          "region": "Cairo",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/n63xpx3o8imuv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "TR",
+      "name": "Турция",
+      "timezone": "Europe/Istanbul",
+      "slots": {
+        "0": {
+          "id": "tr-kral-turk-fm",
+          "uuid": "09f8922f-56bb-41bd-ad35-a7e54c5520e3",
+          "name": "KRAL TÜRK FM",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://live.radyositesihazir.com/8032/stream"
+          ]
+        },
+        "2": {
+          "id": "tr-best-slow",
+          "uuid": "aa64439d-ef9a-4703-825f-b009718296f8",
+          "name": "BEST SLOW",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://hepsibest.radyotvonline.net/bestslow"
+          ]
+        },
+        "4": {
+          "id": "tr-engelliler-radyo",
+          "uuid": "29664f25-1649-4725-b88b-89381616b55f",
+          "name": "Engelliler radyo",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/iuqovax9ftsvv"
+          ]
+        },
+        "7": {
+          "id": "tr-radyo-7",
+          "uuid": "df369586-40fc-11e9-aa55-52543be04c81",
+          "name": "Radyo 7",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "http://46.20.3.250/;stream"
+          ]
+        },
+        "9": {
+          "id": "tr-95-1-tempo-radyo-hatay",
+          "uuid": "1690f824-0e5f-48ad-affc-5e4f364f8056",
+          "name": "95.1 TEMPO RADYO HATAY",
+          "region": "Hatay",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://sslyayin.netyayin.net/tempo/stream"
+          ],
+          "lat": 36.1208,
+          "lon": 36.1236
+        },
+        "11": {
+          "id": "tr-101-1megasite",
+          "uuid": "7aeff8c5-2204-434f-b8ca-aed6cd8278f2",
+          "name": "101.1Megasite",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://37.247.98.8/stream/30/"
+          ]
+        },
+        "13": {
+          "id": "tr-virgin-radio-turkiye",
+          "uuid": "960969eb-0601-11e8-ae97-52543be04c81",
+          "name": "Virgin Radio Türkiye",
+          "region": "",
+          "genre": "pop rock",
+          "tier": "major",
+          "urls": [
+            "http://29073.live.streamtheworld.com/VIRGIN_RADIO_SC",
+            "http://29346.live.streamtheworld.com:80/VIRGIN_RADIO_SC"
+          ]
+        }
+      }
+    },
+    {
+      "code": "KE",
+      "name": "Кения",
+      "timezone": "Africa/Nairobi",
+      "slots": {
+        "0": {
+          "id": "ke-jesus-is-lord-radio",
+          "uuid": "5b47e763-07e5-11ea-a87e-52543be04c81",
+          "name": "JESUS IS LORD Radio",
+          "region": "",
+          "genre": "christian, gospel",
+          "tier": "major",
+          "urls": [
+            "https://s3.radio.co/s97f38db97/listen"
+          ]
+        },
+        "3": {
+          "id": "ke-kbc",
+          "uuid": "44bb6b74-7d40-422e-aaa4-2da831d58a17",
+          "name": "KBC",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "http://stream.zeno.fm/ud2u96xst5quv"
+          ]
+        },
+        "5": {
+          "id": "ke-nation-kenya",
+          "uuid": "060d26ef-0252-49ea-a276-c0b7acfeca6b",
+          "name": "NATION KENYA",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "http://stream.radiojar.com/3by7s8eg65quv"
+          ]
+        },
+        "8": {
+          "id": "ke-irie-fm-jamaica",
+          "uuid": "14e9b3f0-748d-417f-8373-b94844c5df38",
+          "name": "IRIE FM JAMAICA",
+          "region": "",
+          "genre": "classical",
+          "tier": "major",
+          "urls": [
+            "http://stream.zeno.fm/6zszyw9tarzuv"
+          ]
+        },
+        "10": {
+          "id": "ke-reggae-roots",
+          "uuid": "9573cd3d-27bc-417b-b627-b02e94b83b24",
+          "name": "REGGAE ROOTS",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "http://relay5.181.fm:8096/"
+          ]
+        },
+        "12": {
+          "id": "ke-ghetto-kenya",
+          "uuid": "cde57b4c-11d1-49a0-b7e3-98f5f943653f",
+          "name": "ghetto kenya",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/kvudezx1h2zuv"
+          ]
+        },
+        "15": {
+          "id": "ke-radio47",
+          "uuid": "87583ab5-0d53-43ac-a414-46bb39c89217",
+          "name": "Radio47",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://streaming.shoutcast.com/radio-47?ver=690109"
+          ]
+        }
+      }
+    },
+    {
+      "code": "RU",
+      "name": "Россия",
+      "timezone": "Europe/Moscow",
+      "slots": {
+        "0": {
+          "id": "ru-rock-fm",
+          "uuid": "961c96ef-0601-11e8-ae97-52543be04c81",
+          "name": "ROCK FM",
+          "region": "",
+          "genre": "classic rock, pop rock",
+          "tier": "major",
+          "urls": [
+            "http://nashe1.hostingradio.ru/rock-128.mp3"
+          ]
+        },
+        "2": {
+          "id": "ru-59735fa1",
+          "uuid": "59735fa1-aadc-4e97-8943-b64cfe8f1998",
+          "name": "Авторадио",
+          "region": "",
+          "genre": "music",
+          "tier": "minor",
+          "urls": [
+            "https://cast.mediaonline.net.ua/avtoradio"
+          ]
+        },
+        "6": {
+          "id": "ru-vesti-fm",
+          "uuid": "960b9e98-0601-11e8-ae97-52543be04c81",
+          "name": "Вести ФМ (Vesti FM)",
+          "region": "",
+          "genre": "news",
+          "tier": "major",
+          "urls": [
+            "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps"
+          ]
+        },
+        "8": {
+          "id": "ru-dnb-fm",
+          "uuid": "d56f4802-58fe-4940-8ef8-218ba600f858",
+          "name": "DNB FM",
+          "region": "",
+          "genre": "breaks, dnb",
+          "tier": "minor",
+          "urls": [
+            "https://air.dnbfm.ru/listen/player/play"
+          ]
+        },
+        "11": {
+          "id": "ru-d05d85a2",
+          "uuid": "d05d85a2-d227-46af-a3f5-fd370616afbc",
+          "name": "Радио Орфей - Классика крупных форм",
+          "region": "",
+          "genre": "classical, cultural",
+          "tier": "minor",
+          "urls": [
+            "https://channels.fonotron.ru:8000/Chan_8_192.mp3"
+          ],
+          "lat": 55.742,
+          "lon": 37.6311
+        },
+        "13": {
+          "id": "ru-europa-plus",
+          "uuid": "9622cd46-0601-11e8-ae97-52543be04c81",
+          "name": "Europa Plus",
+          "region": "Moscow",
+          "genre": "dance, house",
+          "tier": "major",
+          "urls": [
+            "http://ep256.hostingradio.ru:8052/europaplus256.mp3"
+          ]
+        },
+        "15": {
+          "id": "ru-7",
+          "uuid": "e4a7e1e4-263c-11e9-a80b-52543be04c81",
+          "name": "Радио 7 на семи холмах",
+          "region": "Москва",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://radio7server.streamr.ru:8040/radio7256.mp3"
+          ]
+        }
+      }
+    },
+    {
+      "code": "IR",
+      "name": "Иран",
+      "timezone": "Asia/Tehran",
+      "slots": {
+        "0": {
+          "id": "ir-radio-iran-international",
+          "uuid": "eb68658e-6039-4bef-924b-cfae14098abb",
+          "name": "Radio Iran International",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://radio.iraninternational.app/iintl_c"
+          ]
+        },
+        "2": {
+          "id": "ir-radio-navahang",
+          "uuid": "aa408a3b-3d07-415d-8af1-a60b64e07043",
+          "name": "Radio Navahang",
+          "region": "",
+          "genre": "middle eastern music, pop",
+          "tier": "major",
+          "urls": [
+            "https://navairan.com/;stream.nsv"
+          ]
+        },
+        "5": {
+          "id": "ir-iraninternational",
+          "uuid": "5c6c092b-2b8b-4ac1-a8d0-090f87037fd9",
+          "name": "iraninternational",
+          "region": "",
+          "genre": "iran, news",
+          "tier": "minor",
+          "urls": [
+            "https://radio.iraninternational.app/iintl_c"
+          ]
+        },
+        "8": {
+          "id": "ir-radio-liberty-iran-official-stream",
+          "uuid": "b6eedfc6-4a4b-4899-852f-03dd833f1f1b",
+          "name": "ایران‎  Radio Liberty (Iran) (official stream)",
+          "region": "Tehran",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://stream.radiojar.com/cp13r2cpn3quv"
+          ],
+          "lat": 35.6952,
+          "lon": 51.3844
+        },
+        "10": {
+          "id": "ir-parsa",
+          "uuid": "dcb4d366-5b06-4f4d-a5cb-0b81d1c09521",
+          "name": "parsa",
+          "region": "",
+          "genre": "classical",
+          "tier": "minor",
+          "urls": [
+            "http://parsa.icdndhcp.com:18000/stream"
+          ]
+        },
+        "13": {
+          "id": "ir-radio-yar-plus2",
+          "uuid": "216ac46a-1e79-4683-8d5d-832e65876b4a",
+          "name": "Radio Yar Plus2",
+          "region": "California",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream-163.zeno.fm/yxemzpoaocavv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ5eGVtenBvYW9jYXZ2IiwiaG9zdCI6InN0cmVhbS0xNjMuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6InhKNHZlRTRtVFFPQTZ6RWJwMy1MOXciLCJpYXQiOjE3NTc2MzE3MDEsImV4cCI6MTc1NzYzMTc2MX0.KyIREwfc-nOvruWM_wiFaNS-xCgh1CfF2i8PE-xSm9E"
+          ]
+        },
+        "15": {
+          "id": "ir-iran-international-https-stream",
+          "uuid": "37acc36e-e070-4225-9d9f-d3c3610470fd",
+          "name": "Iran International (HTTPS stream)",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://stream.radiojar.com/iintl_c"
+          ]
+        }
+      }
+    },
+    {
+      "code": "IN",
+      "name": "Индия",
+      "timezone": "Asia/Kolkata",
+      "slots": {
+        "1": {
+          "id": "in-radio-mirchi-hindi",
+          "uuid": "cdd3b5a0-47f6-46d5-8209-b78e8b10ff6e",
+          "name": "Radio Mirchi Hindi",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://eu8.fastcast4u.com/proxy/clyedupq/stream"
+          ]
+        },
+        "3": {
+          "id": "in-986malayalamradio",
+          "uuid": "fb5a60b2-f8c5-4650-aeee-cf118925450d",
+          "name": "986malayalamradio",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/512rbf1e3qzuv"
+          ]
+        },
+        "5": {
+          "id": "in-m-s-viswanathan-fm",
+          "uuid": "0c7f1ee5-6f2d-4049-85b4-6864edfaf0fb",
+          "name": "M S Viswanathan FM",
+          "region": "Tamilnadu",
+          "genre": "m s viswanathan hits, msv",
+          "tier": "minor",
+          "urls": [
+            "http://stream.zeno.fm/x7wc1xgllvsvv"
+          ]
+        },
+        "8": {
+          "id": "in-mirchi-top-20",
+          "uuid": "6b36ba4f-6d29-4272-b3c0-9aeeb64e61ec",
+          "name": "Mirchi Top 20",
+          "region": "",
+          "genre": "bollywood, hindi",
+          "tier": "major",
+          "urls": [
+            "https://drive.uber.radio/uber/bollywoodnow/icecast.audio"
+          ],
+          "lat": 19.0304,
+          "lon": 72.8696
+        },
+        "10": {
+          "id": "in-antara-radio",
+          "uuid": "95232d5b-4fc1-4efe-8a08-a3bddef1692f",
+          "name": "Antara Radio",
+          "region": "",
+          "genre": "music",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/rzuke118e3quv"
+          ]
+        },
+        "12": {
+          "id": "in-ananda-marga-pracharaka-samgha",
+          "uuid": "10618e3a-06f6-4a79-b378-1c9a2f13c4d4",
+          "name": "Ananda Marga Pracharaka Samgha",
+          "region": "",
+          "genre": "kiirtan, mantra",
+          "tier": "minor",
+          "urls": [
+            "https://stream-152.zeno.fm/216zaqk88a0uv?zs=-fqdY-MsRiGgFdlBNEsYvA"
+          ],
+          "lat": 23.4286,
+          "lon": 86.262
+        },
+        "15": {
+          "id": "in-bollywood-gaane-purane",
+          "uuid": "e928bf7b-7de2-4447-87ec-369d1be1b9f5",
+          "name": "Bollywood Gaane Purane",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/6n6ewddtad0uv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "TH",
+      "name": "Таиланд",
+      "timezone": "Asia/Bangkok",
+      "slots": {
+        "0": {
+          "id": "th-a96eb618",
+          "uuid": "a96eb618-1e83-4513-9165-b21a19477d90",
+          "name": "ล้านนา เรดิโอ",
+          "region": "",
+          "genre": "ลูกทุ่ง เพื่อชีวิต",
+          "tier": "minor",
+          "urls": [
+            "https://inter.lannaradio.com/radio/8000/radio.mp3"
+          ]
+        },
+        "2": {
+          "id": "th-radio-red-phuket",
+          "uuid": "f758776d-230e-4237-a426-93005a478ca0",
+          "name": "Radio Red Phuket",
+          "region": "Phuket",
+          "genre": "afro-pop, dance",
+          "tier": "minor",
+          "urls": [
+            "https://stream.chiliradio.app/radiored"
+          ],
+          "lat": 7.5434,
+          "lon": 99.0617
+        },
+        "4": {
+          "id": "th-chili-radio-thailand",
+          "uuid": "df56ca27-8782-439f-bc91-806800aae834",
+          "name": "Chili Radio Thailand",
+          "region": "Chiang Mai",
+          "genre": "1980s, 2000s",
+          "tier": "major",
+          "urls": [
+            "https://stream.chiliradio.app/chiliclassics"
+          ],
+          "lat": 18.7428,
+          "lon": 98.9403
+        },
+        "8": {
+          "id": "th-101-kiss-fm",
+          "uuid": "133ed697-1d6d-4b44-ade5-34070ef6aa6d",
+          "name": "101 kiss fm สุราษฎร์ธานี",
+          "region": "Surat Thani",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://siamtoday.in.th/8498"
+          ]
+        },
+        "10": {
+          "id": "th-cool-fahrenheit-93-fm",
+          "uuid": "c764e9db-1d62-47fb-bb10-bcf132702499",
+          "name": "COOL Fahrenheit 93 FM",
+          "region": "Bangkok",
+          "genre": "adult contemporary, easy listening",
+          "tier": "major",
+          "urls": [
+            "https://coolism-web.cdn.byteark.com/;stream/1"
+          ],
+          "lat": 13.7182,
+          "lon": 100.481
+        },
+        "13": {
+          "id": "th-looktung-eing",
+          "uuid": "99dfc803-36e7-4fc4-b225-825c2f7e9c4e",
+          "name": "Looktung Eing",
+          "region": "Bangkok",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://inter.lannaradio.com/radio/8000/radio.mp3"
+          ]
+        },
+        "15": {
+          "id": "th-cool-fahrenheit",
+          "uuid": "850723b8-24a6-4dca-add8-b0da39db7d39",
+          "name": "Cool fahrenheit",
+          "region": "",
+          "genre": "",
+          "tier": "major",
+          "urls": [
+            "https://coolism-web.cdn.byteark.com/;stream/1"
+          ]
+        }
+      }
+    },
+    {
+      "code": "ID",
+      "name": "Индонезия",
+      "timezone": "Asia/Jakarta",
+      "slots": {
+        "0": {
+          "id": "id-elshinta-fm-jakarta",
+          "uuid": "8dd6a16d-f994-455f-8f6a-a285f07abebd",
+          "name": "Elshinta FM Jakarta",
+          "region": "Jakarta",
+          "genre": "news",
+          "tier": "major",
+          "urls": [
+            "https://stream-ssl.arenastreaming.com:8000/jakarta"
+          ],
+          "lat": -6.2186,
+          "lon": 106.7235
+        },
+        "4": {
+          "id": "id-bellasalam-87-6-fm-tasikmalaya",
+          "uuid": "6c9bcdf4-3ed3-48bd-84fd-31506035f551",
+          "name": "Bellasalam 87.6 FM Tasikmalaya",
+          "region": "Jawa Barat",
+          "genre": "dangdut, nostalgia",
+          "tier": "minor",
+          "urls": [
+            "https://listen.bellasalamfm.com/listen/radiobellasalam/live"
+          ],
+          "lat": -7.3438,
+          "lon": 108.1666
+        },
+        "6": {
+          "id": "id-anime-fm",
+          "uuid": "acfe5e71-7e9a-40bf-b12c-92a980e95fcb",
+          "name": "Anime FM",
+          "region": "",
+          "genre": "anime, ending",
+          "tier": "minor",
+          "urls": [
+            "https://animefm.stream.laut.fm/animefm"
+          ]
+        },
+        "9": {
+          "id": "id-sonora-fm-92-jakarta",
+          "uuid": "6233fefa-714e-444c-bc76-065d440c8082",
+          "name": "Sonora FM 92 Jakarta",
+          "region": "Jakarta",
+          "genre": "music, news",
+          "tier": "major",
+          "urls": [
+            "https://sonora-radio.arenastreaming.com/8130/stream"
+          ],
+          "lat": -6.2081,
+          "lon": 106.7945
+        },
+        "11": {
+          "id": "id-sananta-fm-tegal",
+          "uuid": "86202045-8db9-4607-9208-ec3256cef434",
+          "name": "Sananta FM Tegal",
+          "region": "Tegal",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "http://i.klikhost.com:8500/;super.mp3"
+          ],
+          "lat": -6.8749,
+          "lon": 109.1298
+        },
+        "13": {
+          "id": "id-bandung-death-metal-syndicate",
+          "uuid": "fda05c36-b849-4eb6-8ddc-763a3c899e47",
+          "name": "Bandung Death Metal Syndicate",
+          "region": "Bandung, West Java",
+          "genre": "black metal, death metal",
+          "tier": "minor",
+          "urls": [
+            "https://stream.zeno.fm/t9wdzppre5zuv"
+          ]
+        },
+        "15": {
+          "id": "id-i-radio-jakarta",
+          "uuid": "1c3b70d9-39d5-49d5-a81a-77833667a88b",
+          "name": "I-Radio Jakarta",
+          "region": "Jakarta",
+          "genre": "indonesia, pop",
+          "tier": "major",
+          "urls": [
+            "http://stream.radiojar.com/4ywdgup3bnzuv"
+          ]
+        }
+      }
+    },
+    {
+      "code": "KR",
+      "name": "Южная Корея",
+      "timezone": "Asia/Seoul",
+      "slots": {
+        "0": {
+          "id": "kr-k-radio",
+          "uuid": "54ac5316-5788-452f-a15b-5a53c79d0375",
+          "name": "K-RADIO",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://s5.radio.co/s0a9796fe3/listen"
+          ]
+        },
+        "2": {
+          "id": "kr-big-b-radio-kpop",
+          "uuid": "7a72aa80-3902-4d73-a548-db81ac780240",
+          "name": "Big B Radio - Kpop",
+          "region": "",
+          "genre": "music, pop",
+          "tier": "major",
+          "urls": [
+            "https://antares.dribbcast.com/proxy/kpop?mp=/s"
+          ]
+        },
+        "5": {
+          "id": "kr-fred-film-radio",
+          "uuid": "2b1b77a5-16d9-49eb-9359-38341f5674e4",
+          "name": "Fred Film Radio(한국어)",
+          "region": "Seoul",
+          "genre": "culture, film",
+          "tier": "minor",
+          "urls": [
+            "https://s10.webradio-hosting.com/proxy/fredradiokr/stream"
+          ]
+        },
+        "8": {
+          "id": "kr-ara-fm",
+          "uuid": "427da114-be59-4272-9372-9af9e84a7f39",
+          "name": "ARA FM",
+          "region": "",
+          "genre": "ambient, dance pop",
+          "tier": "major",
+          "urls": [
+            "http://141.164.38.238/listen/ara_fm/radio.mp3"
+          ],
+          "lat": 37.5509,
+          "lon": 126.991
+        },
+        "10": {
+          "id": "kr-listen-moe-kpop-mp3",
+          "uuid": "7e0188a0-b332-405d-af8f-57da3223369b",
+          "name": "Listen.moe Kpop (MP3)",
+          "region": "",
+          "genre": "kpop",
+          "tier": "minor",
+          "urls": [
+            "https://listen.moe/kpop/fallback"
+          ]
+        },
+        "13": {
+          "id": "kr-fm",
+          "uuid": "ba90ebe7-18a1-4014-b6a8-e7a8212e4e36",
+          "name": "평양FM",
+          "region": "",
+          "genre": "105.2, 105.2 fm",
+          "tier": "minor",
+          "urls": [
+            "https://listen7.myradio24.com/69366"
+          ]
+        },
+        "15": {
+          "id": "kr-yojosuknam-radio",
+          "uuid": "24163c48-89c6-4d34-99b7-a3c2e9d4cadd",
+          "name": "yojosuknam Radio",
+          "region": "Gyeonggi-do",
+          "genre": "24/7, gugak",
+          "tier": "major",
+          "urls": [
+            "https://stream.yojosuknam.com/live.mp3"
+          ],
+          "lat": 37.738,
+          "lon": 127.034
+        }
+      }
+    },
+    {
+      "code": "JP",
+      "name": "Япония",
+      "timezone": "Asia/Tokyo",
+      "slots": {
+        "0": {
+          "id": "jp-gotanno-fm-89-2",
+          "uuid": "fdffc27f-a096-4be8-b3bf-2c51a943a1d1",
+          "name": "Gotanno FM 89.2",
+          "region": "Tokyo",
+          "genre": "indie pop, jpop",
+          "tier": "major",
+          "urls": [
+            "https://radio.gotanno.love/;"
+          ],
+          "lat": 35.7652,
+          "lon": 139.8094
+        },
+        "3": {
+          "id": "jp-nonstop-casiopea",
+          "uuid": "21fece77-9763-4223-8f01-358adbddeac7",
+          "name": "Nonstop Casiopea",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://nonstopcasiopea.radioca.st/"
+          ]
+        },
+        "6": {
+          "id": "jp-box-japan-city-pop",
+          "uuid": "30b09043-9b67-43d7-b9c6-b4401e5cb636",
+          "name": "BOX : Japan City Pop - 日本のシティポップ",
+          "region": "",
+          "genre": "city pop, japanese",
+          "tier": "major",
+          "urls": [
+            "https://play.streamafrica.net/japancitypop"
+          ]
+        },
+        "8": {
+          "id": "jp-gensokyo-radio-enhanced",
+          "uuid": "b6512cd8-9b4d-4b25-82a6-3fcd9a6273c6",
+          "name": "Gensokyo Radio (Enhanced)",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream.gensokyoradio.net/3"
+          ]
+        },
+        "11": {
+          "id": "jp-anime-para-ti",
+          "uuid": "1adf1539-e647-44c3-85d8-b437b768fb8c",
+          "name": "Anime Para Ti",
+          "region": "",
+          "genre": "anime, anime openings",
+          "tier": "major",
+          "urls": [
+            "https://stream.zeno.fm/qpn8mkt8c4duv"
+          ]
+        },
+        "13": {
+          "id": "jp-gotanno-radio-micro-fm-station",
+          "uuid": "a4fc8fc6-5eae-4e2e-9881-7770556abd01",
+          "name": "Gotanno Radio micro FM station",
+          "region": "",
+          "genre": "jpop",
+          "tier": "minor",
+          "urls": [
+            "https://radio.gotanno.love/;"
+          ]
+        },
+        "15": {
+          "id": "jp-gensokyo-radio-original",
+          "uuid": "e219fec2-ee95-4c12-86fb-34142143f562",
+          "name": "Gensokyo Radio (Original)",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream.gensokyoradio.net/1"
+          ]
+        }
+      }
+    },
+    {
+      "code": "AU",
+      "name": "Австралия",
+      "timezone": "Australia/Sydney",
+      "slots": {
+        "0": {
+          "id": "au-big-hits-radio-qld-townsville-north-queensland-20220701",
+          "uuid": "1cf68d54-ff37-44cb-b202-099df5108654",
+          "name": "Big Hits Radio QLD Townsville North Queensland 20220701",
+          "region": "Queensland Townsville",
+          "genre": "ballad, classic rock",
+          "tier": "major",
+          "urls": [
+            "https://onlineradiobox.com/json/au/bighits/play?platform=web"
+          ],
+          "lat": -19.2961,
+          "lon": 146.7912
+        },
+        "3": {
+          "id": "au-gold-104-3-melbourne-104-3-fm-mp3",
+          "uuid": "90bb3dbd-6d30-4dcf-8cf4-5acec5329c0e",
+          "name": "GOLD 104.3 - Melbourne - 104.3 FM (MP3)",
+          "region": "Melbourne VIC",
+          "genre": "adult contemporary, pop",
+          "tier": "minor",
+          "urls": [
+            "http://playerservices.streamtheworld.com/api/livestream-redirect/ARN_GOLD1043.mp3"
+          ]
+        },
+        "6": {
+          "id": "au-70s-classics-sydney-mp3",
+          "uuid": "655b54c2-1e92-4346-80c5-8bb2ac1168b8",
+          "name": "70s Classics - Sydney (MP3)",
+          "region": "Sydney NSW",
+          "genre": "1970s, 70's",
+          "tier": "major",
+          "urls": [
+            "http://stream.zeno.fm/glsntnn7et8vv"
+          ]
+        },
+        "8": {
+          "id": "au-mix-102-3-adelaide-102-3-fm-mp3",
+          "uuid": "631b1575-97ba-429a-8f5a-a00f4e30db3d",
+          "name": "Mix 102.3 - Adelaide - 102.3 FM (MP3)",
+          "region": "Adelaide SA",
+          "genre": "hot adult contemporary",
+          "tier": "minor",
+          "urls": [
+            "http://playerservices.streamtheworld.com/api/livestream-redirect/ARN_MIX1023.mp3"
+          ]
+        },
+        "10": {
+          "id": "au-bitwaves-classics",
+          "uuid": "fad123b4-4d48-4a6e-84f4-ef42dcc2481d",
+          "name": "BitWaves Classics",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://radio.kernwifi.com.au/stream/2/"
+          ]
+        },
+        "13": {
+          "id": "au-3aw-melbourne-693-am-mp3",
+          "uuid": "94ab6f5f-b684-4ca1-ae5c-c5c868ed20c6",
+          "name": "3AW - Melbourne - 693 AM (MP3)",
+          "region": "Melbourne VIC",
+          "genre": "news, talk radio",
+          "tier": "major",
+          "urls": [
+            "http://playerservices.streamtheworld.com/api/livestream-redirect/3AW.mp3"
+          ]
+        },
+        "15": {
+          "id": "au-artsound-fm",
+          "uuid": "a96c47e5-6c15-4a34-a2ee-49bc4d3a331f",
+          "name": "ArtSound FM",
+          "region": "Canberra ACT",
+          "genre": "arts, blues",
+          "tier": "minor",
+          "urls": [
+            "https://stream.artsound.fm/mp3"
+          ]
+        }
+      }
+    },
+    {
+      "code": "NZ",
+      "name": "Новая Зеландия",
+      "timezone": "Pacific/Auckland",
+      "slots": {
+        "0": {
+          "id": "nz-95bfm-256kbps-mp3",
+          "uuid": "0df7ff35-422f-4599-be5d-b9d84599e0cb",
+          "name": "95bFM - 256Kbps MP3",
+          "region": "Auckland",
+          "genre": "university radio, university of auckland",
+          "tier": "major",
+          "urls": [
+            "https://streams.95bfm.com/stream95"
+          ]
+        },
+        "2": {
+          "id": "nz-radio-bolly-bop",
+          "uuid": "104485ee-7fd6-4bbc-9027-f968358f4065",
+          "name": "Radio Bolly Bop",
+          "region": "",
+          "genre": "music",
+          "tier": "minor",
+          "urls": [
+            "http://s3.radio.co/s2f19d44d0/listen"
+          ]
+        },
+        "5": {
+          "id": "nz-https-badradio-nz-24-7-phonk",
+          "uuid": "97ecfd87-6e7f-4055-8282-f0121db9322f",
+          "name": "https://badradio.nz/ - 24/7 PHONK",
+          "region": "",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://s2.radio.co/s2b2b68744/listen"
+          ]
+        },
+        "8": {
+          "id": "nz-my-dee-jay-radio",
+          "uuid": "ffe72800-6dbb-4db0-bede-a9c3790e0745",
+          "name": "My Dee Jay Radio",
+          "region": "Canterbury",
+          "genre": "afrobeats, dance",
+          "tier": "major",
+          "urls": [
+            "https://radio.mydeejayradio.com/listen/my_dee_jay_radio/radio.mp3"
+          ],
+          "lat": -43.532,
+          "lon": 172.636
+        },
+        "11": {
+          "id": "nz-bayrock",
+          "uuid": "1e3bed93-a6a3-454d-b8ab-fead7d526812",
+          "name": "BayRock",
+          "region": "Te Ika-a-Māui",
+          "genre": "",
+          "tier": "minor",
+          "urls": [
+            "https://stream-15.aiir.com/okom9fklptitv"
+          ]
+        },
+        "13": {
+          "id": "nz-west-fm-swing-radio",
+          "uuid": "0d61ab6a-5d38-4cbb-aa37-efaf7fae9823",
+          "name": "West FM Swing Radio",
+          "region": "Auckland",
+          "genre": "1920s, 1930's",
+          "tier": "minor",
+          "urls": [
+            "http://westfm.freeddns.org:8000/westfm"
+          ]
+        },
+        "15": {
+          "id": "nz-radio-one-91fm",
+          "uuid": "b562983d-1c3d-456c-acdd-bcef491f245e",
+          "name": "Radio One 91FM",
+          "region": "",
+          "genre": "community radio, disco",
+          "tier": "major",
+          "urls": [
+            "https://play.r1.co.nz/live"
+          ],
+          "lat": -45.8661,
+          "lon": 170.5117
+        }
+      }
+    }
+  ]
+}

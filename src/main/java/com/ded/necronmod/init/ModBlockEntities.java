@@ -2,6 +2,8 @@ package com.ded.necronmod.init;
 
 import com.ded.necronmod.DedNecronMod;
 import com.ded.necronmod.block.entity.ChunkLoaderObeliskBlockEntity;
+import com.ded.necronmod.block.entity.OrkTotemBlockEntity;
+import com.ded.necronmod.block.entity.RadioBlockEntity;
 import com.ded.necronmod.block.entity.TowerTopBlockEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -25,6 +27,16 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("chunk_loader_obelisk",
                     () -> BlockEntityType.Builder.of(ChunkLoaderObeliskBlockEntity::new,
                             ModBlocks.CHUNK_LOADER_OBELISK_BLOCK.get()).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<OrkTotemBlockEntity>> ORK_TOTEM =
+            BLOCK_ENTITIES.register("ork_totem",
+                    () -> BlockEntityType.Builder.of(OrkTotemBlockEntity::new,
+                            ModBlocks.ORK_TOTEM.get()).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RadioBlockEntity>> RADIO_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("radio_block_entity",
+                    () -> BlockEntityType.Builder.of(RadioBlockEntity::new,
+                            ModBlocks.RADIO_BLOCK.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

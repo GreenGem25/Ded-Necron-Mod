@@ -24,6 +24,19 @@ repositories {
     }
 
     maven { url = "https://api.modrinth.com/maven" }
+
+    maven {
+        name = "Minecraft Libraries"
+        url = "https://libraries.minecraft.net/"
+    }
+    maven {
+        name = "NeoForge Mirror Releases"
+        url = "https://neoforged.forgecdn.net/releases" // Зеркало для основных релизов
+    }
+    maven {
+        name = "NeoForge Mirror Mojang Meta"
+        url = "https://neoforged.forgecdn.net/mojang-meta" // Зеркало для метаданных Mojang
+    }
 }
 
 base {
@@ -129,6 +142,11 @@ dependencies {
     implementation "software.bernie.geckolib:geckolib-neoforge-1.21.1:${geckolib_version}"
 
     implementation "maven.modrinth:jade:${jade_version}"
+
+    jarJar(implementation("com.googlecode.soundlibs:jlayer")) {
+        version { strictly '[1.0.1,2)'; prefer '1.0.1.4' }
+    }
+    additionalRuntimeClasspath "com.googlecode.soundlibs:jlayer:1.0.1.4"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
